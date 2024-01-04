@@ -10,89 +10,160 @@
 }
 html {
     font-size: 16px;
+font-family: 'Poppins', sans-serif;  
 }
-body, html {
+.inner {
+    background-color: #fff;
+    padding: 20px 0;
+}
+#container {
+    position: relative;
     height: 100%;
+    overflow: hidden;
 }
-html {
-    font-size: 62.5%;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-html {
-    font-family: Poppins,sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
+
 body {
-    font-family: Lato,Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #444;
-    background-color: #fff
-}
-.sliding  img{
-    height: auto;
+    margin: 0;
+  }
+  
+  header {
+    display: flex;
     width: 100%;
-}
-.cms-block{
-    max-width: 100%;
-    height: auto;
-}
-.section{
-    padding-top: 50px;
-    padding-top: 50px;
-}
-.container{
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.cms-block .brand-background{
-    background-color: #333645;
-    color: #fff;
-}
-@media (max-width:991px)
-.cms-block .brand-background .btn-primary-inverse{
-    margin-bottom:50px!important;
-}
-.cms-block .brand-background .btn-primary-inverse{
-    color: #fff;
-    background-color: #272936;
-}
-.cms-block .brand-background .btn-google, .cms-block .brand-background .btn-primary-inverse, .cms-block .brand-background .btn-trustpilot{
-    border-radius: 6px;
-    padding: 10px 30px;
-    font-size: 20px;
-}
-.btn{
-    height: auto;
-    line-height: 35px;
-    padding: 5px 15px;
-    text-transform: uppercase;
-    font-size: 1.063rem;
-    border-radius: 3px;
-    white-space: normal;
-}
-.btn{
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: 400;
+  }
+  
+  header h1 {
+    margin-left: 1rem;
+  }
+  
+  header a {
+    text-decoration: none;
+  }
+  #menu-btn {
+    position: absolute;
+    top: -100%;
+    left: -100%;
+  }
+  .menu-icon {
+    visibility: hidden;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 250px;
+    margin-right: 2rem;
+  }
+  @media screen and (max-width: 1100px) {
+    header {
+      display: grid;
+      grid-template-areas:
+        "title   title   hamburger"
+        "nav     nav     nav";
+    }
+  
+    h1 {
+      grid-area: title;
+    }
+  
+    .menu a {
+      text-decoration: none;
+      color: black;
+    }
+  
+    .menu-btn {
+      display: none;
+    }
+  
+    .menu-icon {
+      grid-area: hamburger;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-end;
+      align-items: baseline;
+      padding: 30px 20px 30px 0;
+      position: relative;
+      user-select: none;
+      visibility: visible;
+    }
+  
+    .navicon {
+      background: #333;
+      display: block;
+      height: 2px;
+      width: 18px;
+      position: relative;
+    }
+  
+    .navicon:before {
+      top: 5px;
+    }
+  
+    .navicon:after {
+      top: -5px;
+    }
+  
+    .navicon:before,
+    .navicon:after {
+      background: #333;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: "";
+      position: absolute;
+      transition: all 0.2s ease-out;
+    }
+  
+    .menu {
+      grid-area: nav;
+      max-width: unset;
+      max-height: 0;
+      transition: max-height 0.2s ease-out;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .menu a {
+      padding: 20px 20px;
+      border-right: 1px solid #f4f4f4;
+      background-color: #eee;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .menu-btn:checked ~ .menu {
+      max-height: 240px;
+    }
+  
+    .menu-btn:checked ~ .menu-icon .navicon {
+      background: transparent;
+    }
+  
+    .menu-btn:checked ~ .menu-icon .navicon:before {
+      transform: rotate(-45deg);
+    }
+  
+    .menu-btn:checked ~ .menu-icon .navicon:after {
+      transform: rotate(45deg);
+    }
+  
+    .menu-btn:checked ~ .menu-icon .navicon:before,
+    .menu-btn:checked ~ .menu-icon .navicon:after {
+      top: 0;
+    }
+  .overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #fff; 
+    padding: 10px 20px; 
     text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    background-image: none;
-    border: 1px solid transparent;
-    white-space: nowrap;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    border-radius: 2px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.brand-background strong {
-    color: white !important;
+    line-height: 3rem;
+    margin: 0 0 1.25rem;
+    color: #fff;
 }

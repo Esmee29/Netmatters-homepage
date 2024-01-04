@@ -10,9 +10,12 @@
 </title>
 <link rel="canonical" href="https://www.netmatters.co.uk">
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+<link rel="preload" href="/packages/netmatters/base/fonts/fontawesome-webfont.woff?v=4.0.3" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/packages/netmatters/base/fonts/glyphicons-halflings-regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/assets/fonts/icomoon.ttf?nkflco" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/packages/netmatters/base/fonts/Material-Design-Icons.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/assets/fonts/poppins-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/poppins-v15-latin-600.woff2" as="font" type="font/woff2" crossorigin>
 
 </head>
     <div id="callus-container">
@@ -300,21 +303,20 @@
         <header>
          <div class="inner">
             <div class="container">
-
-                <div class="row">
+                 <div class="row">
                     <div class="col-xs-6 col-sm-6 col-md-5 col-lg-4">
                         <div class="logo-container">
                             <a class="logo" href="https://www.netmatters.co.uk/">
                                 <picture>
-                                    <source srcset="	https://www.netmatters.co.uk/assets/images/f-logo.webp" type="image/webp">
+                                    <source srcset="https://www.netmatters.co.uk/assets/images/f-logo.webp" type="image/webp">
                                     <source srcset="https://www.netmatters.co.uk/assets/images/f-logo.png" type="image/png">
-                                    <img src="	https://www.netmatters.co.uk/assets/images/f-logo.png" alt="Netmatters">
+                                    <img src="https://www.netmatters.co.uk/assets/images/f-logo.png" alt="Netmatters">
                                 </picture> 
                             </a>
                         </div>
                     </div>
                 <div class="col-xs-3 hidden-sm hidden-md hidden-lg mobile-container">
-                    <a class="mobile" href="tel:01603704020">
+                    <a class="mobile" href="tel:01603704020" onclick="gtag('event', 'Phone', {'event_category': 'Phone','event_action': 'contactus','event_label': 'Completion'});">
                         <span class="icon-phone_in_talk"></span>
                     </a>
                 </div>
@@ -345,13 +347,11 @@
                         <button type="button" class="btn btn-primary hamburger hamburger--spin" data-toggle="sidebar">
                             <span class="hamburger-box">
                                 <span class="hamburger-inner">
-
                                 </span>
                             </span>
                         </button>
                     </div>
                 </div>
-
                 </div>    
                 <div class="hidden-sm hidden-md hidden-lg search-form-wrapper--mobile">
                     <form method="get" action="https://www.netmatters.co.uk/search" accept-charset="UTF-8" class="search-form ">
@@ -1488,6 +1488,48 @@ sensitive information protected.</p>
                     <div class="article-list">
                         <div class="row">
                             <div class="col-lg-4 col-sm-6">
+                                <div class="item developer-course">
+                                    <a href="https://www.netmatters.co.uk/news/east-anglian-air-ambulance-introducing-a-3cx-call-flow></a>
+                                    <div class="img-container">
+                                        <a href="https://www.netmatters.co.uk/news/it-support" class="category btn-tooltip" title="View all: Telecoms Services / News">News</a>
+                                        <a class="img standard">
+                                            <picture>
+                                                <source srcset="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/east-anglian-air-1pHi.webp" type="image/webp">
+                                                <source srcset=	https://www.netmatters.co.uk/assets/images/thumbnails/thumb/east-anglian-air-1pHi.png" type="image/png">
+                                                <img src="	https://www.netmatters.co.uk/assets/images/thumbnails/thumb/east-anglian-air-1pHi.png" class="img-responsive" alt>
+                                            </picture>
+                                        </a>
+                                    </div>
+                                    <div class="block">
+                                        <h3>
+                                            <a href="https://www.netmatters.co.uk/news/east-anglian-air-ambulance-introducing-a-3cx-call-flow">
+                                                East Anglian Air Ambulance - Introducing a 3C...
+                                            </a>
+                                            <span class="read-time">
+                                                - 4 minute read
+                                            
+                                            </span>
+                                        </h3>
+                                        <p>The Client Championing ‘Your Local Life-Saving Charity’ the East Anglian Air Ambulance (EAAA) is a r...</p>
+                                        <a class="btn btn-it" href="https://www.netmatters.co.uk/news/east-anglian-air-ambulance-introducing-a-3cx-call-flow>Read More</a>
+                                        <div class="user">
+                                            <div class="avatar">
+                                                <picture>
+                                                    <source srcset="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.webp" type="image/webp">
+                                                    <source srcset="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png" type="image/png">
+                                                    <img src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png" class="img-responsive" alt="Netmatters">
+                                                </picture>
+                                            </div>
+                                            <div class="details">
+                                                <strong class="text-primary">Posted by Netmatters</strong>
+                                                <br>
+                                                2nd January 2024
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6">
                                 <div class="item it">
                                     <a href="https://www.netmatters.co.uk/news/jamie-slater-netmatters-5-year-legend"></a>
                                     <div class="img-container">
@@ -1568,50 +1610,6 @@ sensitive information protected.</p>
                     <strong class="text-primary">Posted by Netmatters</strong>
                     <br>
                     9th December 2023
-            
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="col-lg-4 col-sm-6">
-    <div class="item developer-course">
-        <a href="https://www.netmatters.co.uk/news/sean-bosley-netmatters-5-year-legend></a>
-        <div class="img-container">
-            <a href="https://www.netmatters.co.uk/news/it-support" class="category btn-tooltip" title="View all: IT Support / News">News</a>
-            <a class="img standard">
-                <picture>
-                    <source srcset="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/sean-bosley-DG1n.webp" type="image/webp">
-                    <source srcset=https://www.netmatters.co.uk/assets/images/thumbnails/thumb/sean-bosley-DG1n.png" type="image/png">
-                    <img src="https://www.netmatters.co.uk/assets/images/thumbnails/thumb/sean-bosley-DG1n.png" class="img-responsive" alt>
-                </picture>
-            </a>
-        </div>
-        <div class="block">
-            <h3>
-                <a href="https://www.netmatters.co.uk/news/sean-bosley-netmatters-5-year-legend3">
-                    Sean Bosley - Netmatters 5 Year Legend
-                
-                </a>
-                <span class="read-time">
-                    - 3 minute read
-                
-                </span>
-            </h3>
-            <p>Today, we celebrate the accomplishments of Sean Bosley as he receives the Netmatters Long Service Aw...</p>
-            <a class="btn btn-it" href="https://www.netmatters.co.uk/news/november-notables-2023>Read More</a>
-            <div class="user">
-                <div class="avatar">
-                    <picture>
-                        <source srcset="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.webp" type="image/webp">
-                        <source srcset="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png" type="image/png">
-                        <img src="https://www.netmatters.co.uk/assets/images/thumbnails/article_contact_thumb/netmatters-ltd-VXAv.png" class="img-responsive" alt="Netmatters">
-                    </picture>
-                </div>
-                <div class="details">
-                    <strong class="text-primary">Posted by Netmatters</strong>
-                    <br>
-                    8th December 2023
             
                 </div>
             </div>

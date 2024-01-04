@@ -1,144 +1,98 @@
-html{
-    font-size: 16;
-    font-family: sans-serif;
-    -ms-text-size-adjust:100%;
+* {
+	box-sizing: border-box;
+}
+@media (min-width: 769px) {
+	.container {
+		width: 70%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+}
+html {
+    font-size: 16px;
+}
+body, html {
+    height: 100%;
+}
+html {
+    font-size: 62.5%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+    font-family: Poppins,sans-serif;
+    -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-    
-}
-head{
-    display: none;
-}
-title{
-    display: none;
 }
 body {
-    display: block;
-    margin: 0;
     font-family: Lato,Helvetica,Arial,sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #444;
     background-color: #fff
 }
-small {
-    font-size: 80%
-}
-h1 {
-    font-size: 2em;
-    margin: .67em 0
-}
-button {
-    overflow: visible
-}
-
-table  {
-    border: 1px solid #ddd;
+.sliding  img{
+    height: auto;
     width: 100%;
-    }
-    
-    table td {
-    border: 1px solid #fff;
-    background-color: #eee;
-    padding: 15px;
-    height: 20px;
-    }
-    
-    .brand-background strong{
-      color: white !important;
-    }
-    
-    
-    .main-navigation .security + li > a span {
-    color: #926fb1;
-    }
-    
-    .main-navigation .security + li > ul,
-    .main-navigation .security + li > ul::before,
-    .main-navigation .security + li > ul::after {
-    background-color: #79539a !important;
-    }
-    
-    @media (max-width: 991px) {
-    .sidebar .menu-item-532 {
-    display: none;
-    }
-    .actions{
-font-family: Poppins, sans-serif;
-font-size: 16px;
-line-height:22.8571px;
-text-align: start;
-letter-spacing: 0.4px; 
-color: #666666;
-background-color: #ffffff;
-    }
-    .block, .software{
-        padding: 30px;
-        margin-top: 30px;
-        text-align: center;
-        color: #333645;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0p;
-        border-radius: 15px;
-    }  
-    .container, .section{
-        padding: 50px, 15px, 50px, 15px;
-        margin-left: 9px;
-        margin-right: 9px;
-    } 
-    .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
-        font-family: inherit;
-        font-weight: 500;
-        line-height: 1.1;
-        color: inherit
-    }
-    
-    .h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,.h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small {
-        font-weight: 400;
-        line-height: 1;
-        color: #888
-    }
-    
-    .h1,.h2,.h3,h1,h2,h3 {
-        margin-top: 20px;
-        margin-bottom: 10px
-    }
-    
-    .h1 .small,.h1 small,.h2 .small,.h2 small,.h3 .small,.h3 small,h1 .small,h1 small,h2 .small,h2 small,h3 .small,h3 small {
-        font-size: 65%
-    }
-    
-    .h4,.h5,.h6,h4,h5,h6 {
-        margin-top: 10px;
-        margin-bottom: 10px
-    }
-    
-    .h4 .small,.h4 small,.h5 .small,.h5 small,.h6 .small,.h6 small,h4 .small,h4 small,h5 .small,h5 small,h6 .small,h6 small {
-        font-size: 75%
-    }
-    
-    .h1,h1 {
-        font-size: 36px
-    }
-    
-    .h2,h2 {
-        font-size: 28px
-    }
-    
-    .h3,h3 {
-        font-size: 24px
-    }
-    
-    .h4,h4 {
-        font-size: 18px
-    }
-    
-    .h5,h5 {
-        font-size: 14px
-    }
-    
-    .h6,h6 {
-        font-size: 12px
-    }
-    
-    p {
-        margin: 0 0 10px
-    }
+}
+.cms-block{
+    max-width: 100%;
+    height: auto;
+}
+.section{
+    padding-top: 50px;
+    padding-top: 50px;
+}
+.container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.cms-block .brand-background{
+    background-color: #333645;
+    color: #fff;
+}
+@media (max-width:991px)
+.cms-block .brand-background .btn-primary-inverse{
+    margin-bottom:50px!important;
+}
+.cms-block .brand-background .btn-primary-inverse{
+    color: #fff;
+    background-color: #272936;
+}
+.cms-block .brand-background .btn-google, .cms-block .brand-background .btn-primary-inverse, .cms-block .brand-background .btn-trustpilot{
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+.btn{
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1.063rem;
+    border-radius: 3px;
+    white-space: normal;
+}
+.btn{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 2px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.brand-background strong {
+    color: white !important;
+}

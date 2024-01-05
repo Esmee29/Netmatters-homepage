@@ -1,9 +1,17 @@
 //Partials imports
-@import 'partials/icons', @import 'partials';
+@import 'style/icons', 'style/variables';
+
+
 * {
 	box-sizing: border-box;
 }
-
+@media (min-width: 769px) {
+	.container {
+		width: 70%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+}
 html {
     font-size: 16px;
 font-family: 'Poppins', sans-serif;   
@@ -14,7 +22,7 @@ body {
     line-height: 1.42857143;
     letter-spacing: .4px;
     margin: 0;
-    background-color:red;
+  
 
 }
 
@@ -123,7 +131,7 @@ footer, header{
 }
 .headings-bar {
     display: flex;
-    background-color: $color-whiteff;
+    background-color: #fff;
     justify-content: space-between;
 }
 .article-content {

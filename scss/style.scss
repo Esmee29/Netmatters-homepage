@@ -159,9 +159,6 @@ header .inner .actions .btn {
     display: none;
 }
 }
-.icon-format-search {
-    color: #fff;
-}
 .btn-hamburger{
         color: #fff;
         background-color: #22242E;
@@ -272,18 +269,16 @@ a{
     }
   }
   
-  @media (min-width: 992px) {
-    .bottom-header {
-      background-color: #333645;
-    }
+  @media (min-width: 992px){
+.bottom-header {
+    background-color: #333645;
+}
+  }
     .search-box-1 {
       display: none;
     }
     .hamburger {
       margin-left: 0px;
-    }
-    .icon-format-nav-laptop {
-        color: #67809f;
     }
     .nav-bar {
       display: flex;
@@ -368,56 +363,61 @@ a{
     .developer-color {
       background-color: #A3331D;
     }
-    .bespoke-h:hover:hover {
+    .bespoke-head:hover:hover {
       background-color: #67809F;
     }
-    .bespoke-h:hover:hover .triangle {
+    .bespoke-head:hover:hover .triangle {
       border-color: transparent transparent #67809F transparent;
     }
-    .it-h:hover:hover {
-      background-color: #4183d7;
-    }
-    .it-h:hover:hover .triangle {
-      border-color: transparent transparent #4183d7 transparent;
-    }
-    .digital-h:hover:hover {
+    .it-head:hover:hover {
+        background-color: #4183d7;
+      }
+      .it-head:hover:hover .triangle {
+        border-color: transparent transparent #4183d7 transparent;
+      }
+    .digital-head:hover:hover {
       background-color: #00b67b;
     }
-    .digital-h:hover:hover .triangle {
+    .digital-head:hover:hover .triangle {
       border-color: transparent transparent #00b67b transparent;
     }
-    .digital-h:hover > .icon-bar-graph-h:before {
+    .digital-head:hover > .icon-bar-graph-h:before {
       color: #fff;
     }
-    .telecoms-h:hover:hover {
+    .telecoms-head:hover:hover {
       background-color: #D64541;
     }
-    .telecoms-h:hover:hover .triangle {
+    .telecoms-head:hover:hover .triangle {
       border-color: transparent transparent #D64541 transparent;
     }
-    .web-h:hover:hover {
+    .web-head:hover:hover {
       background-color: #926FB1;
     }
-    .web-h:hover:hover .triangle {
+    .web-head:hover:hover .triangle {
       border-color: transparent transparent #926FB1 transparent;
     }
-    .cyber-h:hover:hover {
+    .cyber-head:hover:hover {
       background-color: #F62459;
     }
-    .cyber-h:hover:hover .triangle {
+    .cyber-head:hover:hover .triangle {
       border-color: transparent transparent #F62459 transparent;
     }
-    .developer-h:hover:hover {
+    .developer-head:hover:hover {
       background-color: #ce4125;
     }
-    .developer-h:hover:hover .triangle {
+    .developer-head:hover:hover .triangle {
       border-color: transparent transparent #ce4125 transparent;
     }
-  }
-  
+
   @media (min-width: 1260px) {
     .nav:hover .triangle {
       border-width: 0 85.5px 35px 85.5px;
     }
   }
-  
+  .bottom-header {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: #333645 solid 14px;
+}

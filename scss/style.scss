@@ -104,13 +104,14 @@ header .inner .actions .btn {
 }
 .element {
     display: inline-block;
-    margin-right: 10px; /* Add some spacing between elements */
+    margin-right: 10px; 
   }
   @media (min-width: 992px) and (max-width: 1259px){
 .search-form-header {
     margin-right: -65px;
 }
   }
+  
   .search-form {
     display: flex;
     outline: none;
@@ -166,3 +167,257 @@ header .inner .actions .btn {
         background-color: #22242E;
         border-color: #22242E;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
+  .mw {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100vw;
+    z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .sub-menu-banner {
+    width: 100%;
+    display: none;
+    text-align: left;
+    position: absolute;
+  }
+ 
+  
+  .nav:hover [class^="icon-"]::before {
+    color: #fff;
+  }
+  
+  .nav:hover .sub-menu {
+    padding: 30px;
+    top: 19px;
+    width: 100vw;
+  }
+  
+  .nav:hover .icon-hover {
+    color: #fff;
+  }
+  
+  .nav:hover .icon-hover {
+    color: #fff;
+  }
+  
+  .sub-menu-banner a:hover {
+    text-decoration: underline;
+  }
+  
+  .our-services .viewourwork {
+    visibility: hidden;
+  }
+  
+  .our-services h2 {
+    font-size: 43.2px;
+    font-weight: 600;
+    line-height: 47.52px;
+    color: #333645;
+    text-align: start;
+    margin: 25px 0px 0px;
+  }
+  
+  .our-services h3 {
+    font-size: 26px;
+    margin: 0 0 15px;
+    color: #333645;
+  }
+  
+  @media (min-width: 767px) {
+    .header-high {
+      justify-content: space-flex-start;
+      padding-top: 25px;
+      padding-bottom: 15px;
+    }
+    .search-high {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      justify-content: flex-start;
+    }
+    .search-submit {
+      margin-left: -20px;
+      width: 63px;
+      background-color: #999AA2;
+    }
+    .hamburger {
+      margin: 0px;
+    }
+    .header-low {
+      display: none;
+    }
+    .search {
+      display: inline-flex;
+      width: 174px;
+      justify-content: flex-end;
+      border: 1px #ccc;
+    }
+    .search-box {
+      width: 142px;
+      padding: 5px 15px;
+      border: 1px 0 1px 1px #999AA2;
+    }
+    .search-box:focus {
+      border-color: #5bc0de;
+      outline: 0;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .bottom-header {
+      background-color: #333645;
+    }
+    .search-box-1 {
+      display: none;
+    }
+    .hamburger {
+      margin-left: 0px;
+    }
+    .icon-format-nav-laptop {
+        color: #67809f;
+    }
+    .nav-bar {
+      display: flex;
+      flex-direction: row;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 1;
+    }
+    .nav-bar span {
+      font-size: 1.125rem;
+    }
+    .nav-bar small {
+      font-size: .625rem;
+    }
+    .nav-bar > div {
+      flex-basis: 100%;
+      padding: 19px 0 18px;
+    }
+    .nav > a {
+      padding: 19px 0 18px;
+    }
+    .nav [class^="icon-"] {
+      font-size: 23px;
+    }
+    .nav .sub-menu-banner-title {
+      width: 100%;
+      margin-bottom: 10px;
+      margin-top: 15px;
+      font-weight: 500;
+    }
+    .nav:hover .sub-menu-banner {
+      display: block;
+      left: 0;
+    }
+    .nav:hover .triangle {
+      display: block;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 0px 70px 36px 70px;
+      border-color: transparent transparent #FF4532 transparent;
+      transform: rotate(180deg);
+      position: absolute;
+      z-index: 2;
+    }
+    .nav:hover .sub-menu {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -33px;
+      list-style: none;
+      text-align: left;
+      width: 970px;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 0;
+      flex-direction: row;
+    }
+    .nav:hover .link-text {
+      margin-left: 10px;
+    }
+    .bespoke-color {
+      background-color: #526781;
+    }
+    .it-support-color {
+      background-color: #286abd;
+    }
+    .digital-color {
+      background-color: #25A25A;
+    }
+    .telecoms-color {
+      background-color: #BC2C28;
+    }
+    .web-color {
+      background-color: #79539A;
+    }
+    .cyber-color {
+      background-color: #DE093F;
+    }
+    .developer-color {
+      background-color: #A3331D;
+    }
+    .bespoke-h:hover:hover {
+      background-color: #67809F;
+    }
+    .bespoke-h:hover:hover .triangle {
+      border-color: transparent transparent #67809F transparent;
+    }
+    .it-h:hover:hover {
+      background-color: #4183d7;
+    }
+    .it-h:hover:hover .triangle {
+      border-color: transparent transparent #4183d7 transparent;
+    }
+    .digital-h:hover:hover {
+      background-color: #00b67b;
+    }
+    .digital-h:hover:hover .triangle {
+      border-color: transparent transparent #00b67b transparent;
+    }
+    .digital-h:hover > .icon-bar-graph-h:before {
+      color: #fff;
+    }
+    .telecoms-h:hover:hover {
+      background-color: #D64541;
+    }
+    .telecoms-h:hover:hover .triangle {
+      border-color: transparent transparent #D64541 transparent;
+    }
+    .web-h:hover:hover {
+      background-color: #926FB1;
+    }
+    .web-h:hover:hover .triangle {
+      border-color: transparent transparent #926FB1 transparent;
+    }
+    .cyber-h:hover:hover {
+      background-color: #F62459;
+    }
+    .cyber-h:hover:hover .triangle {
+      border-color: transparent transparent #F62459 transparent;
+    }
+    .developer-h:hover:hover {
+      background-color: #ce4125;
+    }
+    .developer-h:hover:hover .triangle {
+      border-color: transparent transparent #ce4125 transparent;
+    }
+  }
+  
+  @media (min-width: 1260px) {
+    .nav:hover .triangle {
+      border-width: 0 85.5px 35px 85.5px;
+    }
+  }
+  

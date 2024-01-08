@@ -821,7 +821,9 @@ header a{
     line-height: 62px;
     color: white;
 }
-.service-block-two, .btn-it {
+
+
+.service-block-three, .btn-dm {
     top: 0;
     border: 1px solid #ccc;
     border-radius: 0 0 3px 3px;
@@ -835,25 +837,28 @@ header a{
     display: flex;
     border-radius: 15px;
   }
-  .service-block-two:hover, .btn-it:hover {
+  .service-block-three:hover, .btn-dm:hover {
     top: -10px;
     transition: .5s ease;
   }
-  .service-block-two .h2, .btn-it .h2 {
+  
+  .service-block-three .h2, .btn-dm .h2 {
     font-size: 1.3rem;
     position: relative;
     padding-top: 0;
     padding-bottom: 10px;
     margin: 0 0 11px;
   }
-  .service-block-two .p, .btn-it .p {
+  
+  .service-block-three .p, .btn-dm .p {
     margin-top: 0;
     margin-bottom: 20px;
     font-weight: 400;
     font-size: .8125rem;
     line-height: 1.375rem;
   }
-  .service-block-two .btn, .btn-it .btn {
+ 
+  .service-block-three .btn, .btn-dm .btn {
     min-width: 130px;
     max-width: 130px;
     font-size: 1.063rem;
@@ -862,17 +867,12 @@ header a{
     align-self: center;
   }
   
-  @media (min-width: 992px) and (max-width: 1259px) {
-    .service-block-two, .btn-it {
-      margin-right: 30px;
-    }
-  }
-  
   @media (min-width: 1260px) {
-    .service-block-two, .btn-it {
-      margin-right: 30px;
-    }
+  /* line 114, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/services.scss */
+  .service-block-two, .btn-it {
+    margin-right: 30px;
   }
+}
   .service-block-two:hover, .btn-it:hover {
     background-color: #4183d7;
     color: #fff;
@@ -881,21 +881,21 @@ header a{
     background-color: #fff;
     color: #4183d7;
   }
+  
   .service-block-two:hover .icon-circle-it, .btn-it:hover .icon-circle-it {
     fill: #4183d7;
     background-color: #fff;
   }
+
   .service-block-two:hover .icon-display, .btn-it:hover .icon-display {
     color: #4183d7;
     background-color: #fff;
   }
-  .icon-format-services {
-    font-size: 2rem;
-    line-height: 62px;
-    color: white;
-}
 
-.service-block-three, .btn-dm {
+
+
+
+  .service-block-three, .btn-dm {
     top: 0;
     border: 1px solid #ccc;
     border-radius: 0 0 3px 3px;
@@ -960,7 +960,7 @@ header a{
   .service-block-three:hover .icon-bar-graph, .btn-dm:hover .icon-bar-graph {
     color: #2ecc71;
     background-color: #fff;
-  }
+  } 
 footer {
     background-color: #323544;
     padding: 27px 0 0;

@@ -1792,3 +1792,42 @@ h3 a {
     border-radius: 3px;
     padding: 5px 15px;
 }
+.headings-bar {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+}
+.headings-bar a {
+    text-decoration: none;
+    color: #25262c;
+}
+.affiliation-banner {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    overflow-x: hidden;
+    gap: 80px;
+}
+.affiliation-banner:first-child {
+    margin-left: 150px;
+}
+
+    .sponsors-banner img {
+        height: 70px;
+    }
+    .item {
+        max-height: 70px;
+        height: 70px;
+        width: auto;
+        align-items: center;
+        padding: 0 20px;
+      }
+      .xupes-logo, .survey-logo {
+        position: relative;
+        height: 38px !important;
+        width: 200px;
+        padding-top: 15px;
+        margin-right: 15px;
+      }

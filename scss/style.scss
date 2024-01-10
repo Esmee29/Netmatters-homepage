@@ -2053,15 +2053,14 @@ input[type="checkbox"]:checked:after {
 }
 @media (min-width: 992px){
 .links {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-grow: 1;
 }
 }
-@media (min-width: 768px){
 .links {
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
+  display: flex;
+    flex-wrap: wrap;  
 }
 .links {
   font-size: .8125rem;
@@ -2077,6 +2076,7 @@ input[type="checkbox"]:checked:after {
 @media (min-width: 768px){
 .footer-li {
     margin-top: 0px;
+    ;
 }
 }
 .footer-li {
@@ -2093,4 +2093,13 @@ input[type="checkbox"]:checked:after {
 }
 a.ftr-li{
   color: white;
+}
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }

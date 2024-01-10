@@ -167,6 +167,25 @@ header .inner .actions .btn {
     user-select: none;
     color: #fff;
 }
+@media (min-width: 992px){
+.nm-logo-black {
+    position: relative;
+    left: 0;
+}
+}
+@media (min-width: 768px){
+.nm-logo-black {
+    max-width: 345px;
+}
+}
+.nm-logo-black {
+  max-width: 100%;
+  height: 60px;
+  display: block;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: auto;
+}
 .btn-help-contact {
     color: #fff;
     background-color: #999aa2;
@@ -177,7 +196,27 @@ header .inner .actions .btn {
     background-color: #4183d7;
     border-color: #4183d7;
 }
-
+.search-box-2 {
+  width: 100%;
+  border: none;
+  background: transparent;
+  height: 47px;
+  padding-left: 15px;
+}
+.icon-search {
+  font-size: 24px;
+  font-weight: 400;
+  background-color: transparent;
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+.search-low {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  border: 1px #ccc;
+}
 @media (min-width: 992px) {
 	.header-row {
 		width: 970px;
@@ -238,11 +277,7 @@ header .inner .actions .btn {
     height: 47px;
     width: 100%;
 }
-@media (min-width: 992px) and (max-width: 1259px){
-.hidden-lg {
-    display: none;
-}
-}
+
 @media (min-width: 992px) and (max-width: 1259px){
 .search-bar-tablet {
     display: none;

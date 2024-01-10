@@ -24,16 +24,9 @@
         <div class="inner">
             <div class="header-row">
               <div class="logo element">
-                <a class="logo" href="https://www.netmatters.co.uk">
-                    <picture>
-                        <source srcset="https://www.netmatters.co.uk/assets/images/f-logo.webp" type="image/webp">
-                        <source srcset="https://www.netmatters.co.uk/assets/images/f-logo.png" type="image/png">
-                            <img src="https://www.netmatters.co.uk/assets/images/f-logo.png"
-                            alt="Netmatters">
-                    </picture>
-                </a>
+                <a href="#" ><img src="images\nm-logo.webp" class="nm-logo-black" alt="netmatters logo"></a>
               </div>
-                <div class="support element">
+                <div class="support element large-screen">
                   <button type="button" class="btn btn-help btn-help-support">
                     <span class="pull-left">
                      <span class="icon-mouse mouse"></span>
@@ -41,7 +34,7 @@
                     Support
                   </button>
                 </div>
-                <div class="contact element">
+                <div class="contact element large-screen">
                   <button type="button" class="btn btn-help btn-help-contact">
                     <span class="pull-left">
                       <span class="icon-paperplane plane"></span>
@@ -49,16 +42,24 @@
                     Contact
                   </button>
                 </div>
-                <div class="hidden-sm visible-md">
-                    <form method="GET"  class="search-form search-form-header"> <!-- search bar -->
-                      <input class="form-control search-bar-tablet hidden-lg hidden-xlg" placeholder="Search..."  name="keyword" type="text" value>
+                <div class="search-1 large-screen"> <!-- search bar for large screen-->
                       <button type="submit" class="search-form-tablet-btn">
                         <span class="icon-search icon-format-search"></span>
                       </button>
                     </form>
                   </div>
                   
-                  <div class="visible-md">
+                  <div class="search-2 mobile">
+                    <form class="search-low">
+                        <input type="text" name="search-2" placeholder="Search.." class="search-box-2">
+                        <span class="icon-search"></span>
+                     </form>
+                    </div>
+                      <a class="mobile" href="#">
+                        <span class="icon-phone_in_talk"></span>
+                      </a>
+                    </div>
+                  
                           
                   </div>
                   <div class="actions">
@@ -71,7 +72,7 @@
                     </div>
                   </div>     
                </div>
-               <div class="bottom-header "> <!-- Navigation -->
+               <div class="bottom-header large-screen"> <!-- Navigation -->
                 <ul class="nav-bar">
                 <div class="bespoke-head nav">
                         <span class="icon-laptop icon-format-nav icon-format-nav-laptop"></span>

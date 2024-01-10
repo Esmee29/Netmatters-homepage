@@ -808,35 +808,42 @@
                 <img  src="images\crane_logo.png" alt="Crane" class="colour-logo mono-logo item">
                    </div>
         <!-- News letter Sign up area-->
-        <div class="email-container container-mw">
-        <form class="email-news align-center">
-            <h2 id="newsletter">Email Newsletter Sign-Up</h2>
-            <div class="news-input">
-                <div class="email-input-container">
-                    <label>Your Name</label>
-                    <br>
-                    <input type="text" id="your-name" name="name" class="email"> </input>
-                    <br>
-                </div>
-                <div class="email-input-container">
-                    <label>Your Email</label>
-                    <br>
-                    <input type="text" id="your-email" name="email" class="email"> </input>
-                </div>
-        </div>
-        <br>
-            <div class="privacy-policy">
-                <!-- <input class="pretty-checkbox" type="checkbox" checked="checked" ;><span class="icon-checkmark"></span> -->
-                <div class="checkbox-container"></div>
-                    <input type="checkbox" id="check">
-                    <label for="check" id="label-checkmark">Please tick this box if you wish to receive marketing information from us. Please see our <a href='#'>Privacy Policy</a> for more information on how we keep your data safe</label>
-    
-    
-          
+        <div class="background-color-lightgrey">
+            <div class="container"> <!-- Contains the Email Newsletter Sign up block-->
+              <div class="newsletter">
+                  <form method="POST" action="#" class="sign-up">
+                    <h2 class="newsletter-title">Email Newsletter Sign-Up</h2>
+                    <div class="form-input">
+                      <div class="sign-up-input">
+                        <label class="required">Your Name</label>
+                        <input id ="newsletter-name" name="name" type="text">
+                      </div>
+                      <div class="sign-up-input">
+                        <label class ="required">Your Email</label>
+                        <input id ="newsletter-email" name="name" type="text">
+                      </div>
+                    </div>
+                    
+                        
+                    <label class="newsletter-tickboxarea">
+                      <input type="checkbox" id="customCheckbox">
+                      <span class="label-checkbox"></span>
+                        <span class="media-body">
+                          Please tick this box if you wish to receive marketing information from us. Please see our 
+                          <a class="privacy-policy" href ="#" target="_blank">Privacy Policy</a>
+                          for more information on how we keep your data safe.
+                        </span>
+                    </label>
+                    
+                    
+                    
+                      <button name="submit" class="btn btn-subscribe">Subscribe </button>
+                    
+                  </form>
+              </div>
             </div>
-            <button type="submit" id="submit" class="btn button-black subscribe" >SUBSCRIBE</button>
-        </form>
-    </div>
+          </div>
+        </div>
         <!-- bottom footer -->
       
         </div>
@@ -844,7 +851,7 @@
         <footer class="about-footer container-mw ">
             <div class="align-center footer-container">
             <div class="about about-netmatters">
-            <img src="style/images/logos/nm-logo-white-med.webp" class="nm-logo-med">    
+            <img src="images\nm-logo-white-med.webp" class="Netmatters White Logo">    
             <h4 class="footer-h4">FOLLOW US ON</h4>
             <div class="footer-icons">
             <a href='#'><span class="icon icon-facebook"></span></a>

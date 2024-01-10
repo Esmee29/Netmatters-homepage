@@ -1995,7 +1995,18 @@ input[type="checkbox"]:checked:after {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  color: #fff;
+}
+@media (max-width: 480px){
+.footer-socials a {
+    width: 35%;
+}
+}
 .icon-facebook:hover {
   background-color: #3B5998;
   text-decoration: none;
@@ -2104,4 +2115,19 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding: 5px 0px 10px;
+  background-color: #212330;
+  color: #fff;
+  font-size: 0.8125rem;
+  margin: 0;
+  padding-top: 15px;
+}
+.copyright p{
+  line-height: 1.875rem;
+  margin-bottom: 25px;
 }

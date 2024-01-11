@@ -422,7 +422,6 @@
 @media (min-width: 767px) {
   .search-submit {
     margin-left: -20px;
-    width: 63px;
     background-color: #999AA2;
   }
 }
@@ -717,12 +716,6 @@ header .inner .actions .btn {
 .form-control {
   height: 47px;
   width: 100%;
-}
-
-@media (min-width: 992px) and (max-width: 1259px) {
-  .search-bar-tablet {
-    display: none;
-  }
 }
 
 a {

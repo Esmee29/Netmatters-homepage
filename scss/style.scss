@@ -79,12 +79,18 @@
     margin-left: 0px;
 }
 }
-@media (min-width: 767px){
 .search-submit {
-    margin-left: -20px;
-    width: 63px;
-    background-color: #999AA2;
-}
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 16px 20px;
+  border-radius: 3px;
+  background-color: #999aa2;
+  border: none;
+  outline: none;
+  border-radius: 0 5% 5% 0;
+  cursor: pointer;
 }
 #header {
   color: #fff;
@@ -351,12 +357,6 @@ header .inner .actions .btn {
 .form-control {
     height: 47px;
     width: 100%;
-}
-
-@media (min-width: 992px) and (max-width: 1259px){
-.search-bar-tablet {
-    display: none;
-}
 }
 
 a{

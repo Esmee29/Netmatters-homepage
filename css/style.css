@@ -267,12 +267,12 @@
   content: "\e900";
 }
 
-.icon-format-search {
+.icon-search-1 {
   color: #fff;
 }
 
-search-2-icon {
-  color: black;
+.icon-search-2 {
+  color: #333645;
 }
 
 .icon-format-nav-laptop {
@@ -360,16 +360,178 @@ search-2-icon {
   left: 0;
 }
 
-.inner {
-  background-color: #fff;
-  padding: 20px 0;
+.other {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.header-row {
+.header-large {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.header-high {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  .search-box-1 {
+    display: none;
+  }
+}
+
+.search-box-1 {
+  box-sizing: border-box;
+  height: 56px;
+  padding: 5px 15px;
+  border-color: #ccc;
+  width: 100%;
+  font-size: 14px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  border-radius: 0;
+  width: 174px;
+  padding-right: 40px;
+}
+
+.search-submit {
+  font-size: 23px;
+  height: 56px;
+  border: none;
+  border-radius: 0 3px 3px 0;
+}
+
+@media (min-width: 992px) {
+  .search-submit {
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 767px) {
+  .search-submit {
+    margin-left: -20px;
+    width: 63px;
+    background-color: #999AA2;
+  }
+}
+
+#header {
+  color: #fff;
+}
+
+.header-small {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-small-logo {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 20px;
+}
+
+.hamburger {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-size: 21px;
+  width: 63px;
+  height: 56px;
+  background-color: #333645;
+  border: none;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+
+.btn-hamburger {
+  height: 56px;
+  border-radius: 3px;
+}
+
+.container-mobile {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.phone {
+  text-decoration: none;
+  font-size: 32px;
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #333645;
+}
+
+.search-small {
+  border: 2px solid #CECECE;
+  background-color: #E5E5E5;
+  height: 41px;
+  border-radius: 3px;
+}
+
+.search-2 {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  border: 1px #ccc;
+}
+
+.menu-1 {
+  width: 33px;
+  height: 4px;
+}
+
+.icon-search-2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #333645;
+  background-color: transparent;
+  position: relative;
+  top: 10px;
+  right: 10px;
+}
+
+.icon-menu {
+  font-size: 32px;
+  text-align: center;
+}
+
+.search-box-2 {
+  width: 100%;
+  border: none;
+  position: relative;
+  background: transparent;
+  height: 47px;
+  padding-left: 15px;
+}
+
+.icon-search {
+  font-size: 24px;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.nm-logo-black {
+  max-width: 100%;
+  height: 60px;
+  display: block;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-right: auto;
 }
 
 html {
@@ -454,7 +616,7 @@ body {
   color: #464d5c;
   background-color: #fff;
   width: 100%;
-  padding: 0;
+  padding: 0px;
   margin: 0;
 }
 
@@ -469,6 +631,10 @@ body {
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+
+.bottom-header a {
+  color: white;
 }
 
 .header-row {
@@ -491,45 +657,17 @@ header .inner .actions .btn {
 
 .btn {
   display: inline-block;
-  margin-bottom: 0;
   font-weight: 400;
+  height: auto;
+  line-height: 35px;
+  padding: 6px 12px;
   text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 5px 15px;
+  text-transform: uppercase;
   font-size: 14px;
-  line-height: 46px;
+  border: 1px solid transparent;
   border-radius: 2px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #fff;
-}
-
-@media (min-width: 992px) {
-  .nm-logo-black {
-    position: relative;
-    left: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .nm-logo-black {
-    max-width: 345px;
-  }
-}
-
-.nm-logo-black {
-  max-width: 100%;
-  height: 60px;
-  display: block;
-  padding-left: 0px;
-  padding-right: 0px;
-  margin-right: auto;
+  color: white;
+  row-gap: 0.625em;
 }
 
 .btn-help-contact {
@@ -542,30 +680,6 @@ header .inner .actions .btn {
   color: #fff;
   background-color: #4183d7;
   border-color: #4183d7;
-}
-
-.search-box-2 {
-  width: 100%;
-  border: none;
-  background: transparent;
-  height: 47px;
-  padding-left: 15px;
-}
-
-.icon-search {
-  font-size: 24px;
-  font-weight: 400;
-  background-color: transparent;
-  position: relative;
-  top: 10px;
-  right: 10px;
-}
-
-.search-low {
-  display: inline-flex;
-  width: 100%;
-  justify-content: space-between;
-  border: 1px #ccc;
 }
 
 @media (min-width: 992px) {
@@ -588,17 +702,6 @@ header .inner .actions .btn {
   margin-right: 10px;
 }
 
-@media (min-width: 992px) and (max-width: 1259px) {
-  .search-form-header {
-    margin-right: -65px;
-  }
-}
-
-.search-form {
-  display: flex;
-  outline: none;
-}
-
 .search-form-tablet-btn {
   width: 63px;
   border-radius: 0 3px 3px 0;
@@ -611,25 +714,6 @@ header .inner .actions .btn {
   cursor: pointer;
 }
 
-.search-bar-tablet {
-  display: inline-block;
-  box-sizing: border-box;
-  height: 56px;
-  padding: 5px 15px;
-  border-color: #ccc;
-  width: 100%;
-  font-size: 14px;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #e5e5e5;
-  border-radius: 2px;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-  border-radius: 0;
-  width: 174px;
-  padding-right: 40px;
-}
-
 .form-control {
   height: 47px;
   width: 100%;
@@ -639,12 +723,6 @@ header .inner .actions .btn {
   .search-bar-tablet {
     display: none;
   }
-}
-
-.btn-hamburger {
-  color: #fff;
-  background-color: #22242E;
-  border-color: #22242E;
 }
 
 a {
@@ -701,17 +779,6 @@ header a {
     padding-top: 25px;
     padding-bottom: 15px;
   }
-  .search-high {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    justify-content: flex-start;
-  }
-  .search-submit {
-    margin-left: -20px;
-    width: 63px;
-    background-color: #999AA2;
-  }
   .hamburger {
     margin: 0px;
   }
@@ -752,10 +819,6 @@ header a {
 
 .text-align-md {
   text-align: center;
-}
-
-.search-box-1 {
-  display: none;
 }
 
 .hamburger {
@@ -932,8 +995,6 @@ header a {
 .bottom-header {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
   border-left: #333645 solid 14px;
 }
 
@@ -964,7 +1025,7 @@ header a {
   width: 100%;
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   .banner {
     display: flex;
     justify-content: start;
@@ -986,7 +1047,6 @@ header a {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   position: relative;
   padding: 60px 15px;
   color: #fff;
@@ -1006,6 +1066,10 @@ header a {
   }
 }
 
+#banner {
+  overflow: hidden;
+}
+
 .banner-heading {
   font-size: 2.5rem;
   line-height: 3rem;
@@ -1023,30 +1087,16 @@ header a {
   font-weight: 600;
 }
 
-@media (min-width: 992px) {
-  .btn-banner {
-    align-self: start;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 30px;
-    margin-bottom: 18px;
-  }
-}
-
-@media (min-width: 563px) {
-  .btn-banner {
-    margin-top: 30px;
-  }
-}
-
-.btn-banner {
+.btn-whyus {
+  margin-top: 5px;
+  text-decoration: none;
   height: 50px;
   padding: 5px 20px;
   border-radius: 3px;
   background-color: #926FB1;
   line-height: 50px;
   font-size: 1.2rem;
-  width: 208px;
+  width: 250px;
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
@@ -1926,15 +1976,7 @@ footer {
   cursor: pointer;
 }
 
-.btn-whyus, .btn-bespokesoftware, .btn-itsupport, .btn-digitalmarketing, .btn-telecomsservices, .btn-webdesign, .btn-cybersecurity {
-  text-decoration: none;
-  padding: 15px;
-  background-color: #926fb1;
-  border-color: #926fb1;
-  font-weight: 400;
-}
-
-.btn-whyus:hover, .btn-bespokesoftware:hover, .btn-itsupport:hover, .btn-digitalmarketing:hover, .btn-telecomsservices:hover, .btn-webdesign:hover, .btn-cybersecurity:hover {
+.btn-whyus:hover {
   cursor: pointer;
 }
 
@@ -2064,13 +2106,6 @@ cite {
   padding-bottom: 50px;
 }
 
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .space-between {
   padding-bottom: 30px;
 }
@@ -2104,7 +2139,7 @@ cite {
   font-weight: 600;
 }
 
-@media (min-width: 992px) and (max-width: 1259px) {
+@media (min-width: 768px) {
   .mobile {
     display: none;
   }

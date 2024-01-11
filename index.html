@@ -14,66 +14,75 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 
-
 <div id="container">
     <div class="main">
-     <div class="main-outer">
-    <div class="main-inner">
-     <div  id="header">
-    <header> 
-        <div class="inner">
+        <div id="header">
+<header>
+    <div class="container container-header">
+        <div class="header-large large-screen">
             <div class="header-row">
-              <div class="logo element">
-                <a href="#" ><img src="images\nm-logo.webp" class="nm-logo-black" alt="netmatters logo"></a>
-              </div>
-                <div class="support element large-screen">
-                  <button type="button" class="btn btn-help btn-help-support">
-                    <span class="pull-left">
-                     <span class="icon-mouse mouse"></span>
-                    </span>
-                    Support
-                  </button>
-                </div>
-                <div class="contact element large-screen">
-                  <button type="button" class="btn btn-help btn-help-contact">
-                    <span class="pull-left">
-                      <span class="icon-paperplane plane"></span>
-                    </span>
-                    Contact
-                  </button>
-                </div>
-                <div class="search-1 large-screen"> <!-- search bar for large screen-->
-                      <button type="submit" class="search-form-tablet-btn">
-                        <span class="icon-search icon-format-search"></span>
-                      </button>
+                <div class="logo element">
+                    <a href="#" ><img src="images\nm-logo.webp" class="nm-logo-black" alt="netmatters logo"></a>
+                  </div>
+                <div class="support element">
+                    <button type="button" class="btn btn-help btn-help-support">
+                      <span class="pull-left">
+                       <span class="icon-mouse mouse"></span>
+                      </span>
+                      Support
+                    </button>
+                  </div>
+                  <div class="contact element">
+                    <button type="button" class="btn btn-help btn-help-contact">
+                      <span class="pull-left">
+                        <span class="icon-paperplane plane"></span>
+                      </span>
+                      Contact
+                    </button>
+                  </div>
+                  <div class="search-large">
+                    <form class="search-1">
+                        <input type="text" placeholder="Search.." class="search-box-1">
+                <button type="submit" class="search-submit" ><span class="icon-search icon-search-1"></span></button>
                     </form>
+                </div>
+                <div class="hamburger-large"> <!-- hamburger menu -->
+                    <button type="button" id="header-hamburger" class="btn btn-hamburger hamburger">
+                      <span class="hamburger-box">
+                        <span class="icon-menu menu-1"></span>
+                      </span>
+                    </button>
                   </div>
-                  
-                  <div class="search-2 mobile">
-                    <form class="search-low">
-                        <input type="text" name="search-2" placeholder="Search.." class="search-box-2">
-                        <span class="icon-search"></span>
-                     </form>
-                    </div>
-                      <a class="mobile" href="#">
-                        <span class="icon-phone_in_talk"></span>
-                      </a>
-                    </div>
-                  
-                          
+            </div>
+        </div>
+        <div class="header-small mobile">
+            <div class="header-small-logo">
+                <a href="#" class="nm-logo-black">
+                    <img src="images\nm-logo.webp" class="nm-logo-black" alt="Netmatters Logo Black">
+                </a>
+                <div class="container-mobile">
+                    <a class="phone" href="#">
+                      <span class="icon-phone_in_talk"></span>
+                    </a>
                   </div>
-                  <div class="actions">
-                    <div class="container-hamburger"> <!-- hamburger menu -->
-                      <button type="button" id="header-hamburger" class="btn btn-hamburger hamburger  is-active">
-                        <span class="hamburger-box">
-                          <span class="icon-menu hamburger-inner"></span>
-                        </span>
-                      </button>
-                    </div>
-                  </div>     
-               </div>
-               <div class="bottom-header large-screen"> <!-- Navigation -->
-                <ul class="nav-bar">
+                <div class="hamburger-small"> <!-- hamburger menu -->
+                    <button type="button" id="header-hamburger" class="btn btn-hamburger hamburger">
+                      <span class="hamburger-box">
+                        <span class="icon-menu"></span>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+            <div class="search-small">
+                <form class="search-2">
+                    <input type="text" name="search-2" placeholder="Search.." class="search-box-2">
+                    <span class="icon-search icon-search-2"></span>
+                </form>
+            </div>
+            
+    </div>
+    <div class="bottom-header large-screen"> <!-- Navigation -->
+    <ul class="nav-bar">
                 <div class="bespoke-head nav">
                         <span class="icon-laptop icon-format-nav icon-format-nav-laptop"></span>
                         <br>
@@ -476,10 +485,15 @@
                        </div>
                    </div> 
             </div>
-        </div>
-    </div>                                           
-</header> 
+        </header>
+    </div>
+        
+    </ul>
+
+                                               
+ 
 <!-- carousel -->
+<div id="banner">
 <div class="banner-main">
     <div class="container-banner">
         <div class="banner wrapper">
@@ -489,13 +503,19 @@
             <p class="banner-text">Performance-driven digital and technology services
             <br>
             with complete transparency.</p>
-            <span class="btn-banner">Why choose us? <span class="icon-arrow-right2" id="why"></span> </span>
+            <a href="#" class="btn btn-whyus" name="example">
+                Why Choose Us?
+                <span class="icon-arrow-right"></span>
+              </a>
     
         </div>
     </div>
+</div>
 </div> 
         <!-- Services area -->
-<div class="container container-section service"> 
+<body>
+    <div class="other"><!--not header footer or banner-->
+    <div class="container container-section service"> 
               <div class="service-list">
                 <div class="row">
                   <div class="service-heading">
@@ -815,6 +835,7 @@
                 <img  src="images\crane_logo.png" alt="Crane" class="colour-logo mono-logo item">
                    </div>
                 </div>
+</div> 
         <!-- Email Newsletter Sign up area-->
         <div class="email-newsletter">
             <form class="email-news align-center">
@@ -844,9 +865,7 @@
                 <button type="submit" id="submit" class="btn btn-subscribe" >SUBSCRIBE</button>
             </form>
         </div>
-         
-        </div>
-    
+
         <footer class="about-footer container-footer"> <!-- Footer block (Not COPYRIGHT section)-->
             <div class="align-center footer-container">
             <div class="about about-netmatters">
@@ -977,5 +996,8 @@
                   <a href="https://www.netmatters.co.uk/sitemap.xml" >Sitemap</a>
             </p>
                 </div>
-        </body>
+</body>
+</div>
+</div>
+</div>
         </html>

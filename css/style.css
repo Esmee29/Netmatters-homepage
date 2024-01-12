@@ -2565,6 +2565,11 @@ cite {
   vertical-align: middle;
 }
 
+.user > .info {
+  padding-left: 20px;
+  line-height: 1.375rem;
+}
+
 .btn-tooltip {
   position: absolute;
   color: #fff;

@@ -1652,6 +1652,7 @@ cite {
 .latest-articles {
     background-color: #fff;
   }
+
 .block-content{
   padding: 30px;
 }
@@ -2015,6 +2016,10 @@ cite {
 .user>* {
     display: table-cell;
     vertical-align: middle;
+}
+.user>.info {
+  padding-left: 20px;
+  line-height: 1.375rem;
 }
 .btn-tooltip {
     position: absolute;

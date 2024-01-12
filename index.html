@@ -95,7 +95,7 @@
                        </span>
                        <span class="triangle"></span>
                        <div class="sub-menu-banner bespoke-software-banner ">
-                            <div class="mw bespoke-color">
+                            <div class="menu-drop bespoke-color">
                                 <ul class="sub-menu sub-container bespoke-ul bespoke-color">
                                     <li class="h2 sub-menu-banner-title">Our Bespoke Software Services</li>
                                     <li class="nav-item nav-sub-menu">
@@ -185,7 +185,7 @@
                 </span>
                 <span class="triangle"></span>
                 <div class="sub-menu-banner it-support-banner ">
-                    <div class="mw it-support-color">
+                    <div class="menu-drop it-support-color">
                     
                         <ul class="sub-menu sub-container it-support-ul it-support-color">
                             <li class="h2 sub-menu-banner-title">Our IT Support Services</li>
@@ -238,7 +238,7 @@
                     </span>
                     <span class="triangle"></span>
                     <div class="sub-menu-banner digital-banner ">
-                        <div class="mw digital-color">
+                        <div class="menu-drop digital-color">
                             <div class="align-center">
                             <ul class="sub-menu sub-container digital-ul digital-color">
                                 <li class="h2 sub-menu-banner-title">Digital Marketing</li>
@@ -294,7 +294,7 @@
                     </span>
                     <span class="triangle"></span>
                     <div class="sub-menu-banner telecoms-banner">
-                        <div class="mw telecoms-color">
+                        <div class="menu-drop telecoms-color">
                             <ul class="sub-menu sub-container telecoms-ul telecoms-color">
                                 <li class="h2 sub-menu-banner-title">Our Telecoms Services</li>
                                 <li class="nav-item nav-sub-menu">
@@ -347,7 +347,7 @@
                     </span>
                     <span class="triangle"></span>
                     <div class="sub-menu-banner web-banner ">
-                        <div class="mw web-color">
+                        <div class="menu-drop web-color">
                             <ul class="sub-menu sub-container web-ul web-color">
                                 <li class="h2 sub-menu-banner-title">Our Web Design Services</li>
                                 <li class="nav-item nav-sub-menu">
@@ -402,7 +402,7 @@
                     </span>
                     <span class="triangle"></span>
                     <div class="sub-menu-banner cyber-banner ">
-                        <div class="mw cyber-color">
+                        <div class="menu-drop cyber-color">
                             <ul class="sub-menu sub-container cyber-ul cyber-color">
                                 <li class="h2 sub-menu-banner-title">Our Cyber Security Services</li>
                                 <li class="nav-item nav-sub-menu">
@@ -455,7 +455,7 @@
                        </span>
                        <span class="triangle"></span>
                        <div class="sub-menu-banner developer-banner ">
-                           <div class="mw developer-color">
+                           <div class="menu-drop developer-color">
                                <ul class="sub-menu sub-container developer-ul developer-color">
                                    <li class="h2 sub-menu-banner-title">Our Developer Course Services</li>
                                    <li class="nav-item nav-sub-menu">
@@ -516,7 +516,7 @@
 </div> 
         <!-- Services area -->
 <body>
-    <div class="other"><!--not header footer or banner-->
+    <div class="other"></div><!--not header footer or banner-->
     <div class="container container-section service"> 
               <div class="service-list">
                 <div class="row">
@@ -666,14 +666,32 @@
         <div class="align-center">
             <div class="welcome-grid">
             <div class="welcome-left">
-                <h2>Welcome to Netmatters</h2>
-                <p class="welcome-p"><strong>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in London, Cambridge, Wymondham, and Great Yarmouth.</strong>
-                    <br>
-                    <br>
-                    We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.
-                    <br>
-                    <br>
-                    We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
+                <h2 class="h1"><strong>Welcome to Netmatters</strong> </h2>
+                          <p>
+                            <strong>Netmatters is a leading 
+                              <a href="#">Bespoke Software</a>
+                              ,
+                              <a href="#">IT Support</a>
+                              , and
+                              <a href="#">Digital Marketing</a>
+                              company based in the East of England with offices in 
+                              <a href="#" target="_blank">London</a>
+                              ,&nbsp;
+                              <a href="#">Cambridge</a>
+                              ,
+                              <a href="#">Wymondham</a>
+                              , and
+                              <a href="#">Great Yarmouth</a>
+                              .
+                            </strong>
+                          </p>
+                          <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in 
+                            mind: to help improve your business with the most appropriate solutions. 
+                          </p>
+                          <p> We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship
+                             in an upfront manner.
+                          </p>
+
                 <button class="btn button-black"> WHY CHOOSE US?<span class="icon-arrow-right"></span></button>
                 <button class="btn button-black"> OUR CULTURE<span class="icon-arrow-right"></span></button>
             </div>
@@ -914,15 +932,15 @@
             <form class="email-news align-center">
                 <h2 id="newsletter">Email Newsletter Sign-Up</h2>
                 <div class="news-input">
-                    <div class="email-input-container">
+                    <div class="name-input">
                         <label class="required">Your Name</label>
                         <br>
-                        <input type="text" id="your-name" name="name" class="email"> </input>
+                        <input id="newsletter-name" type="text" id="your-name" name="name"> </input>
                     </div>
-                    <div class="email-input-container">
+                    <div class="email-input">
                         <label class="required">Your Email</label>
                         <br>
-                        <input type="text" id="your-email" name="email" class="email"> </input>
+                        <input id="newsletter-email" type="text" id="your-email" name="email"> </input>
                         <br>
                     </div>
             </div>
@@ -938,7 +956,7 @@
                 <button type="submit" id="submit" class="btn btn-subscribe" >SUBSCRIBE</button>
             </form>
         </div>
-
+    </div>
         <footer class="about-footer container-footer"> <!-- Footer block (Not COPYRIGHT section)-->
             <div class="align-center footer-container">
             <div class="about about-netmatters">

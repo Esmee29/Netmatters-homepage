@@ -783,7 +783,7 @@ header a {
   color: white;
 }
 
-.mw {
+.menu-drop {
   display: block;
   position: absolute;
   top: 100%;
@@ -803,6 +803,27 @@ header a {
 
 .nav:hover [class^="icon-"]::before {
   color: #fff;
+}
+
+@media (min-width: 1260px) {
+  .nav:hover .triangle {
+    border-width: 0 85.5px 35px 85.5px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav:hover .triangle {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0px 70px 36px 70px;
+    border-color: transparent;
+    transform: rotate(180deg);
+    position: absolute;
+    z-index: 2;
+  }
 }
 
 .nav:hover .sub-menu {
@@ -918,19 +939,6 @@ header a {
   left: 0;
 }
 
-.nav:hover .triangle {
-  display: block;
-  content: "";
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 0px 70px 36px 70px;
-  border-color: transparent transparent #FF4532 transparent;
-  transform: rotate(180deg);
-  position: absolute;
-  z-index: 2;
-}
-
 .nav:hover .sub-menu {
   display: flex;
   flex-wrap: wrap;
@@ -1036,9 +1044,15 @@ header a {
   border-color: transparent transparent #ce4125 transparent;
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 992px) {
   .nav:hover .triangle {
     border-width: 0 85.5px 35px 85.5px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .nav:hover .triangle {
+    border-width: 0 107px 35px 107px;
   }
 }
 
@@ -1150,6 +1164,11 @@ header a {
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
+}
+
+.btn-whyus:hover {
+  background-color: #7e57a0;
+  color: white;
 }
 
 .service-heading {
@@ -2105,6 +2124,10 @@ footer {
   }
 }
 
+.welcome-left a {
+  color: white;
+}
+
 @media screen and (min-width: 992px) {
   .welcome-grid h2 {
     color: #fff;
@@ -2687,6 +2710,62 @@ cite {
   padding-bottom: 20px;
 }
 
+#newsletter-email {
+  box-sizing: border-box;
+  height: 47px;
+  padding: 5px 15px;
+  border-color: #ccc;
+  width: 100%;
+  font-size: 14px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#newsletter-name:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+
+#newsletter-email:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+
+#newsletter-name {
+  box-sizing: border-box;
+  height: 47px;
+  padding: 5px 15px;
+  border-color: #ccc;
+  width: 100%;
+  font-size: 14px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.name-input {
+  flex: 1 1;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.email-input {
+  flex: 1 1;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
 .btn-subscribe {
   color: #fff;
   background-color: #333645;
@@ -2895,14 +2974,6 @@ footer h4 {
   padding: 12px 22px 16px;
   margin-right: 10px;
   margin-bottom: 10px;
-}
-
-.footer-socials {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-  color: #fff;
 }
 
 @media (max-width: 480px) {

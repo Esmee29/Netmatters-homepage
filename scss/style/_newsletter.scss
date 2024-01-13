@@ -1,0 +1,163 @@
+ 
+.email-newsletter {
+    background-color: #ddd;
+    line-height: 32px;
+    font-weight: 600;
+    color: #333645;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#newsletter-email {
+  box-sizing: border-box;
+  height: 47px;
+  padding: 5px 15px;
+  border-color: #ccc;
+  width: 100%;
+  font-size: 14px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+#newsletter-name:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+#newsletter-email:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+#newsletter-name {
+  box-sizing: border-box;
+  height: 47px;
+  padding: 5px 15px;
+  border-color: #ccc;
+  width: 100%;
+  font-size: 14px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.name-input{
+  flex: 1 1;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 15px; 
+}
+.email-input{
+  flex: 1 1;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 15px; 
+}
+.btn-subscribe {
+   color: #fff;
+  background-color: #333645;
+  border-color: #333645;
+  height: auto;
+  line-height: 35px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  font-size: 1.063rem;
+  border-radius: 3px;
+  white-space: normal;
+}
+  
+label.required:after, label .required:after {
+  content: " *";
+  color: #d24d57;
+}
+.newsletter{
+  text-align: left;
+  display: flex;
+    flex-wrap: wrap;
+}
+.email-news {
+  background-color: inherit;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+}
+@media screen and (min-width: 992px){
+.news-input {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+}
+.news-input {
+  width: 100%;
+}
+@media screen and (min-width: 992px){
+#your-email, #your-name {
+    width: 450px;
+    display: block;
+    box-sizing: border-box;
+}
+}
+.email {
+  justify-content: flex-start;
+  width: 100%;
+  line-height: 47px;
+}
+.checkbox-container {
+  display: flex;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  min-height: 26px;
+  min-width: 26px;
+  max-height: 26px;
+  max-width: 26px;
+  background-color: #ddd;
+  border: 3px solid #333645;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  margin-right: 20px;
+}
+
+.label-checkmark {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+input[type="checkbox"]:after {
+  font-family: 'icomoon';
+  content: "\ea10";
+  color: #fff;
+  font-size: 1.2em;
+  display: none;
+  padding-top: 2px;
+  padding-left: 2px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #333645;
+}
+
+input[type="checkbox"]:checked:after {
+  display: block;
+}
+.privacy-policy {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.privacy-policy a{
+  text-decoration: underline;
+    color: #000;
+}

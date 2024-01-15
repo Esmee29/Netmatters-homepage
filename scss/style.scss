@@ -200,3 +200,19 @@ a:hover {
     margin: auto;
 }
 }
+@include mq(medium) {
+  .main {
+    width: 750px;
+  }
+}
+@include mq(large) {
+  .main {
+    width: 970px;
+  }
+}
+
+@include mq(x-large) {
+  .main {
+    width: 1170px;
+  }
+}

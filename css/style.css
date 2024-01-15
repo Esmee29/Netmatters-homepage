@@ -2792,22 +2792,22 @@ footer h4 {
   }
 }
 
-.icon-facebook:hover {
+.facebook:hover {
   background-color: #3B5998;
   text-decoration: none;
 }
 
-.icon-linkedin:hover {
+.linkedin:hover {
   background-color: #0077B5;
   text-decoration: none;
 }
 
-.icon-twitter:hover {
+.twitter:hover {
   background-color: #00ACED;
   text-decoration: none;
 }
 
-.icon-instagram:hover {
+.instagram:hover {
   background-color: #D93175;
   text-decoration: none;
 }

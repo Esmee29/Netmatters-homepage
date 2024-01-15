@@ -345,15 +345,33 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 15px;
 }
 
-.header-high {
-  display: flex;
-  gap: 20px;
-  width: 100%;
-  justify-content: flex-start;
+@media (min-width: 767px) {
+  .header-large {
+    justify-content: space-flex-start;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+}
+
+.logo-container {
+  display: table;
+  table-layout: fixed;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+@media (min-width: 1260px) {
+  .logo {
+    height: 64px;
+  }
+}
+
+.logo img {
+  display: block;
 }
 
 @media (min-width: 992px) {
@@ -560,6 +578,19 @@
   margin-right: auto;
 }
 
+@media (min-width: 992px) {
+  .nm-logo-black {
+    position: relative;
+    left: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .nm-logo-black {
+    max-width: 345px;
+  }
+}
+
 .bottom-header a {
   color: white;
 }
@@ -758,6 +789,15 @@ header a {
   margin-left: 10px;
 }
 
+.nav-item {
+  margin-top: -15px;
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  width: 33%;
+  margin-top: 15px;
+}
+
 .bespoke-color {
   background-color: #526781;
 }
@@ -874,13 +914,11 @@ header a {
 }
 
 .btn-help-contact {
-  color: #fff;
   background-color: #999aa2;
   border-color: #999aa2;
 }
 
 .btn-help-support {
-  color: #fff;
   background-color: #4183d7;
   border-color: #4183d7;
 }
@@ -892,6 +930,14 @@ header a {
   padding: 5px 10px;
   width: 151px;
   border-radius: 3px;
+}
+
+@media (min-width: 1260px) {
+  .btn-help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .search-form-tablet-btn {
@@ -2753,8 +2799,6 @@ footer h4 {
   width: 68px;
   height: 28px;
   padding: 12px 22px 16px;
-  margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 @media (max-width: 480px) {
@@ -2827,6 +2871,9 @@ footer h4 {
 .links {
   font-size: .8125rem;
   line-height: 1.375rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .about {
@@ -2983,6 +3030,10 @@ li {
   border-radius: 2px;
   color: white;
   row-gap: 0.625em;
+}
+
+.btn-help {
+  font-size: 1.125rem;
 }
 
 #container {

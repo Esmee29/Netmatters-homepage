@@ -68,8 +68,7 @@
       width: 68px;
       height: 28px;
       padding: 12px 22px 16px;
-      margin-right: 10px;
-      margin-bottom: 10px;
+  
     }
   
     @media (max-width: 480px){
@@ -136,6 +135,9 @@
     .links {
       font-size: .8125rem;
       line-height: 1.375rem;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
     }
     .about {
       text-align: start;

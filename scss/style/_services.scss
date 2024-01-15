@@ -53,7 +53,7 @@
   }
   
   @media (min-width: 768px) and (max-width: 991px) {
-        .service-blocks-bottom {
+    .service-blocks-bottom {
       display: grid;
       grid-template-columns: auto auto;
     }
@@ -63,13 +63,6 @@
     .service-blocks-bottom {
       display: grid;
       grid-template-columns: auto auto;
-    }
-  }
-  
-  @media (min-width: 1260px) {
-    .service-blocks-bottom {
-      display: grid;
-      grid-template-columns: auto auto auto auto;
     }
   }
   .service-link {
@@ -311,6 +304,13 @@
     color: #2ecc71;
     background-color: #fff;
   }
+  @media (min-width: 1260px) {
+    .service-blocks-bottom {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+  
   .service-block-four, .btn-ts {
     top: 0;
     border: 1px solid #ccc;

@@ -1032,13 +1032,6 @@ header a {
   }
 }
 
-@media (min-width: 1260px) {
-  .service-blocks-bottom {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-  }
-}
-
 .service-link {
   color: #fff;
   position: absolute;
@@ -1306,6 +1299,13 @@ header a {
 .service-block-three:hover .icon-bar-graph, .btn-dm:hover .icon-bar-graph {
   color: #2ecc71;
   background-color: #fff;
+}
+
+@media (min-width: 1260px) {
+  .service-blocks-bottom {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
 }
 
 .service-block-four, .btn-ts {
@@ -3216,5 +3216,30 @@ footer {
 @media (min-width: 768px) {
   .align-center {
     margin: auto;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .hidden-sm {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  /* line 124, D:/Documents/GitHub/HTML-And-CSS-Assignment/scss/layout/_viewports.scss */
+  .hidden-lg {
+    display: none;
+  }
+}
+
+@media (min-width: 1260px) {
+  .hidden-xlg {
+    display: none;
   }
 }

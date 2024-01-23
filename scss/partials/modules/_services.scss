@@ -1,7 +1,7 @@
 
 .service-heading {
     display: flex;
-    background-color: #fff;
+    background-color: $white;
     justify-content: space-between;
   }
 
@@ -19,7 +19,7 @@
   
   .icon-circle {
     display: inline-block;
-    color: #fff;
+    color: $white;
     font-size: 32px;
     padding: 15px;
     border-radius: 50%;
@@ -28,7 +28,7 @@
 .icon-format-services {
   font-size: 2rem;
 line-height: 62px;
-  color: white;
+  color: $white;
 }
 .service-list h2 {
     font-size: 2.7rem;
@@ -39,7 +39,7 @@ line-height: 62px;
   .service-title .h1 {
     font-size: 2.7rem;
     margin-top: -13px;
-    color: #333645;
+    color: $tuna;
   }
   
   @media (min-width: 992px) and (max-width: 1259px) {
@@ -70,7 +70,7 @@ line-height: 62px;
     }
   }
   .service-link {
-    color: #fff;
+    color: $white;
     position: absolute;
     top: 0;
     right: 0;
@@ -80,25 +80,25 @@ line-height: 62px;
     text-align: center;
   }
   .service-block-one:hover .h2{
-    color: white;
+    color: $white;
   }
   .service-block-two:hover .h2{
-    color: white;
+    color: $white;
   }
   .service-block-three:hover .h2{
-    color: white;
+    color: $white;
   }
   .service-block-four:hover .h2{
-    color: white;
+    color: $white;
   }
   .service-block-five:hover .h2{
-    color: white;
+    color: $white;
   }
   .service-block-six:hover .h2{
-    color: white;
+    color: $white;
   }
   .service-block-seven:hover .h2{
-    color: white;
+    color: $white;
   }
   .service-link > span.h2 {
     padding-bottom: 10px;
@@ -157,22 +157,22 @@ line-height: 62px;
     }
   }
   .service-block-one:hover, .btn-software:hover {
-    background-color: #67809f;
-    color: #fff;
+    background-color: $hoki;
+    color: $white;
   }
 
   .service-block-one:hover .btn-software, .btn-software:hover .btn-software {
-    background-color: #fff;
-    color: #67809f;
+    background-color: $white;
+    color: $hoki;
   }
 
   .service-block-one:hover .icon-circle-software, .btn-software:hover .icon-circle-software {
-    color: #67809f;
-    background-color: #fff;
+    color: $hoki;
+    background-color: $white;
   }
   .service-block-one:hover .icon-laptop, .btn-software:hover .icon-laptop {
-    color: #67809f;
-    background-color: #fff;
+    color: $hoki;
+    background-color: $white;
   }
   
   .service-block-two, .btn-it {
@@ -229,22 +229,63 @@ line-height: 62px;
       margin-right: 30px;
     }
   }
+.icon-googlescholar-service:hover{
+    color: $valencia; 
+}     
+.icon-marketing {
+        color: $shamrock;
+      } 
+.icon-format-nav-telephone {
+        color: $valencia;
+      } 
+.icon-format-nav-code {
+        color: $wisteria;
+      } 
 
+.icon-format-nav-security {
+        color: $radical-red;
+      }
+       
+.icon-format-nav-devloper {
+        color: $radical-red;
+      } 
+      
+      .icon-circle-software {
+        background-color: $hoki;
+      }
+      .icon-circle-it {
+        background-color: $havelock-blue;
+      }
+      .icon-circle-dm {
+        background-color: $shamrock;
+      }
+      .icon-circle-ts {
+        background-color: $valencia;
+      }
+      .icon-circle-wd {
+        background-color: $wisteria;
+      }
+      .icon-circle-cs {
+        background-color: $radical-red;
+      }
+      .icon-circle-dt {
+        background-color: $punch;
+      }
   .service-block-two:hover, .btn-it:hover {
-    background-color: #4183d7;
-    color: #fff;
+    background-color: $havelock-blue;
+    color: $white;
   }
   .service-block-two:hover .btn-it, .btn-it:hover .btn-it {
-    background-color: #fff;
-    color: #4183d7;
+    background-color: $white;
+    color: $havelock-blue
   }
   .service-block-two:hover .icon-circle-it, .btn-it:hover .icon-circle-it {
-    fill: #4183d7;
-    background-color: #fff;
+    fill: $havelock-blue;
+    background-color: $white;
   }
   .service-block-two:hover .icon-display, .btn-it:hover .icon-display {
-    color: #4183d7;
-    background-color: #fff;
+    color: $havelock-blue;
+    background-color: $white;
   }
   .service-block-three, .btn-dm {
     top: 0;
@@ -293,20 +334,20 @@ line-height: 62px;
     }
   }
   .service-block-three:hover, .btn-dm:hover {
-    background-color: #2ecc71;
-    color: #fff;
+    background-color: $shamrock;
+    color: $white;
   }
   .service-block-three:hover .btn-dm, .btn-dm:hover .btn-dm {
-    background-color: #fff;
-    color: #2ecc71;
+    background-color: $white;
+    color: $shamrock;
   }
   .service-block-three:hover .icon-circle-dm, .btn-dm:hover .icon-circle-dm {
-    fill: #2ecc71;
-    background-color: #fff;
+    fill: $shamrock;
+    background-color: $white;
   }
   .service-block-three:hover .icon-bar-graph, .btn-dm:hover .icon-bar-graph {
-    color: #2ecc71;
-    background-color: #fff;
+    color: $shamrock;
+    background-color: $white;
   }
   @media (min-width: 1260px) {
     .service-blocks-bottom {
@@ -374,21 +415,21 @@ line-height: 62px;
     }
   }
   .service-block-four:hover, .btn-ts:hover {
-    background-color: #d64541;
-    color: #fff;
+    background-color: $valencia;
+    color: $white;
   }
  
   .service-block-four:hover .btn-ts, .btn-ts:hover .btn-ts {
-    background-color: #fff;
-    color: #d64541;
+    background-color: $white;
+    color: $valencia;
   }
   .service-block-four:hover .icon-circle-ts, .btn-ts:hover .icon-circle-ts {
-    fill: #d64541;
-    background-color: #fff;
+    fill: $valencia;
+    background-color: $white;
   }
   .service-block-four:hover .icon-phone_in_talk, .btn-ts:hover .icon-phone_in_talk {
-    color: #d64541;
-    background-color: #fff;
+    color: $valencia;
+    background-color: $white;
   }
   .service-block-five, .btn-wd {
     top: 0;
@@ -450,20 +491,20 @@ line-height: 62px;
     }
   }
   .service-block-five:hover, .btn-wd:hover {
-    background-color: #926fb1;
-    color: #fff;
+    background-color: $wisteria;
+    color: $white;
   }
   .service-block-five:hover .btn-wd, .btn-wd:hover .btn-wd {
-    background-color: #fff;
-    color: #926fb1;
+    background-color: $white;
+    color: $wisteria;
   }
   .service-block-five:hover .icon-circle-wd, .btn-wd:hover .icon-circle-wd {
-    fill: #926fb1;
-    background-color: #fff;
+    fill: $wisteria;
+    background-color: $white;
   }
   .service-block-five:hover .icon-code, .btn-wd:hover .icon-code {
-    color: #926fb1;
-    background-color: #fff;
+    color: $wisteria;
+    background-color: $white;
   }
   .service-block-six, .btn-cs {
     top: 0;
@@ -528,21 +569,21 @@ line-height: 62px;
     }
   }
   .service-block-six:hover, .btn-cs:hover {
-    background-color: #f62459;
-    color: #fff;
+    background-color: $radical-red;
+    color: $white;
   }
   .service-block-six:hover .btn-cs, .btn-cs:hover .btn-cs {
-    background-color: #fff;
-    color: #f62459;
+    background-color: $white;
+    color: $radical-red;
   }
   .service-block-six:hover .icon-circle-cs, .btn-cs:hover .icon-circle-cs {
-    fill: #f62459;
-    background-color: #fff;
+    fill: $radical-red;
+    background-color: $white;
   }
 
   .service-block-six:hover .icon-security, .btn-cs:hover .icon-security {
-    color: #f62459;
-    background-color: #fff;
+    color: $radical-red;
+    background-color: $white;
   }
   .service-block-seven, .btn-dt {
     top: 0;
@@ -604,23 +645,23 @@ line-height: 62px;
   }
 
   .service-block-seven:hover, .btn-dt:hover {
-    background-color: #ce4125;
-    color: #fff;
+    background-color: $punch;
+    color: $white;
   }
 
   .service-block-seven:hover .btn-dt, .btn-dt:hover .btn-dt {
-    background-color: #fff;
-    color: #ce4125;
+    background-color: $white;
+    color: $punch;
   }
 
   .service-block-seven:hover .icon-circle-dt, .btn-dt:hover .icon-circle-dt {
-    fill: #ce4125;
-    background-color: #fff;
+    fill: $punch;
+    background-color: $white;
   }
   
   .service-block-seven:hover .icon-graduation-cap, .btn-dt:hover .icon-graduation-cap {
-    color: #ce4125;
-    background-color: #fff;
+    color: $punch;
+    background-color: $white;
   }
   
   
@@ -635,15 +676,14 @@ line-height: 62px;
     font-size: 14px;
     border: 1px solid transparent;
     border-radius: 2px;
-    color: white;
+    color: $white;
     row-gap: 0.625em;
     text-transform: uppercase;
     border-radius: 3px;
     width: 50%;
     align-self: center;
-    color: #fff;
     margin-right: 0;
-    background-color: #67809f;
+    background-color: $hoki;
   }
   .btn-software:hover {
     cursor: pointer;
@@ -659,15 +699,14 @@ line-height: 62px;
     font-size: 14px;
     border: 1px solid transparent;
     border-radius: 2px;
-    color: white;
+    color: $white;
     row-gap: 0.625em;
     text-transform: uppercase;
     border-radius: 3px;
     width: 50%;
     align-self: center;
-    color: #fff;
     margin-right: 0;
-    background-color: #4183d7;
+    background-color: $havelock-blue;
   }
   .btn-it:hover {
     cursor: pointer;
@@ -683,15 +722,14 @@ line-height: 62px;
     font-size: 14px;
     border: 1px solid transparent;
     border-radius: 2px;
-    color: white;
+    color: $white;
     row-gap: 0.625em;
     text-transform: uppercase;
     border-radius: 3px;
     width: 50%;
     align-self: center;
-    color: #fff;
     margin-right: 0;
-    background-color: #2ecc71;
+    background-color: $shamrock;
   }
   .btn-dm:hover {
     cursor: pointer;
@@ -707,15 +745,14 @@ line-height: 62px;
     font-size: 14px;
     border: 1px solid transparent;
     border-radius: 2px;
-    color: white;
     row-gap: 0.625em;
     text-transform: uppercase;
     border-radius: 3px;
     width: 50%;
     align-self: center;
-    color: #fff;
+    color: $white;
     margin-right: 0;
-    background-color: #d64541;
+    background-color: $valencia;
   }
   .btn-ts:hover {
     cursor: pointer;
@@ -731,16 +768,15 @@ line-height: 62px;
     font-size: 14px;
     border: 1px solid transparent;
     border-radius: 2px;
-    color: white;
     row-gap: 0.625em;
     text-transform: uppercase;
     border-radius: 3px;
     width: 50%;
     align-self: center;
-    color: #fff;
+    color: $white;
     margin-left: 0;
     margin-right: 0;
-    background-color: #926fb1;
+    background-color: $wisteria;
   }
   .btn-wd:hover {
     cursor: pointer;
@@ -756,15 +792,14 @@ line-height: 62px;
     font-size: 14px;
     border: 1px solid transparent;
     border-radius: 2px;
-    color: white;
     row-gap: 0.625em;
     text-transform: uppercase;
     border-radius: 3px;
     width: 50%;
     align-self: center;
-    color: #fff;
+    color: $white;
     margin-right: 0;
-    background-color: #f62459;
+    background-color: $radical-red;
   }
   .btn-cs:hover {
     cursor: pointer;
@@ -780,16 +815,15 @@ line-height: 62px;
     font-size: 14px;
     border: 1px solid transparent;
     border-radius: 2px;
-    color: white;
     row-gap: 0.625em;
     text-transform: uppercase;
     border-radius: 3px;
     width: 50%;
     align-self: center;
-    color: #fff;
+    color: $white;
     margin-left: 0;
     margin-right: 0;
-    background-color: #ce4125;
+    background-color: $punch;
   }
   .btn-dt:hover {
     cursor: pointer;

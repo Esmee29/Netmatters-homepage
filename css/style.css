@@ -340,8 +340,8 @@ footer {
 }
 
 .btn-whyus:hover {
-  background-color: #7e57a0;
-  color: white;
+  background-color: #79539A;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -363,7 +363,7 @@ footer {
 
 .about-footer {
   padding: 15px 25px;
-  background-color: #323544;
+  background-color: #333645;
   color: #fff;
   text-decoration: none;
   align-items: flex-start;
@@ -478,7 +478,7 @@ footer h4 {
   font-size: 14px;
   border: 1px solid transparent;
   border-radius: 2px;
-  color: white;
+  color: #fff;
   row-gap: 0.625em;
   color: #fff;
   background-color: #333645;
@@ -522,7 +522,7 @@ footer h4 {
 }
 
 a.ftr-li {
-  color: white;
+  color: #fff;
 }
 
 ul {
@@ -564,7 +564,7 @@ footer ul {
 }
 
 .copyright a {
-  color: white;
+  color: #fff;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -630,7 +630,7 @@ li {
 }
 
 .sub-menu-banner-title {
-  color: white;
+  color: #fff;
 }
 
 .header-large {
@@ -718,7 +718,7 @@ li {
   .search-box {
     width: 142px;
     padding: 5px 15px;
-    border: 1px 0 1px 1px #999AA2;
+    border: 1px 0 1px 1px #999aa2;
   }
 }
 
@@ -822,7 +822,7 @@ li {
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
-  border: 1px #ccc;
+  border: 1px solid #ccc;
 }
 
 .menu-1 {
@@ -886,7 +886,7 @@ li {
 }
 
 .bottom-header a {
-  color: white;
+  color: #fff;
 }
 
 .header-row {
@@ -919,7 +919,7 @@ header .inner .actions .btn {
 }
 
 header a {
-  color: white;
+  color: #fff;
 }
 
 .menu-drop {
@@ -1004,9 +1004,9 @@ header a {
   .search-box {
     width: 142px;
     padding: 5px 15px;
-    border: 1px 0 1px 1px #999AA2;
+    border: 1px 0 1px 1px #ccc;
   }
-  .search-box:focus {
+  .search-focus:focus {
     border-color: #5bc0de;
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
@@ -1034,7 +1034,7 @@ header a {
 }
 
 .nav-bar .h2 {
-  color: white;
+  color: #fff;
 }
 
 .nav-bar span {
@@ -1096,6 +1096,73 @@ header a {
   margin-top: 15px;
 }
 
+@media (min-width: 992px) {
+  .nav:hover .triangle {
+    border-width: 0 85.5px 35px 85.5px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .nav:hover .triangle {
+    border-width: 0 107px 35px 107px;
+  }
+}
+
+.bottom-header {
+  margin-right: auto;
+  margin-left: auto;
+  border-left: #333645 solid 14px;
+}
+
+@media (min-width: 767px) {
+  .header-elements {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+.btn-help {
+  height: 56px;
+  line-height: 46px;
+  font-size: 1.125rem;
+  padding: 5px 10px;
+  width: 151px;
+  border-radius: 3px;
+}
+
+@media (min-width: 1260px) {
+  .btn-help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.search-form-tablet-btn {
+  width: 63px;
+  border-radius: 0 3px 3px 0;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: #999aa2;
+  border: none;
+  cursor: pointer;
+}
+
+.sub-menu-banner-title {
+  color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-small {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+
 .bespoke-color {
   background-color: #526781;
 }
@@ -1141,11 +1208,11 @@ header a {
 }
 
 .digital-head:hover:hover {
-  background-color: #00b67b;
+  background-color: #2ecc71;
 }
 
 .digital-head:hover:hover .triangle {
-  border-color: transparent transparent #00b67b transparent;
+  border-color: transparent transparent #2ecc71 transparent;
 }
 
 .digital-head:hover > .icon-bar-graph-h:before {
@@ -1153,11 +1220,11 @@ header a {
 }
 
 .telecoms-head:hover:hover {
-  background-color: #D64541;
+  background-color: #d64541;
 }
 
 .telecoms-head:hover:hover .triangle {
-  border-color: transparent transparent #D64541 transparent;
+  border-color: transparent transparent #d64541 transparent;
 }
 
 .web-head:hover:hover {
@@ -1177,38 +1244,11 @@ header a {
 }
 
 .developer-head:hover:hover {
-  background-color: #ce4125;
+  background-color: #CE4125;
 }
 
 .developer-head:hover:hover .triangle {
-  border-color: transparent transparent #ce4125 transparent;
-}
-
-@media (min-width: 992px) {
-  .nav:hover .triangle {
-    border-width: 0 85.5px 35px 85.5px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .nav:hover .triangle {
-    border-width: 0 107px 35px 107px;
-  }
-}
-
-.bottom-header {
-  margin-right: auto;
-  margin-left: auto;
-  border-left: #333645 solid 14px;
-}
-
-@media (min-width: 767px) {
-  .header-elements {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    justify-content: flex-start;
-  }
+  border-color: transparent transparent #CE4125 transparent;
 }
 
 .btn-help-contact {
@@ -1221,44 +1261,32 @@ header a {
   border-color: #4183d7;
 }
 
-.btn-help {
-  height: 56px;
-  line-height: 46px;
-  font-size: 1.125rem;
-  padding: 5px 10px;
-  width: 151px;
-  border-radius: 3px;
-}
-
-@media (min-width: 1260px) {
-  .btn-help {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.search-form-tablet-btn {
-  width: 63px;
-  border-radius: 0 3px 3px 0;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
-  background-color: #999aa2;
-  border: none;
-  cursor: pointer;
-}
-
-.sub-menu-banner-title {
+.icon-search-1 {
   color: #fff;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .header-small {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
+.icon-search-2 {
+  color: #333645;
+}
+
+.icon-format-nav-laptop {
+  color: #67809F;
+}
+
+.icon-display {
+  color: #4183d7;
+}
+
+.icon-display-service {
+  color: #fff;
+}
+
+.icon-digital {
+  color: #fff;
+}
+
+.icon-googlescholar-service {
+  color: #fff;
 }
 
 .latest-articles .headings-container {
@@ -1983,7 +2011,7 @@ input[type="checkbox"]:checked:after {
 .icon-format-services {
   font-size: 2rem;
   line-height: 62px;
-  color: white;
+  color: #fff;
 }
 
 .service-list h2 {
@@ -2040,31 +2068,31 @@ input[type="checkbox"]:checked:after {
 }
 
 .service-block-one:hover .h2 {
-  color: white;
+  color: #fff;
 }
 
 .service-block-two:hover .h2 {
-  color: white;
+  color: #fff;
 }
 
 .service-block-three:hover .h2 {
-  color: white;
+  color: #fff;
 }
 
 .service-block-four:hover .h2 {
-  color: white;
+  color: #fff;
 }
 
 .service-block-five:hover .h2 {
-  color: white;
+  color: #fff;
 }
 
 .service-block-six:hover .h2 {
-  color: white;
+  color: #fff;
 }
 
 .service-block-seven:hover .h2 {
-  color: white;
+  color: #fff;
 }
 
 .service-link > span.h2 {
@@ -2130,22 +2158,22 @@ input[type="checkbox"]:checked:after {
 }
 
 .service-block-one:hover, .btn-software:hover {
-  background-color: #67809f;
+  background-color: #67809F;
   color: #fff;
 }
 
 .service-block-one:hover .btn-software, .btn-software:hover .btn-software {
   background-color: #fff;
-  color: #67809f;
+  color: #67809F;
 }
 
 .service-block-one:hover .icon-circle-software, .btn-software:hover .icon-circle-software {
-  color: #67809f;
+  color: #67809F;
   background-color: #fff;
 }
 
 .service-block-one:hover .icon-laptop, .btn-software:hover .icon-laptop {
-  color: #67809f;
+  color: #67809F;
   background-color: #fff;
 }
 
@@ -2204,6 +2232,58 @@ input[type="checkbox"]:checked:after {
   .service-block-two, .btn-it {
     margin-right: 30px;
   }
+}
+
+.icon-googlescholar-service:hover {
+  color: #d64541;
+}
+
+.icon-marketing {
+  color: #2ecc71;
+}
+
+.icon-format-nav-telephone {
+  color: #d64541;
+}
+
+.icon-format-nav-code {
+  color: #926FB1;
+}
+
+.icon-format-nav-security {
+  color: #F62459;
+}
+
+.icon-format-nav-devloper {
+  color: #F62459;
+}
+
+.icon-circle-software {
+  background-color: #67809F;
+}
+
+.icon-circle-it {
+  background-color: #4183d7;
+}
+
+.icon-circle-dm {
+  background-color: #2ecc71;
+}
+
+.icon-circle-ts {
+  background-color: #d64541;
+}
+
+.icon-circle-wd {
+  background-color: #926FB1;
+}
+
+.icon-circle-cs {
+  background-color: #F62459;
+}
+
+.icon-circle-dt {
+  background-color: #CE4125;
 }
 
 .service-block-two:hover, .btn-it:hover {
@@ -2452,22 +2532,22 @@ input[type="checkbox"]:checked:after {
 }
 
 .service-block-five:hover, .btn-wd:hover {
-  background-color: #926fb1;
+  background-color: #926FB1;
   color: #fff;
 }
 
 .service-block-five:hover .btn-wd, .btn-wd:hover .btn-wd {
   background-color: #fff;
-  color: #926fb1;
+  color: #926FB1;
 }
 
 .service-block-five:hover .icon-circle-wd, .btn-wd:hover .icon-circle-wd {
-  fill: #926fb1;
+  fill: #926FB1;
   background-color: #fff;
 }
 
 .service-block-five:hover .icon-code, .btn-wd:hover .icon-code {
-  color: #926fb1;
+  color: #926FB1;
   background-color: #fff;
 }
 
@@ -2539,22 +2619,22 @@ input[type="checkbox"]:checked:after {
 }
 
 .service-block-six:hover, .btn-cs:hover {
-  background-color: #f62459;
+  background-color: #F62459;
   color: #fff;
 }
 
 .service-block-six:hover .btn-cs, .btn-cs:hover .btn-cs {
   background-color: #fff;
-  color: #f62459;
+  color: #F62459;
 }
 
 .service-block-six:hover .icon-circle-cs, .btn-cs:hover .icon-circle-cs {
-  fill: #f62459;
+  fill: #F62459;
   background-color: #fff;
 }
 
 .service-block-six:hover .icon-security, .btn-cs:hover .icon-security {
-  color: #f62459;
+  color: #F62459;
   background-color: #fff;
 }
 
@@ -2622,22 +2702,22 @@ input[type="checkbox"]:checked:after {
 }
 
 .service-block-seven:hover, .btn-dt:hover {
-  background-color: #ce4125;
+  background-color: #CE4125;
   color: #fff;
 }
 
 .service-block-seven:hover .btn-dt, .btn-dt:hover .btn-dt {
   background-color: #fff;
-  color: #ce4125;
+  color: #CE4125;
 }
 
 .service-block-seven:hover .icon-circle-dt, .btn-dt:hover .icon-circle-dt {
-  fill: #ce4125;
+  fill: #CE4125;
   background-color: #fff;
 }
 
 .service-block-seven:hover .icon-graduation-cap, .btn-dt:hover .icon-graduation-cap {
-  color: #ce4125;
+  color: #CE4125;
   background-color: #fff;
 }
 
@@ -2652,15 +2732,14 @@ input[type="checkbox"]:checked:after {
   font-size: 14px;
   border: 1px solid transparent;
   border-radius: 2px;
-  color: white;
+  color: #fff;
   row-gap: 0.625em;
   text-transform: uppercase;
   border-radius: 3px;
   width: 50%;
   align-self: center;
-  color: #fff;
   margin-right: 0;
-  background-color: #67809f;
+  background-color: #67809F;
 }
 
 .btn-software:hover {
@@ -2678,13 +2757,12 @@ input[type="checkbox"]:checked:after {
   font-size: 14px;
   border: 1px solid transparent;
   border-radius: 2px;
-  color: white;
+  color: #fff;
   row-gap: 0.625em;
   text-transform: uppercase;
   border-radius: 3px;
   width: 50%;
   align-self: center;
-  color: #fff;
   margin-right: 0;
   background-color: #4183d7;
 }
@@ -2704,13 +2782,12 @@ input[type="checkbox"]:checked:after {
   font-size: 14px;
   border: 1px solid transparent;
   border-radius: 2px;
-  color: white;
+  color: #fff;
   row-gap: 0.625em;
   text-transform: uppercase;
   border-radius: 3px;
   width: 50%;
   align-self: center;
-  color: #fff;
   margin-right: 0;
   background-color: #2ecc71;
 }
@@ -2730,7 +2807,6 @@ input[type="checkbox"]:checked:after {
   font-size: 14px;
   border: 1px solid transparent;
   border-radius: 2px;
-  color: white;
   row-gap: 0.625em;
   text-transform: uppercase;
   border-radius: 3px;
@@ -2756,7 +2832,6 @@ input[type="checkbox"]:checked:after {
   font-size: 14px;
   border: 1px solid transparent;
   border-radius: 2px;
-  color: white;
   row-gap: 0.625em;
   text-transform: uppercase;
   border-radius: 3px;
@@ -2765,7 +2840,7 @@ input[type="checkbox"]:checked:after {
   color: #fff;
   margin-left: 0;
   margin-right: 0;
-  background-color: #926fb1;
+  background-color: #926FB1;
 }
 
 .btn-wd:hover {
@@ -2783,7 +2858,6 @@ input[type="checkbox"]:checked:after {
   font-size: 14px;
   border: 1px solid transparent;
   border-radius: 2px;
-  color: white;
   row-gap: 0.625em;
   text-transform: uppercase;
   border-radius: 3px;
@@ -2791,7 +2865,7 @@ input[type="checkbox"]:checked:after {
   align-self: center;
   color: #fff;
   margin-right: 0;
-  background-color: #f62459;
+  background-color: #F62459;
 }
 
 .btn-cs:hover {
@@ -2809,7 +2883,6 @@ input[type="checkbox"]:checked:after {
   font-size: 14px;
   border: 1px solid transparent;
   border-radius: 2px;
-  color: white;
   row-gap: 0.625em;
   text-transform: uppercase;
   border-radius: 3px;
@@ -2818,7 +2891,7 @@ input[type="checkbox"]:checked:after {
   color: #fff;
   margin-left: 0;
   margin-right: 0;
-  background-color: #ce4125;
+  background-color: #CE4125;
 }
 
 .btn-dt:hover {
@@ -3187,86 +3260,6 @@ cite {
 
 .icon-clock:before {
   content: "\e94f";
-}
-
-.icon-search-1 {
-  color: #fff;
-}
-
-.icon-search-2 {
-  color: #333645;
-}
-
-.icon-format-nav-laptop {
-  color: #67809F;
-}
-
-.icon-display {
-  color: #4183D7;
-}
-
-.icon-display-service {
-  color: #fff;
-}
-
-.icon-digital {
-  color: #fff;
-}
-
-.icon-googlescholar-service {
-  color: #fff;
-}
-
-.icon-googlescholar-service:hover {
-  color: #D64542;
-}
-
-.icon-marketing {
-  color: #2DCC71;
-}
-
-.icon-format-nav-telephone {
-  color: #D64542;
-}
-
-.icon-format-nav-code {
-  color: #926FB1;
-}
-
-.icon-format-nav-security {
-  color: #F62459;
-}
-
-.icon-format-nav-devloper {
-  color: #F62459;
-}
-
-.icon-circle-software {
-  background-color: #67809f;
-}
-
-.icon-circle-it {
-  background-color: #4183d7;
-}
-
-.icon-circle-dm {
-  background-color: #2ecc71;
-}
-
-.icon-circle-ts {
-  background-color: #d64541;
-}
-
-.icon-circle-wd {
-  background-color: #926fb1;
-}
-
-.icon-circle-cs {
-  background-color: #f62459;
-}
-
-.icon-circle-dt {
-  background-color: #ce4125;
 }
 
 @media (min-width: 1260px) {

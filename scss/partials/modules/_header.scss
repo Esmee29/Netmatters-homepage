@@ -1,8 +1,8 @@
 .container-header {
-  background-color: #fff;
+  background-color: $white;
 }
 .sub-menu-banner-title {
-  color: white;
+  color: $white;
 }
 .header-large {
   display: flex;
@@ -42,7 +42,7 @@ display: block;
 @media (min-width: 768px){
 .search-bar {
     font-size: 1em;
-    fill: #fff;
+    fill: $white;
 }
 }
 @media (min-width: 768px){
@@ -70,7 +70,7 @@ display: block;
 .search-box {
     padding: 1em;
     flex: 1;
-    background-color: #fff;
+    background-color: $white;
     max-width: 175px;
 }
 }
@@ -78,12 +78,12 @@ display: block;
 .search-box {
     width: 142px;
     padding: 5px 15px;
-    border: 1px 0 1px 1px #999AA2;
+    border: 1px 0 1px 1px $manatee;
 }
 }
 @media (min-width: 768px){
 input[type=text] {
-    border: 1px solid #ccc;
+    border: 1px solid $input;
     outline: none;
     font-size: 1em;
     height: 57px;
@@ -99,13 +99,13 @@ input[type=text] {
 }
 @media (min-width: 768px){
 .search-bar button {
-    color: #fff;
+    color: $white;
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1em;
     padding: 16px 20px;
     border-radius: 3px;
-    background-color: #999aa2;
+    background-color: $manatee;
     border: none;
     outline: none;
     border-radius: 0 5% 5% 0;
@@ -113,7 +113,7 @@ input[type=text] {
 }
 }
 #header {
-  color: #fff;
+  color: $white;
 }
 @media (max-width: 767px){
 .header-small {
@@ -139,7 +139,7 @@ input[type=text] {
   font-size: 21px;
   width: 63px;
   height: 56px;
-  background-color: #333645;
+  background-color: $tuna;
   border: none;
   border-radius: 3px;
   margin-left: 20px;
@@ -158,11 +158,11 @@ input[type=text] {
   margin-top: 10px;
   margin-left: 15px;
   margin-right: 15px;
-  color: #333645;
+  color: $tuna;
 }
 .search-small {
-  border: 2px solid #CECECE;
-  background-color: #E5E5E5;
+  border: 2px solid $alto;
+  background-color: $mercury;
   height: 41px;
   border-radius: 3px;
 }
@@ -170,7 +170,7 @@ input[type=text] {
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
-  border: 1px #ccc;
+  border: 1px solid $input;
 }
 .menu-1{
   width: 33px;
@@ -186,7 +186,7 @@ input[type=text] {
 .icon-search-2{
   font-size: 24px;
   font-weight: 400;
-  color: #333645;
+  color: $tuna;
   background-color: transparent;
   position: relative;
   top: 10px;
@@ -228,7 +228,7 @@ input[type=text] {
 } 
 }
 .bottom-header a{
-  color: white;
+  color: $white;
 }
  
 .header-row {
@@ -260,7 +260,7 @@ header .inner .actions .btn {
   margin-right: 10px; 
 }
 header a{
-  color: white;
+  color: $white;
 }
 .menu-drop {
   display: block;
@@ -282,7 +282,7 @@ header a{
 
 
 .nav:hover [class^="icon-"]::before {
-  color: #fff;
+  color: $white;
 }
 @media (min-width: 1260px){
 .nav:hover .triangle {
@@ -310,11 +310,11 @@ header a{
 }
 
 .nav:hover .icon-hover {
-  color: #fff;
+  color: $white;
 }
 
 .nav:hover .icon-hover {
-  color: #fff;
+  color: $white;
 }
 
 .sub-menu-banner a:hover {
@@ -337,23 +337,22 @@ header a{
     display: inline-flex;
     width: 174px;
     justify-content: flex-end;
-    border: 1px #ccc;
+    border: 1px $input;
   }
   .search-box {
     width: 142px;
     padding: 5px 15px;
-    border: 1px 0 1px 1px #999AA2;
+    border: 1px 0 1px 1px $input;
   }
-  .search-box:focus {
-    border-color: #5bc0de;
+  .search-focus:focus {
+    border-color: $viking;
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
   }
 }
-
 @media (min-width: 992px){
 .bottom-header {
-  background-color: #333645;
+  background-color: $tuna;
 }
 }
 
@@ -365,12 +364,12 @@ header a{
   flex-direction: row;
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: $white;
   text-transform: uppercase;
   line-height: 1;
 }
 .nav-bar .h2{
-  color: white;
+  color: $white;
 }
 .nav-bar span {
   font-size: 1.125rem;
@@ -422,72 +421,7 @@ header a{
   width: 33%;
   margin-top: 15px;
 }
-.bespoke-color {
-  background-color: #526781;
-}
-.it-support-color {
-  background-color: #286abd;
-}
-.digital-color {
-  background-color: #25A25A;
-}
-.telecoms-color {
-  background-color: #BC2C28;
-}
-.web-color {
-  background-color: #79539A;
-}
-.cyber-color {
-  background-color: #DE093F;
-}
-.developer-color {
-  background-color: #A3331D;
-}
-.bespoke-head:hover:hover {
-  background-color: #67809F;
-}
-.bespoke-head:hover:hover .triangle {
-  border-color: transparent transparent #67809F transparent;
-}
-.it-head:hover:hover {
-    background-color: #4183d7;
-  }
-  .it-head:hover:hover .triangle {
-    border-color: transparent transparent #4183d7 transparent;
-  }
-.digital-head:hover:hover {
-  background-color: #00b67b;
-}
-.digital-head:hover:hover .triangle {
-  border-color: transparent transparent #00b67b transparent;
-}
-.digital-head:hover > .icon-bar-graph-h:before {
-  color: #fff;
-}
-.telecoms-head:hover:hover {
-  background-color: #D64541;
-}
-.telecoms-head:hover:hover .triangle {
-  border-color: transparent transparent #D64541 transparent;
-}
-.web-head:hover:hover {
-  background-color: #926FB1;
-}
-.web-head:hover:hover .triangle {
-  border-color: transparent transparent #926FB1 transparent;
-}
-.cyber-head:hover:hover {
-  background-color: #F62459;
-}
-.cyber-head:hover:hover .triangle {
-  border-color: transparent transparent #F62459 transparent;
-}
-.developer-head:hover:hover {
-  background-color: #ce4125;
-}
-.developer-head:hover:hover .triangle {
-  border-color: transparent transparent #ce4125 transparent;
-}
+
 
 @media (min-width: 992px) {
 .nav:hover .triangle {
@@ -502,7 +436,7 @@ header a{
 .bottom-header {
 margin-right: auto;
 margin-left: auto;
-border-left: #333645 solid 14px;
+border-left: $tuna solid 14px;
 }
 @media (min-width: 767px){
   .header-elements {
@@ -512,14 +446,7 @@ border-left: #333645 solid 14px;
       justify-content: flex-start;
   }
 }
-.btn-help-contact {
-  background-color: #999aa2;
-  border-color: #999aa2;
-}
-.btn-help-support {
-  background-color: #4183d7;
-  border-color: #4183d7;
-}
+
 .btn-help {
 height: 56px;
 line-height: 46px;
@@ -542,16 +469,111 @@ border-radius: 3px;
   padding-bottom: 14px;
   padding-left: 12px;
   padding-right: 12px;
-  background-color: #999aa2;
+  background-color: $manatee;
   border: none;
   cursor: pointer;
 }
 .sub-menu-banner-title {
-color: #fff;
+color: $white;
 }
 @media (min-width: 768px) and (max-width: 991px){
   .header-small{
     margin-left: 15px;
     margin-right: 15px;
   }
+}
+.bespoke-color {
+  background-color: $blue-bayoux;
+}
+.it-support-color {
+  background-color: $mariner;
+}
+.digital-color {
+  background-color: $eucalyptus;
+}
+.telecoms-color {
+  background-color: $tall-poppy;
+}
+.web-color {
+  background-color: $affair;
+}
+.cyber-color {
+  background-color: $red-ribbon;
+}
+.developer-color {
+  background-color: $cognac;
+}
+
+.bespoke-head:hover:hover {
+  background-color: $hoki;
+}
+.bespoke-head:hover:hover .triangle {
+  border-color: transparent transparent $hoki transparent;
+}
+.it-head:hover:hover {
+    background-color: $havelock-blue;
+  }
+  .it-head:hover:hover .triangle {
+    border-color: transparent transparent $havelock-blue transparent;
+  }
+.digital-head:hover:hover {
+  background-color: $shamrock;
+}
+.digital-head:hover:hover .triangle {
+  border-color: transparent transparent $shamrock transparent;
+}
+.digital-head:hover > .icon-bar-graph-h:before {
+  color: $white;
+}
+.telecoms-head:hover:hover {
+  background-color: $valencia;
+}
+.telecoms-head:hover:hover .triangle {
+  border-color: transparent transparent $valencia transparent;
+}
+.web-head:hover:hover {
+  background-color: $wisteria;
+}
+.web-head:hover:hover .triangle {
+  border-color: transparent transparent $wisteria transparent;
+}
+.cyber-head:hover:hover {
+  background-color: $radical-red;
+}
+.cyber-head:hover:hover .triangle {
+  border-color: transparent transparent $radical-red transparent;
+}
+.developer-head:hover:hover {
+  background-color: $punch;
+}
+.developer-head:hover:hover .triangle {
+  border-color: transparent transparent $punch transparent;}
+.btn-help-contact {
+  background-color: $manatee;
+  border-color: $manatee;
+}
+.btn-help-support {
+  background-color:$havelock-blue;
+  border-color: $havelock-blue;
+}
+.icon-search-1 {
+  color: $white;
+}
+.icon-search-2{
+color: $tuna;
+}
+.icon-format-nav-laptop {
+  color: $hoki;
+}
+
+.icon-display {
+    color: $havelock-blue;}
+.icon-display-service{
+  color: $white;
+}     
+.icon-digital{
+  color: $white;
+}
+.icon-googlescholar-service{
+  color: $white; 
 }

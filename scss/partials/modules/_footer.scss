@@ -6,8 +6,8 @@
     }
     .about-footer {
       padding: 15px 25px;
-      background-color: #323544;
-      color: #fff;
+      background-color: $tuna;
+      color: $white;
       text-decoration: none;
       align-items: flex-start;
     }
@@ -20,11 +20,11 @@
     }
     @media (min-width: 768px){
     .about-footer h4, .about-footer h3 {
-        color: #fff !important;
+        color: $white !important;
     }
     }
     footer h4 {
-      color: #fff;
+      color: $white;
       text-transform: uppercase;
       font-size: 1rem;
         margin-bottom: 26px;
@@ -35,7 +35,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 30px;
-    color: #fff;
+    color: $white;
 }
 .footer-socials a {
   padding: 12px 22px 7px;
@@ -61,41 +61,41 @@
     }
     }
     .facebook:hover {
-      background-color: #3B5998;
+      background-color: $facebook;
       text-decoration: none;
     }
     
     .linkedin:hover {
-      background-color: #0077B5;
+      background-color: $link;
       text-decoration: none;
     }
     
     .twitter:hover {
-      background-color: #00ACED;
+      background-color: $twitter;
       text-decoration: none;
     }
     
     .instagram:hover {
-      background-color: #D93175;
+      background-color: $insta;
       text-decoration: none;
     }
     .facebook {
-      background-color: #212330;
+      background-color: $footer;
       align-content: center;
       justify-content: center;
     }
     .linkedin {
-      background-color: #212330;
+      background-color: $footer;
       align-content: center;
       justify-content: center;
     }
     .twitter {
-      background-color: #212330;
+      background-color: $footer;
       align-content: center;
       justify-content: center;
     }
     .instagram {
-      background-color: #212330;
+      background-color: $footer;
       align-content: center;
       justify-content: center;
     }
@@ -110,10 +110,10 @@
       font-size: 14px;
       border: 1px solid transparent;
       border-radius: 2px;
-      color: white;
+      color: $white;
       row-gap: 0.625em;
-      color: #fff;
-      background-color: #333645;
+      color: $white;
+      background-color: $tuna;
     }
     .links {
       font-size: .8125rem;
@@ -144,11 +144,11 @@
     }
     @media (min-width: 768px){
     .about-footer h4, .about-footer h3 {
-        color: #fff !important;
+        color: $white !important;
     }
     }
     a.ftr-li{
-      color: white;
+      color: $white;
     }
     ul {
       display: block;
@@ -178,14 +178,14 @@
     .copyright {
       display: flex;
       justify-content: space-between;
-      background-color: #212330;
-      color: #fff;
+      background-color: $footer;
+      color: $white;
       font-size: 0.8125rem;
       padding-top: 15px;
       padding-bottom: 0;
     }
     .copyright a{
-      color: white;
+      color: $white;
     }
     @media (min-width: 320px) and (max-width: 767px){
     .licence {

@@ -1245,6 +1245,10 @@ header a {
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.news-input {
+  width: 100%;
+}
+
 #newsletter-name:focus {
   border-color: #5bc0de;
   outline: 0;
@@ -1317,26 +1321,6 @@ label.required:after, label .required:after {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-}
-
-@media screen and (min-width: 992px) {
-  .news-input {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
-}
-
-.news-input {
-  width: 100%;
-}
-
-@media screen and (min-width: 992px) {
-  #your-email, #your-name {
-    width: 450px;
-    display: block;
-    box-sizing: border-box;
-  }
 }
 
 .email {
@@ -3035,6 +3019,94 @@ cite {
 @media (min-width: 992px) and (max-width: 1259px) {
   .welcome-right {
     grid-column-start: 2;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .article-content {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .article-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .article-blocks {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  .article-blocks {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .article-blocks {
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .view-all-mobile {
+    display: block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .block-one {
+    width: 50%;
+    float: left;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .block-two {
+    width: 50%;
+    float: right;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .block-three {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  .block-three {
+    display: none;
+  }
+}
+
+@media (min-width: 1260px) {
+  .block-three {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  .news-input {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  #your-email, #your-name {
+    width: 450px;
+    display: block;
+    box-sizing: border-box;
   }
 }
 

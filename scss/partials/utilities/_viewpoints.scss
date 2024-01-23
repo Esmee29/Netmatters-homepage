@@ -280,7 +280,77 @@ input[type=text] {
         @include viewport(large){
             grid-column-start: 2;
                     }
+    }
+//news//
+.article-content{
+    @include viewport(small){
+        flex-direction: column;
+        }
+        @include viewport(medium){
+            flex-direction: row;
+      flex-wrap: wrap;
+             }  
+}
+  .article-blocks{
+    @include viewport(medium){
+        display: flex;
+      gap: 30px;
+         }
+         @include viewport(large){
+            display: flex;
+            gap: 30px;    
+    }
+    @include viewport(x-large){
+        display: flex;
+      gap: 30px;    
+    }
+          
+  }
+
+    .view-all-mobile {
+        @include viewport(medium){
+       display: block!important;;
+        }
+    }
+ .block-one{
+    @include viewport(medium){
+        width: 50%;
+      float: left;
+    }    
+ }
+.block-two{
+    @include viewport(medium){
+            width: 50%;
+            float: right;
+    }    
+ }        
+
+.block-three{
+    @include viewport(medium){
+        display: none;
     }  
+    @include viewport(large){
+        display: none;    
+}
+@include viewport(x-large){
+    display: block;    
+}
+}  
+  //newsletter//
+    .news-input {
+        @include viewport(large){
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+            } 
+    }
+    #your-email, #your-name {
+        @include viewport(large){
+        width: 450px;
+        display: block;
+        box-sizing: border-box;
+                }
+    }
 //footer//
 .footer{
     @include viewport(large){

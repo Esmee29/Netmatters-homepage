@@ -21,6 +21,10 @@
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
+
+.news-input {
+  width: 100%;
+}
 #newsletter-name:focus {
   border-color: $viking;
   outline: 0;
@@ -86,23 +90,6 @@ label.required:after, label .required:after {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-}
-@media screen and (min-width: 992px){
-.news-input {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-}
-}
-.news-input {
-  width: 100%;
-}
-@media screen and (min-width: 992px){
-#your-email, #your-name {
-    width: 450px;
-    display: block;
-    box-sizing: border-box;
-}
 }
 .email {
   justify-content: flex-start;

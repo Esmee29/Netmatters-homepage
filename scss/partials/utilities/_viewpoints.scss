@@ -241,7 +241,7 @@ input[type=text] {
       grid-template-columns: auto auto auto auto;
                   }         
 } 
-.service-block-one, .btn-software, .service-block-two, .btn-it{
+.service-block-one, .service-block-two{
     @include viewport(large){
         margin-right: 30px;
           }
@@ -249,7 +249,7 @@ input[type=text] {
         margin-right: 30px
               }     
 }
-.service-block-five, .btn-wd, .service-block-six, .btn-cs, .service-block-seven, .btn-dt, .service-block-five, .btn-wd, .service-block-four, .btn-ts {
+.service-block-five, .service-block-six, .service-block-seven, .service-block-five, .service-block-four{
     @include viewport(medium) {
         margin-left: 15px;
         margin-left: 15px;

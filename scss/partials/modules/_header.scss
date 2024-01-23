@@ -285,7 +285,7 @@ header a{
 
 
 .hamburger {
-  margin-left: 0px;
+  margin-left: 10px;
 }
 .nav-bar {
   display: flex;
@@ -454,11 +454,17 @@ color: $white;
   border-color: transparent transparent $punch transparent;}
 .btn-help-contact {
   background-color: $manatee;
-  border-color: $manatee;
 }
 .btn-help-support {
   background-color:$havelock-blue;
-  border-color: $havelock-blue;
+}
+.btn-help-contact:hover {
+  background-color: $waterloo;
+  cursor: pointer;
+}
+.btn-help-support:hover {
+  background-color:$mariner;
+  cursor: pointer;
 }
 .icon-search-1 {
   color: $white;

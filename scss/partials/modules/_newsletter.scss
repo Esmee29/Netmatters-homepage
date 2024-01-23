@@ -1,11 +1,13 @@
  
 .email-newsletter {
-    background-color: $newsletter;
     line-height: 32px;
     font-weight: 600;
     color: $tuna;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.email-background{
+  background-color: $newsletter;
 }
 #newsletter-email {
   box-sizing: border-box;

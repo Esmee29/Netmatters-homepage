@@ -301,9 +301,12 @@ footer {
   width: 100%;
 }
 
+.footer-background {
+  background-color: #333645;
+}
+
 .about-footer {
   padding: 15px 25px;
-  background-color: #333645;
   color: #fff;
   text-decoration: none;
   align-items: flex-start;
@@ -807,7 +810,7 @@ header a {
 }
 
 .hamburger {
-  margin-left: 0px;
+  margin-left: 10px;
 }
 
 .nav-bar {
@@ -1005,12 +1008,20 @@ header a {
 
 .btn-help-contact {
   background-color: #999aa2;
-  border-color: #999aa2;
 }
 
 .btn-help-support {
   background-color: #4183d7;
-  border-color: #4183d7;
+}
+
+.btn-help-contact:hover {
+  background-color: #84858F;
+  cursor: pointer;
+}
+
+.btn-help-support:hover {
+  background-color: #286abd;
+  cursor: pointer;
 }
 
 .icon-search-1 {
@@ -1306,12 +1317,15 @@ header a {
 }
 
 .email-newsletter {
-  background-color: #ddd;
   line-height: 32px;
   font-weight: 600;
   color: #333645;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.email-background {
+  background-color: #ddd;
 }
 
 #newsletter-email {
@@ -2404,7 +2418,6 @@ input[type="checkbox"]:checked:after {
 }
 
 .welcome-netmatters {
-  background-color: #333645;
   color: #fff;
   text-align: left;
 }
@@ -3042,33 +3055,33 @@ cite {
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  .service-block-one, .btn-software, .service-block-two, .btn-it {
+  .service-block-one, .service-block-two {
     margin-right: 30px;
   }
 }
 
 @media (min-width: 1260px) {
-  .service-block-one, .btn-software, .service-block-two, .btn-it {
+  .service-block-one, .service-block-two {
     margin-right: 30px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .service-block-five, .btn-wd, .service-block-six, .btn-cs, .service-block-seven, .btn-dt, .service-block-five, .btn-wd, .service-block-four, .btn-ts {
+  .service-block-five, .service-block-six, .service-block-seven, .service-block-five, .service-block-four {
     margin-left: 15px;
     margin-left: 15px;
   }
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
-  .service-block-five, .btn-wd, .service-block-six, .btn-cs, .service-block-seven, .btn-dt, .service-block-five, .btn-wd, .service-block-four, .btn-ts {
+  .service-block-five, .service-block-six, .service-block-seven, .service-block-five, .service-block-four {
     margin-left: 15px;
     margin-right: 15px;
   }
 }
 
 @media (min-width: 1260px) {
-  .service-block-five, .btn-wd, .service-block-six, .btn-cs, .service-block-seven, .btn-dt, .service-block-five, .btn-wd, .service-block-four, .btn-ts {
+  .service-block-five, .service-block-six, .service-block-seven, .service-block-five, .service-block-four {
     margin-left: 15px;
     margin-right: 15px;
   }

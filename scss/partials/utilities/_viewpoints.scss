@@ -1,5 +1,379 @@
+//header//
+.hidden-sm{
+    @include viewport(small) {
+        display:none;
+         }  
+}
+.hidden-md{
+    @include viewport(medium) {
+        display:none;
+         }
+} 
+.hidden-lg{
+    @include viewport(large) {
+        display:none;
+         }
+} 
+ .hidden-xlg{
+    @include viewport(x-large) {
+        display:none;
+         }
+} 
+.header-large {
+    @include viewport(large){
+    justify-content: space-flex-start;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    }
+}
+.header-small{
+    @include viewport(medium){
+            margin-left: 15px;
+            margin-right: 15px;
+        padding: 15px 20px;
+        }
+}
+
+.logo {
+    @include viewport(x-large) {
+    height: 64px;
+         }
+}
+.search-bar{
+    @include viewport(medium){
+        font-size: 1em;
+        fill: $white;
+        position: relative;
+        display: flex;
+        width: 100%;
+        margin-top: 0;
+        margin-right: -2px !important;
+        height: 57px !important;
+        max-width: 243px;
+    }
+    @include viewport(large){
+        max-width: 66px;
+    }
+}.search-box{
+    @include viewport(medium){
+        padding: 1em;
+        flex: 1;
+        background-color: $white;
+        max-width: 175px;
+        width: 142px;
+        padding: 5px 15px;
+        border: 1px 0 1px 1px $manatee;
+    }    
+}
+input[type=text] {
+    @include viewport(medium){
+        border: 1px solid $input;
+        outline: none;
+        font-size: 1em;
+        height: 57px;
+    }
+}
+.header-row{
+    @include viewport(medium){
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        justify-content: flex-start;    
+    }
+    @include viewport(large){
+        width: 970px;
+    }
+}
+.search-bar button{
+    @include viewport(medium){
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 16px 20px;
+        border-radius: 3px;
+        background-color: $manatee;
+        border: none;
+        outline: none;
+        border-radius: 0 5% 5% 0;
+        cursor: pointer;   
+    }
+}
+.btn-help{
+    @include viewport(x-large){
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    } 
+}
+.header-elements{
+    @include viewport(medium){
+        display: flex;
+        gap: 20px;
+        width: 100%;
+        justify-content: flex-start;
+    }   
+} 
+.nav:hover .triangle{
+    @include viewport(large){
+        border-width: 0 85.5px 35px 85.5px;
+            display: block;
+            content: "";
+            width: 0px;
+            height: 0px;
+            border-style: solid;
+            border-color: transparent;
+            transform: rotate(180deg);
+            position: absolute;
+            z-index: 2;   
+    }  
+    @include viewport(x-large){
+        border-width: 0 85.5px 35px 85.5px;
+        display: block;
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-color: transparent;
+      transform: rotate(180deg);
+      position: absolute;
+      z-index: 2;   
+    }
+}
+.bottom-header{
+    @include viewport(large){
+        background-color: $tuna;   
+    }   
+}
+.header-high{
+    @include viewport(medium){
+        justify-content: space-flex-start;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }      
+}
+.nm-logo-black{
+    @include viewport(medium){
+        max-width: 345px;
+    } 
+    @include viewport(large){
+        position: relative;
+        left: 0;   
+    }           
+}
+//carousel//
+    .banner {
+        @include viewport(large) {
+            display: flex;
+        justify-content: start;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+             }
+        
+    }
+    .wrapper {
+        @include viewport(medium) {
+            width: 750px;
+            margin: auto;
+             }
+        
+    }
+        .banner-heading {
+            @include viewport(large){
+            font-size: 4.2rem;
+            line-height: 5rem;
+            margin-bottom: 0px;
+            }
+        }
+//services//
 .service-heading{
     @include viewport(x-large) {
         width:1200px;
          }  
+}
+.service-blocks{
+    @include viewport(large){
+      display: grid;
+      grid-template-columns: auto auto auto;
+        }
+    @include viewport(x-large) {
+        display: grid;
+      grid-template-columns: auto auto auto;
+            }  
+}
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .service-blocks-bottom {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1259px) {
+    .service-blocks-bottom {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1259px) {
+    .service-block-one, .btn-software {
+      margin-right: 30px;
+    }
+  }
+  
+  @media (min-width: 1260px) {
+    .service-block-one, .btn-software {
+      margin-right: 30px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .service-block-five, .btn-wd {
+      margin-left: 15px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .service-block-six, .btn-cs {
+      margin-right: 15px;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+    .service-block-seven, .btn-dt {
+      margin-left: 15px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1259px) {
+    .service-block-seven, .btn-dt {
+      margin-left: 15px;
+    }
+  }
+  
+  @media (min-width: 1260px) {
+    .service-block-seven, .btn-dt {
+      margin-left: 15px;
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1259px) {
+    .service-block-six, .btn-cs {
+      margin-right: 15px;
+    }
+  }
+  
+  @media (min-width: 1260px) {
+    .service-block-six, .btn-cs {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+    .service-block-six .btn-cs, .btn-cs .btn-cs {
+      margin-left: 0;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1259px) {
+    .service-block-five, .btn-wd {
+      margin-left: 15px;
+    }
+  }
+  
+  @media (min-width: 1260px) {
+    .service-block-five, .btn-wd {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .service-block-four, .btn-ts {
+      margin-right: 15px;
+    }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1259px) {
+    .service-block-four, .btn-ts {
+      margin-right: 15px;
+    }
+  }
+  
+  @media (min-width: 1260px) {
+    .service-block-four, .btn-ts {
+      margin-right: 15px;
+    }
+  }
+  @media (min-width: 1260px) {
+    .service-blocks-bottom {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+  
+  @media (min-width: 1260px) {
+    .service-block-three .p, .btn-dm .p {
+      margin-bottom: 40px;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1259px) {
+
+    .service-block-two, .btn-it {
+      margin-right: 30px;
+    }
+  }
+  
+  @media (min-width: 1260px) {
+    .service-block-two, .btn-it {
+      margin-right: 30px;
+    }
+  }
+//footer//
+.footer{
+    @include viewport(large){
+        flex-direction: row;
+        }   
+}
+.about-footer h4, .about-footer h3{
+    @include viewport(medium) {
+        color: $white !important;
+         }    
+}
+.copyright .license{
+    @include viewport(small){
+        flex-direction: column;
+        }    
+}
+.about-netmatters{
+    @include viewport(x-large) {
+        justify-content: flex-start;
+        width: 397px;
+         }    
+}
+.links{
+    @include viewport(large){
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        }
+    @include viewport(x-large) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        flex-grow: 1;
+        margin-left: -15px;
+        margin-right: -15px;
+            }  
+}
+.footer-container{
+    @include viewport(small){
+        flex-wrap: wrap
+        }      
+} 
+.footer-socials a{
+    @include viewport(small){
+        width: 35%;
+        } 
+}
+.footer-li{
+    @include viewport(medium){
+        margin-top: 0px;
+    }    
 }

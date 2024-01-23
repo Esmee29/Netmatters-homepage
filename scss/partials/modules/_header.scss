@@ -11,13 +11,7 @@
   justify-content: space-between;
   align-items: center;
 }
-@media (min-width: 767px){
-.header-large {
-  justify-content: space-flex-start;
-  padding-top: 25px;
-  padding-bottom: 15px;
-}
-}
+
 .logo-container {
   display: table;
   table-layout: fixed;
@@ -25,101 +19,22 @@
 .logo {
 max-width: 100%;
 }
-@media (min-width: 1260px){
-.logo {
-  height: 64px;
-}
-}
+
 .logo img {
 display: block;
 }
 
-@media (min-width: 992px){
-.search-bar {
-    max-width: 66px;
-}
-}
-@media (min-width: 768px){
-.search-bar {
-    font-size: 1em;
-    fill: $white;
-}
-}
-@media (min-width: 768px){
-.search-bar {
-    position: relative;
-    display: flex;
-    width: 100%;
-    margin-top: 0;
-    margin-right: -2px !important;
-    height: 57px !important;
-    max-width: 243px;
-}
-}
+
 .search-bar {
   display: flex;
   align-items: center;
   margin-right: 15px;
 }
-@media (min-width: 992px) and (max-width: 1259px){
-.search-box {
-    display: none;
-}
-}
-@media (min-width: 768px){
-.search-box {
-    padding: 1em;
-    flex: 1;
-    background-color: $white;
-    max-width: 175px;
-}
-}
-@media (min-width: 767px){
-.search-box {
-    width: 142px;
-    padding: 5px 15px;
-    border: 1px 0 1px 1px $manatee;
-}
-}
-@media (min-width: 768px){
-input[type=text] {
-    border: 1px solid $input;
-    outline: none;
-    font-size: 1em;
-    height: 57px;
-}
-}
-@media (min-width: 767px){
-.header-row {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-    justify-content: flex-start;
-}
-}
-@media (min-width: 768px){
-.search-bar button {
-    color: $white;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 1em;
-    padding: 16px 20px;
-    border-radius: 3px;
-    background-color: $manatee;
-    border: none;
-    outline: none;
-    border-radius: 0 5% 5% 0;
-    cursor: pointer;
-}
-}
+
 #header {
   color: $white;
 }
-@media (max-width: 767px){
-.header-small {
-    padding: 15px 20px;
-}
-}
+
 .header-small{
   padding-top: 20px;
     padding-bottom: 20px;
@@ -216,17 +131,7 @@ input[type=text] {
   padding-right: 0px;
   margin-right: auto;
 }
-@media (min-width: 992px){
-.nm-logo-black {
-  position: relative;
-  left: 0;
-}
-}
-@media (min-width: 768px){
-.nm-logo-black {
-    max-width: 345px;
-} 
-}
+
 .bottom-header a{
   color: $white;
 }
@@ -250,11 +155,7 @@ header .inner .actions .btn {
 }
 
 
-@media (min-width: 992px) {
-.header-row {
-  width: 970px;
-}
-}
+
 .element {
   display: inline-block;
   margin-right: 10px; 
@@ -284,25 +185,7 @@ header a{
 .nav:hover [class^="icon-"]::before {
   color: $white;
 }
-@media (min-width: 1260px){
-.nav:hover .triangle {
-  border-width: 0 85.5px 35px 85.5px;
-}
-}
-@media (min-width: 992px){
-.nav:hover .triangle {
-  display: block;
-  content: "";
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 0px 70px 36px 70px;
-  border-color: transparent;
-  transform: rotate(180deg);
-  position: absolute;
-  z-index: 2;
-}
-}
+
 .nav:hover .sub-menu {
   padding: 30px;
   top: 19px;
@@ -320,12 +203,7 @@ header a{
 .sub-menu-banner a:hover {
   text-decoration: underline;
 }
-@media (min-width: 767px) {
-  .header-high {
-    justify-content: space-flex-start;
-    padding-top: 25px;
-    padding-bottom: 15px;
-  }
+
 
   .hamburger {
     margin: 0px;
@@ -349,12 +227,7 @@ header a{
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
   }
-}
-@media (min-width: 992px){
-.bottom-header {
-  background-color: $tuna;
-}
-}
+
 
 .hamburger {
   margin-left: 0px;
@@ -423,29 +296,13 @@ header a{
 }
 
 
-@media (min-width: 992px) {
-.nav:hover .triangle {
-  border-width: 0 85.5px 35px 85.5px;
-}
-}
-@media (min-width: 1536px) {
-.nav:hover .triangle {
-  border-width: 0 107px 35px 107px;
-}
-}
+
 .bottom-header {
 margin-right: auto;
 margin-left: auto;
 border-left: $tuna solid 14px;
 }
-@media (min-width: 767px){
-  .header-elements {
-      display: flex;
-      gap: 20px;
-      width: 100%;
-      justify-content: flex-start;
-  }
-}
+
 
 .btn-help {
 height: 56px;
@@ -455,13 +312,8 @@ padding: 5px 10px;
 width: 151px;
 border-radius: 3px;
 }
-@media (min-width: 1260px){
-.btn-help {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-}
+
+
 .search-form-tablet-btn {
   width: 63px;
   border-radius: 0 3px 3px 0;
@@ -476,12 +328,8 @@ border-radius: 3px;
 .sub-menu-banner-title {
 color: $white;
 }
-@media (min-width: 768px) and (max-width: 991px){
-  .header-small{
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-}
+
+
 .bespoke-color {
   background-color: $blue-bayoux;
 }

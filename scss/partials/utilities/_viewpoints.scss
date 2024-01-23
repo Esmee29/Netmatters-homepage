@@ -202,131 +202,85 @@ input[type=text] {
       grid-template-columns: auto auto auto;
             }  
 }
-  
-  @media (min-width: 768px) and (max-width: 991px) {
-    .service-blocks-bottom {
-      display: grid;
+.service-blocks-bottom{
+    @include viewport(medium) {
+        display: grid;
       grid-template-columns: auto auto;
-    }
-  }
-  
-  @media (min-width: 992px) and (max-width: 1259px) {
-    .service-blocks-bottom {
-      display: grid;
-      grid-template-columns: auto auto;
-    }
-  }
-  
-  @media (min-width: 992px) and (max-width: 1259px) {
-    .service-block-one, .btn-software {
-      margin-right: 30px;
-    }
-  }
-  
-  @media (min-width: 1260px) {
-    .service-block-one, .btn-software {
-      margin-right: 30px;
-    }
-  }
-  
-  @media (min-width: 768px) and (max-width: 991px) {
-    .service-block-five, .btn-wd {
-      margin-left: 15px;
-    }
-  }
-  
-  @media (min-width: 768px) and (max-width: 991px) {
-    .service-block-six, .btn-cs {
-      margin-right: 15px;
-    }
-  }
-  
-  @media (min-width: 768px) and (max-width: 991px) {
-    .service-block-seven, .btn-dt {
-      margin-left: 15px;
-    }
-  }
-  
-  @media (min-width: 992px) and (max-width: 1259px) {
-    .service-block-seven, .btn-dt {
-      margin-left: 15px;
-    }
-  }
-  
-  @media (min-width: 1260px) {
-    .service-block-seven, .btn-dt {
-      margin-left: 15px;
-    }
-  }
-
-  @media (min-width: 992px) and (max-width: 1259px) {
-    .service-block-six, .btn-cs {
-      margin-right: 15px;
-    }
-  }
-  
-  @media (min-width: 1260px) {
-    .service-block-six, .btn-cs {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-    .service-block-six .btn-cs, .btn-cs .btn-cs {
-      margin-left: 0;
-    }
-  }
-  @media (min-width: 992px) and (max-width: 1259px) {
-    .service-block-five, .btn-wd {
-      margin-left: 15px;
-    }
-  }
-  
-  @media (min-width: 1260px) {
-    .service-block-five, .btn-wd {
-      margin-left: 15px;
-      margin-right: 15px;
-    }
-  }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .service-block-four, .btn-ts {
-      margin-right: 15px;
-    }
-  }
-  
-  @media (min-width: 992px) and (max-width: 1259px) {
-    .service-block-four, .btn-ts {
-      margin-right: 15px;
-    }
-  }
-  
-  @media (min-width: 1260px) {
-    .service-block-four, .btn-ts {
-      margin-right: 15px;
-    }
-  }
-  @media (min-width: 1260px) {
-    .service-blocks-bottom {
-      display: grid;
+         }
+    @include viewport(large){
+    display: grid;
+    grid-template-columns: auto auto auto;
+        }
+        @include viewport(x-large) {
+            display: grid;
       grid-template-columns: auto auto auto auto;
-    }
-  }
-  
-  @media (min-width: 1260px) {
-    .service-block-three .p, .btn-dm .p {
-      margin-bottom: 40px;
-    }
-  }
-  @media (min-width: 992px) and (max-width: 1259px) {
+                  }         
+} 
+.service-block-one, .btn-software, .service-block-two, .btn-it{
+    @include viewport(large){
+        margin-right: 30px;
+          }
+      @include viewport(x-large) {
+        margin-right: 30px
+              }     
+}
+.service-block-five, .btn-wd, .service-block-six, .btn-cs, .service-block-seven, .btn-dt, .service-block-five, .btn-wd, .service-block-four, .btn-ts {
+    @include viewport(medium) {
+        margin-left: 15px;
+        margin-left: 15px;
+         }
+         @include viewport(large){
+            margin-left: 15px;
+            margin-right: 15px;
+                }
+                @include viewport(x-large) {
+                    margin-left: 15px;
+      margin-right: 15px;
+                          }    
+} 
 
-    .service-block-two, .btn-it {
-      margin-right: 30px;
+    .service-block-three .p, .btn-dm .p {
+        @include viewport(x-large) {
+            margin-bottom: 40px;
+                  }  
+      
     }
-  }
-  
-  @media (min-width: 1260px) {
-    .service-block-two, .btn-it {
-      margin-right: 30px;
+//welcome//
+    .welcome-grid {
+        @include viewport(large){
+            display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 15px;
+                }
+        
     }
-  }
+    .welcome-left {
+        @include viewport(large){
+        grid-column-start: 1;
+                }
+    }
+ .welcome-grid h2   
+    .welcome-grid h2 {
+        @include viewport(large){
+            color: $white;
+        font-weight: 600;
+        font-size: 2.25rem;
+                    }
+        
+    }
+        .welcome-grid .button-black {
+            @include viewport(large){
+            padding: 10px 30px;
+            margin-right: 30px;
+            margin-bottom: 17px;
+                        }
+        }
+        
+    .welcome-right {
+        @include viewport(large){
+            grid-column-start: 2;
+                    }
+    }  
 //footer//
 .footer{
     @include viewport(large){

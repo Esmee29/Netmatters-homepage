@@ -32,16 +32,6 @@
 .view-all:hover a {
   text-decoration: underline;
 }
-@media (min-width: 768px){
-.mobile {
-    display: none;
-}
-}
-@media (min-width: 320px) and (max-width: 767px){
-.large-screen {
-    display: none;
-}
-}
 .latest-articles {
     background-color: $white;
   }
@@ -51,19 +41,6 @@
     padding-top: 15px;
     padding-bottom: 15px;
     text-align: left;
-  }
-  
-  @media (min-width: 320px) and (max-width: 767px) {
-    .article-content {
-      flex-direction: column;
-    }
-  }
-  
-  @media (min-width: 768px) and (max-width: 991px) {
-    .article-content {
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
   }
   
   .article-blocks {
@@ -76,27 +53,7 @@
   .article-blocks h3 a {
     text-decoration: none;
   }
-  
-  @media (min-width: 768px) and (max-width: 991px) {
-    .article-blocks {
-      display: flex;
-      gap: 30px;
-    }
-  }
-  
-  @media (min-width: 992px) and (max-width: 1259px) {
-    .article-blocks {
-      display: flex;
-      gap: 30px;
-    }
-  }
-  
-  @media (min-width: 1260px) {
-    .article-blocks {
-      display: flex;
-      gap: 30px;
-    }
-  }
+
   .article-link {
     position: absolute;
     top: 0;
@@ -110,11 +67,6 @@
   }
   .article-link:hover {
     text-decoration: none;
-  }
-  @media (max-width: 767px){
-.view-all-mobile {
-    display: block!important;
-}
   }
   .view-all a{text-decoration: none;
     color: $tuna;
@@ -139,12 +91,7 @@
   width: 100%;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .block-one {
-    width: 50%;
-    float: left;
-  }
-}
+
 .block-one {
   top: 0;
   border: 1px solid $input;
@@ -175,12 +122,7 @@
   color: $punch;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .block-two {
-    width: 50%;
-    float: right;
-  }
-}
+
 .block-three {
   top: 0;
   border: 1px solid $input;
@@ -201,23 +143,6 @@
   color: $havelock-blue;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .block-three {
-    display: none;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1259px) {
-  .block-three {
-    display: none;
-  }
-}
-
-@media (min-width: 1260px) {
-  .block-three {
-    display: block;
-  }
-}
 .img-container {
   position: relative;
   width: 100%;

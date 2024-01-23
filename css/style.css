@@ -276,7 +276,7 @@ footer {
 }
 
 .btn-whyus {
-  margin-top: 5px;
+  margin: 5px 0;
   text-decoration: none;
   height: 50px;
   padding: 5px 20px;
@@ -285,8 +285,6 @@ footer {
   line-height: 50px;
   font-size: 1.2rem;
   width: 250px;
-  margin-left: auto;
-  margin-right: auto;
   text-transform: uppercase;
 }
 
@@ -587,21 +585,12 @@ li {
   }
 }
 
-.icon-search {
-  margin-bottom: 0;
-}
-
 .search-submit {
   font-size: 23px;
   border: none;
   width: 63px;
   border-radius: 0 3px 3px 0;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
-  background-color: #999aa2;
-  border: none;
-  cursor: pointer;
+  height: 56px;
 }
 
 .form-control {
@@ -1036,6 +1025,22 @@ header a {
   color: #67809F;
 }
 
+.icon-format-nav-telephone {
+  color: #d64541;
+}
+
+.icon-format-nav-code {
+  color: #926FB1;
+}
+
+.icon-format-nav-security {
+  color: #F62459;
+}
+
+.icon-format-nav-devloper {
+  color: #d64541;
+}
+
 .icon-display {
   color: #4183d7;
 }
@@ -1048,8 +1053,8 @@ header a {
   color: #fff;
 }
 
-.icon-googlescholar-service {
-  color: #fff;
+.icon-marketing {
+  color: #2ecc71;
 }
 
 .latest-articles .headings-container {
@@ -1661,10 +1666,6 @@ input[type="checkbox"]:checked:after {
   transition: .5s;
 }
 
-.service-heading .float-left strong {
-  color: #333645;
-}
-
 .icon-circle {
   display: inline-block;
   color: #fff;
@@ -1846,30 +1847,6 @@ input[type="checkbox"]:checked:after {
   margin-bottom: 0;
   line-height: 35px;
   align-self: center;
-}
-
-.icon-googlescholar-service:hover {
-  color: #d64541;
-}
-
-.icon-marketing {
-  color: #2ecc71;
-}
-
-.icon-format-nav-telephone {
-  color: #d64541;
-}
-
-.icon-format-nav-code {
-  color: #926FB1;
-}
-
-.icon-format-nav-security {
-  color: #F62459;
-}
-
-.icon-format-nav-devloper {
-  color: #F62459;
 }
 
 .icon-circle-software {
@@ -2240,7 +2217,7 @@ input[type="checkbox"]:checked:after {
   background-color: #fff;
 }
 
-.service-block-seven:hover .icon-graduation-cap, .btn-dt:hover .icon-graduation-cap {
+.service-block-seven:hover .icon-googlescholar-service, .btn-dt:hover .icon-googlescholar-service {
   color: #CE4125;
   background-color: #fff;
 }
@@ -2969,6 +2946,18 @@ cite {
 
 @media (min-width: 992px) and (max-width: 1259px) {
   .banner {
+    width: 950px;
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1260px) {
+  .banner {
+    width: 950px;
     display: flex;
     justify-content: start;
     text-align: left;
@@ -2989,6 +2978,25 @@ cite {
     font-size: 4.2rem;
     line-height: 5rem;
     margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .banner-heading {
+    font-size: 4.2rem;
+    line-height: 5rem;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .banner {
+    width: 950px;
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

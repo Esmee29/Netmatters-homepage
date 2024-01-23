@@ -164,12 +164,21 @@ input[type=text] {
 //carousel//
     .banner {
         @include viewport(large) {
-            display: flex;
-        justify-content: start;
-        text-align: left;
-        margin-left: auto;
-        margin-right: auto;
+            width: 950px;
+                display: flex;
+                justify-content: start;
+                text-align: left;
+                margin-left: auto;
+                margin-right: auto;
              }
+             @include viewport(x-large) {
+                width: 950px;
+                    display: flex;
+                    justify-content: start;
+                    text-align: left;
+                    margin-left: auto;
+                    margin-right: auto;
+                 }
         
     }
     .wrapper {
@@ -185,7 +194,23 @@ input[type=text] {
             line-height: 5rem;
             margin-bottom: 0px;
             }
+            @include viewport(x-large){
+                font-size: 4.2rem;
+                line-height: 5rem;
+                margin-bottom: 0px;
+                }
         }
+
+        @media screen and (min-width: 992px){
+            .banner {
+                width: 950px;
+                display: flex;
+                justify-content: start;
+                text-align: left;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            }
 //services//
 .service-heading{
     @include viewport(x-large) {

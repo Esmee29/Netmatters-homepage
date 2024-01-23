@@ -80,8 +80,7 @@ display: block;
   border: none;
   width: 63px;
     border-radius: 0 3px 3px 0;
-    height: 56px
-    cursor: pointer;
+    height: 56px;
 }
 .form-control {
   height: 47px;
@@ -470,7 +469,20 @@ color: $tuna;
 .icon-format-nav-laptop {
   color: $hoki;
 }
+.icon-format-nav-telephone {
+  color: $valencia;
+} 
+.icon-format-nav-code {
+  color: $wisteria;
+} 
 
+.icon-format-nav-security {
+  color: $radical-red;
+}
+ 
+.icon-format-nav-devloper {
+  color: $valencia;
+} 
 .icon-display {
     color: $havelock-blue;}
 .icon-display-service{
@@ -479,6 +491,7 @@ color: $tuna;
 .icon-digital{
   color: $white;
 }
-.icon-googlescholar-service{
-  color: $white; 
-}
+   
+.icon-marketing {
+  color: $shamrock;
+} 

@@ -16,9 +16,7 @@
     top: 0;
     transition: .5s;
   }
-.service-heading .float-left strong{
-  color: $tuna;
-}
+
   .icon-circle {
     display: inline-block;
     color: $white;
@@ -181,27 +179,7 @@ line-height: 62px;
     line-height: 35px;
     align-self: center;
   }
-  
-.icon-googlescholar-service:hover{
-    color: $valencia; 
-}     
-.icon-marketing {
-        color: $shamrock;
-      } 
-.icon-format-nav-telephone {
-        color: $valencia;
-      } 
-.icon-format-nav-code {
-        color: $wisteria;
-      } 
-
-.icon-format-nav-security {
-        color: $radical-red;
-      }
-       
-.icon-format-nav-devloper {
-        color: $radical-red;
-      } 
+    
       
       .icon-circle-software {
         background-color: $hoki;
@@ -525,11 +503,10 @@ line-height: 62px;
     background-color: $white;
   }
   
-  .service-block-seven:hover .icon-graduation-cap, .btn-dt:hover .icon-graduation-cap {
+  .service-block-seven:hover .icon-googlescholar-service, .btn-dt:hover .icon-googlescholar-service {
     color: $punch;
     background-color: $white;
   }
-  
   
   .btn-software {
     display: inline-block;

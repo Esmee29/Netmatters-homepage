@@ -32,6 +32,8 @@
 .container {
   margin-right: auto;
   margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .container-header {
@@ -44,11 +46,6 @@
   transition: all .5s;
   z-index: 10;
   left: 0;
-}
-
-.other {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 html {
@@ -196,20 +193,28 @@ footer {
   padding-bottom: 50px;
 }
 
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
 @media screen and (min-width: 992px) {
-  .align-center {
+  .center {
     width: 970px;
   }
 }
 
 @media screen and (min-width: 1260px) {
-  .align-center {
+  .center {
     width: 1200px;
   }
 }
 
 @media (min-width: 768px) {
-  .align-center {
+  .center {
     margin: auto;
   }
 }
@@ -1967,12 +1972,18 @@ input[type="checkbox"]:checked:after {
 }
 
 .icon-circle {
-  width: 65px;
-  height: 65px;
+  display: inline-block;
+  color: #fff;
+  font-size: 32px;
+  padding: 15px;
   border-radius: 50%;
-  text-align: center;
-  align-self: center;
-  margin: 0 auto 17px;
+  margin: 0px auto 17px;
+}
+
+.icon-format-services {
+  font-size: 2rem;
+  line-height: 62px;
+  color: white;
 }
 
 .service-list h2 {
@@ -2630,12 +2641,6 @@ input[type="checkbox"]:checked:after {
   background-color: #fff;
 }
 
-.icon-format-services {
-  font-size: 2rem;
-  line-height: 62px;
-  color: white;
-}
-
 .btn-software {
   display: inline-block;
   font-weight: 400;
@@ -2942,6 +2947,20 @@ cite {
   -moz-osx-font-smoothing: grayscale;
 }
 
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .icon-security:before {
   content: "\e902";
 }
@@ -3166,6 +3185,10 @@ cite {
   content: "\eaca";
 }
 
+.icon-clock:before {
+  content: "\e94f";
+}
+
 .icon-search-1 {
   color: #fff;
 }
@@ -3182,7 +3205,23 @@ cite {
   color: #4183D7;
 }
 
-.icon-bar-graph {
+.icon-display-service {
+  color: #fff;
+}
+
+.icon-digital {
+  color: #fff;
+}
+
+.icon-googlescholar-service {
+  color: #fff;
+}
+
+.icon-googlescholar-service:hover {
+  color: #D64542;
+}
+
+.icon-marketing {
   color: #2DCC71;
 }
 
@@ -3198,7 +3237,7 @@ cite {
   color: #F62459;
 }
 
-.icon-googlescholar {
+.icon-format-nav-devloper {
   color: #F62459;
 }
 
@@ -3228,4 +3267,10 @@ cite {
 
 .icon-circle-dt {
   background-color: #ce4125;
+}
+
+@media (min-width: 1260px) {
+  .service-heading {
+    width: 1200px;
+  }
 }

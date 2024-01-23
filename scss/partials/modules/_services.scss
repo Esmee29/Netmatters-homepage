@@ -18,14 +18,18 @@
   }
   
   .icon-circle {
-    width: 65px;
-    height: 65px;
+    display: inline-block;
+    color: #fff;
+    font-size: 32px;
+    padding: 15px;
     border-radius: 50%;
-    text-align: center;
-    align-self: center;
-    margin: 0 auto 17px;
+    margin: 0px auto 17px;
 }
-
+.icon-format-services {
+  font-size: 2rem;
+line-height: 62px;
+  color: white;
+}
 .service-list h2 {
     font-size: 2.7rem;
   }
@@ -618,11 +622,7 @@
     color: #ce4125;
     background-color: #fff;
   }
-  .icon-format-services {
-    font-size: 2rem;
-    line-height: 62px;
-    color: white;
-  }
+  
   
   .btn-software {
     display: inline-block;

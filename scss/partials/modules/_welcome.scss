@@ -4,12 +4,16 @@
     color: $white;
     text-align: left;
 }
+.background-grey{
+ background-color: $tuna;   
+}
 .welcome-left a{
     color: $white;
    }
 .welcome-left .button-black {
     margin-bottom: 30px;
 }
+
 .button-black {
     background-color: $charade;
     border: 1px solid transparent;

@@ -16,7 +16,9 @@
     top: 0;
     transition: .5s;
   }
-  
+.service-heading .float-left strong{
+  color: $tuna;
+}
   .icon-circle {
     display: inline-block;
     color: $white;

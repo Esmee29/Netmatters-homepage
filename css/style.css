@@ -164,6 +164,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .p {
@@ -343,9 +344,6 @@ footer {
   background-color: #79539A;
   color: #fff;
   text-decoration: none;
-}
-
-.btn-whyus:hover {
   cursor: pointer;
 }
 
@@ -1314,7 +1312,7 @@ header a {
 
 .headings-news a {
   text-decoration: none;
-  color: #25262c;
+  color: #333645;
 }
 
 .view-all a {
@@ -1411,7 +1409,6 @@ header a {
   text-decoration: none;
   text-align: left;
   font-size: 13px;
-  color: #b9bbc5;
 }
 
 .article-link:hover {
@@ -1426,7 +1423,7 @@ header a {
 
 .view-all a {
   text-decoration: none;
-  color: #25262c;
+  color: #333645;
   font-size: 26;
 }
 
@@ -1444,7 +1441,7 @@ header a {
 }
 
 .block-one h3 a {
-  color: #ce4125;
+  color: #CE4125;
 }
 
 .block-one img {
@@ -1486,7 +1483,7 @@ header a {
 }
 
 .block-two h3 a {
-  color: #ce4125;
+  color: #CE4125;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1583,11 +1580,11 @@ header a {
 }
 
 .btn-tooltip-one {
-  background-color: #ce4125;
+  background-color: #CE4125;
 }
 
 .btn-tooltip-three {
-  background-color: #4183D7;
+  background-color: #4183d7;
 }
 
 .block-content p {
@@ -1597,11 +1594,11 @@ header a {
 }
 
 .btn-news-one {
-  background-color: #ce4125;
+  background-color: #CE4125;
 }
 
 .btn-news-three {
-  background-color: #4183D7;
+  background-color: #4183d7;
 }
 
 .btn-news {
@@ -1619,7 +1616,7 @@ header a {
 
 .headings-bar a {
   text-decoration: none;
-  color: #25262c;
+  color: #333645;
 }
 
 .email-newsletter {
@@ -1640,7 +1637,7 @@ header a {
   font-size: 14px;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #E5E5E5;
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -1667,7 +1664,7 @@ header a {
   font-size: 14px;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #e5e5e5;
+  border: 1px solid #E5E5E5;
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -1702,7 +1699,7 @@ header a {
 
 label.required:after, label .required:after {
   content: " *";
-  color: #d24d57;
+  color: #d64541;
 }
 
 .newsletter {
@@ -2899,7 +2896,7 @@ input[type="checkbox"]:checked:after {
 }
 
 .welcome-netmatters {
-  background-color: #323544;
+  background-color: #333645;
   color: #fff;
   text-align: left;
 }
@@ -2919,7 +2916,7 @@ input[type="checkbox"]:checked:after {
 }
 
 .welcome-left a {
-  color: white;
+  color: #fff;
 }
 
 @media screen and (min-width: 992px) {
@@ -2946,6 +2943,11 @@ input[type="checkbox"]:checked:after {
   background-color: #272936;
   border: 1px solid transparent;
   transition: 0.3s;
+}
+
+.button-black:hover {
+  background-color: #121318;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 992px) {
@@ -2990,11 +2992,23 @@ cite {
   align-items: baseline;
 }
 
+.btn-reviews-google:hover {
+  background-color: #166AF4;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .btn-reviews-trustpilot {
   background-color: #00b67b;
   display: inline-block;
   align-items: baseline;
   white-space: nowrap;
+}
+
+.btn-reviews-trustpilot:hover {
+  background-color: #009B69;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @font-face {

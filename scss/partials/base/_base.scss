@@ -151,6 +151,7 @@ a{
 }
 a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
   .p {
     display: block;
@@ -235,22 +236,31 @@ box-sizing: border-box;
 $white:#fff;
 
 $black:#000;
+$woodsmoke:#121318; //black button hover//
+$charade:#272936; //black button//
 $tuna:#333645; //search bar 2//
 $manatee:#999aa2; //search bar 1//
+$gray-chateau:#a3a8ac; //cite//
 $alto:#CECECE;
 $mercury:#E5E5E5;
 $input:#ccc;
+$newsletter:#ddd;
 
 
 $blue-bayoux:#526781; //Bespoke software Nav//
 $hoki:#67809F; //software//
+$blue-ribbon:#166AF4; //google review hover//
 $havelock-blue:#4183d7; //support button and IT//
+$dodger-blue:#4387f6; //google reviews//
 $mariner:#286abd; //IT Nav//
 $viking:#5bc0de; //focus//
 
-
+$jade:#00b67b; //trustpilot//
+$green-haze:#009B69; //trustpilot hover/
 $eucalyptus:#25A25A; //digital marketing nav
 $shamrock:#2ecc71; //digital marketing background//
+$jungle-green:#26AB5F; //partner slideshow//
+
 
 $punch:#CE4125; //developer course nav//
 $valencia:#d64541; //telecoms services triangle//

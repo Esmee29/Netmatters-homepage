@@ -12,7 +12,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
-    border: 1px solid #ccc;
+    border: 1px solid $input;
     top: 0;
     transition: .5s;
   }
@@ -105,7 +105,7 @@ line-height: 62px;
   }
   .service-block-one,  {
     top: 0;
-    border: 1px solid #ccc;
+    border: 1px solid $input;
     border-radius: 0 0 3px 3px;
     flex-direction: column;
     margin-bottom: 30px;
@@ -177,7 +177,7 @@ line-height: 62px;
   
   .service-block-two, .btn-it {
     top: 0;
-    border: 1px solid #ccc;
+    border: 1px solid $input;
     border-radius: 0 0 3px 3px;
     flex-direction: column;
     margin-bottom: 30px;
@@ -289,7 +289,7 @@ line-height: 62px;
   }
   .service-block-three, .btn-dm {
     top: 0;
-    border: 1px solid #ccc;
+    border: 1px solid $input;
     border-radius: 0 0 3px 3px;
     flex-direction: column;
     margin-bottom: 30px;
@@ -358,7 +358,7 @@ line-height: 62px;
   
   .service-block-four, .btn-ts {
     top: 0;
-    border: 1px solid #ccc;
+    border: 1px solid $input;
     border-radius: 0 0 3px 3px;
     flex-direction: column;
     margin-bottom: 30px;
@@ -433,7 +433,7 @@ line-height: 62px;
   }
   .service-block-five, .btn-wd {
     top: 0;
-    border: 1px solid #ccc;
+    border: 1px solid $input;
     border-radius: 0 0 3px 3px;
     flex-direction: column;
     margin-bottom: 30px;
@@ -508,7 +508,7 @@ line-height: 62px;
   }
   .service-block-six, .btn-cs {
     top: 0;
-    border: 1px solid #ccc;
+    border: 1px solid $input;
     border-radius: 0 0 3px 3px;
     flex-direction: column;
     margin-bottom: 30px;
@@ -587,7 +587,7 @@ line-height: 62px;
   }
   .service-block-seven, .btn-dt {
     top: 0;
-    border: 1px solid #ccc;
+    border: 1px solid $input;
     border-radius: 0 0 3px 3px;
     flex-direction: column;
     margin-bottom: 30px;

@@ -1,7 +1,7 @@
 
 .welcome-netmatters {
-    background-color: #323544;
-    color: #fff;
+    background-color: $tuna;
+    color: $white;
     text-align: left;
 }
 @media screen and (min-width: 992px){
@@ -17,11 +17,11 @@
 }
 }
 .welcome-left a{
- color: white;
+ color: $white;
 }
 @media screen and (min-width: 992px){
 .welcome-grid h2 {
-    color: #fff;
+    color: $white;
     font-weight: 600;
     font-size: 2.25rem;
 }
@@ -38,9 +38,13 @@
   }
   }
 .button-black {
-    background-color: #272936;
+    background-color: $charade;
     border: 1px solid transparent;
     transition: 0.3s;
+}
+.button-black:hover{
+    background-color: $woodsmoke;
+    cursor: pointer;
 }
 @media screen and (min-width: 992px){
 .welcome-right {
@@ -60,26 +64,37 @@ em {
 }
 cite {
     font-weight: 600;
-    color: #a3a8ac;
+    color: $gray-chateau;
     font-size: 1.1rem;
 }
 .btn-reviews {
-    color: #fff;
-    background-color: #333645;
+    color: $white;
+    background-color: $tuna;
     border-radius: 6px;
     padding: 10px 30px;
     margin-top: 20px;
     font-size: 20px;
     display: block;
 }
+
 .btn-reviews-google {
     display: inline-block;
-    background-color: #4387f6;
+    background-color: $dodger-blue;
     align-items: baseline;
 }
+.btn-reviews-google:hover {
+    background-color: $blue-ribbon;
+    text-decoration: none;
+    cursor: pointer;
+}
 .btn-reviews-trustpilot {
-    background-color: #00b67b;
+    background-color: $jade;
     display: inline-block;
     align-items: baseline;
     white-space: nowrap;
+}
+.btn-reviews-trustpilot:hover {
+    background-color: $green-haze;
+    text-decoration: none;
+    cursor: pointer;
 }

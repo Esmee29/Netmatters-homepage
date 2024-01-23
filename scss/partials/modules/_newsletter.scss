@@ -1,9 +1,9 @@
  
 .email-newsletter {
-    background-color: #ddd;
+    background-color: $newsletter;
     line-height: 32px;
     font-weight: 600;
-    color: #333645;
+    color: $tuna;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -11,23 +11,23 @@
   box-sizing: border-box;
   height: 47px;
   padding: 5px 15px;
-  border-color: #ccc;
+  border-color: $input;
   width: 100%;
   font-size: 14px;
-  background-color: #fff;
+  background-color: $white;
   background-image: none;
-  border: 1px solid #e5e5e5;
+  border: 1px solid $mercury;
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 #newsletter-name:focus {
-  border-color: #5bc0de;
+  border-color: $viking;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 #newsletter-email:focus {
-  border-color: #5bc0de;
+  border-color: $viking;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
@@ -35,12 +35,12 @@
   box-sizing: border-box;
   height: 47px;
   padding: 5px 15px;
-  border-color: #ccc;
+  border-color: $input;
   width: 100%;
   font-size: 14px;
-  background-color: #fff;
+  background-color: $white;
   background-image: none;
-  border: 1px solid #e5e5e5;
+  border: 1px solid $mercury;
   border-radius: 2px;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
@@ -58,9 +58,9 @@
   margin-bottom: 15px; 
 }
 .btn-subscribe {
-   color: #fff;
-  background-color: #333645;
-  border-color: #333645;
+   color: $white;
+  background-color: $tuna;
+  border-color: $tuna;
   height: auto;
   line-height: 35px;
   padding: 5px 15px;
@@ -72,7 +72,7 @@
   
 label.required:after, label .required:after {
   content: " *";
-  color: #d24d57;
+  color: $valencia;
 }
 .newsletter{
   text-align: left;
@@ -120,8 +120,8 @@ input[type="checkbox"] {
   min-width: 26px;
   max-height: 26px;
   max-width: 26px;
-  background-color: #ddd;
-  border: 3px solid #333645;
+  background-color: $newsletter;
+  border: 3px solid $tuna;
   border-radius: 3px;
   cursor: pointer;
   display: flex;
@@ -137,7 +137,7 @@ input[type="checkbox"] {
 input[type="checkbox"]:after {
   font-family: 'icomoon';
   content: "\ea10";
-  color: #fff;
+  color: $white;
   font-size: 1.2em;
   display: none;
   padding-top: 2px;
@@ -145,7 +145,7 @@ input[type="checkbox"]:after {
 }
 
 input[type="checkbox"]:checked {
-  background-color: #333645;
+  background-color: $tuna;
 }
 
 input[type="checkbox"]:checked:after {
@@ -159,5 +159,5 @@ input[type="checkbox"]:checked:after {
 
 .privacy-policy a{
   text-decoration: underline;
-    color: #000;
+    color: $black;
 }

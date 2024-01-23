@@ -4,7 +4,7 @@
   justify-content: space-between;
 }
 .latest-articles {
-    background-color: #fff;
+    background-color: $white;
   }
 
 .block-content{
@@ -15,12 +15,12 @@
   }
   .headings-news {
     display: flex;
-    background-color: #fff;
+    background-color: $white;
     justify-content: space-between;
 }
 .headings-news a {
     text-decoration: none;
-    color: #25262c;
+    color: $tuna;
 }
 .view-all a {
     font-size: 26px;
@@ -43,7 +43,7 @@
 }
 }
 .latest-articles {
-    background-color: #fff;
+    background-color: $white;
   }
   .article-content {
     flex-wrap: wrap;
@@ -107,7 +107,6 @@
     text-decoration: none;
     text-align: left;
     font-size: 13px;
-    color: #b9bbc5;
   }
   .article-link:hover {
     text-decoration: none;
@@ -118,7 +117,7 @@
 }
   }
   .view-all a{text-decoration: none;
-    color: #25262c;
+    color: $tuna;
     font-size: 26
 }
   .readtime {
@@ -134,7 +133,7 @@
   transition: .5s ease;
 }
 .block-one h3 a {
-  color: #ce4125;
+  color: $punch;
 }
 .block-one img {
   width: 100%;
@@ -148,7 +147,7 @@
 }
 .block-one {
   top: 0;
-  border: 1px solid #ccc;
+  border: 1px solid $input;
   border-radius: 0 0 3px 3px;
   flex-direction: column;
   margin-bottom: 30px;
@@ -158,7 +157,7 @@
 }
 .block-two {
   top: 0;
-  border: 1px solid #ccc;
+  border: 1px solid $input;
   border-radius: 0 0 3px 3px;
   flex-direction: column;
   margin-bottom: 30px;
@@ -173,7 +172,7 @@
 }
 
 .block-two h3 a {
-  color: #ce4125;
+  color: $punch;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -184,7 +183,7 @@
 }
 .block-three {
   top: 0;
-  border: 1px solid #ccc;
+  border: 1px solid $input;
   border-radius: 0 0 3px 3px;
   flex-direction: column;
   margin-bottom: 30px;
@@ -199,7 +198,7 @@
 }
 
 .block-three h3 a {
-  color: #4183d7;
+  color: $havelock-blue;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -232,7 +231,7 @@
 .user {
   margin-top: 30px;
   padding-top: 30px;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid $input;
   
 }
 .user > .avatar {
@@ -250,7 +249,7 @@ line-height: 1.375rem;
 }
 .btn-tooltip {
   position: absolute;
-  color: #fff;
+  color: $white;
   text-transform: uppercase;
   text-decoration: none;
   font-size: .75rem;
@@ -262,10 +261,10 @@ line-height: 1.375rem;
   z-index: 1;
 }
 .btn-tooltip-one {
-  background-color: #ce4125;
+  background-color: $punch;
 }
 .btn-tooltip-three{
-  background-color: #4183D7;
+  background-color: $havelock-blue;
 }
 .block-content p {
   text-wrap: wrap;
@@ -273,10 +272,10 @@ line-height: 1.375rem;
   font-size: .8125rem;
 }
 .btn-news-one {
-  background-color: #ce4125;
+  background-color: $punch;
 }
 .btn-news-three {
-  background-color: #4183D7;
+  background-color: $havelock-blue;
 }
 .btn-news {
   text-align: center;
@@ -287,10 +286,10 @@ line-height: 1.375rem;
 
 .headings-bar {
   display: flex;
-  background-color: #fff;
+  background-color: $white;
   justify-content: space-between;
 }
 .headings-bar a {
   text-decoration: none;
-  color: #25262c;
+  color: $tuna;
 }

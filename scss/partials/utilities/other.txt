@@ -1,0 +1,164 @@
+ &-help {
+      font-size: 1.125rem;
+  }
+
+  .sub-menu-banner-title {
+color: $white;
+}
+
+
+.bespoke-color {
+  background-color: $blue-bayoux;
+}
+.it-support-color {
+  background-color: $mariner;
+}
+.digital-color {
+  background-color: $eucalyptus;
+}
+.telecoms-color {
+  background-color: $tall-poppy;
+}
+.web-color {
+  background-color: $affair;
+}
+.cyber-color {
+  background-color: $red-ribbon;
+}
+.developer-color {
+  background-color: $cognac;
+}
+
+.bespoke-head:hover:hover {
+  background-color: $hoki;
+}
+.bespoke-head:hover:hover .triangle {
+  border-color: transparent transparent $hoki transparent;
+}
+.it-head:hover:hover {
+    background-color: $havelock-blue;
+  }
+  .it-head:hover:hover .triangle {
+    border-color: transparent transparent $havelock-blue transparent;
+  }
+.digital-head:hover:hover {
+  background-color: $shamrock;
+}
+.digital-head:hover:hover .triangle {
+  border-color: transparent transparent $shamrock transparent;
+}
+.digital-head:hover > .icon-bar-graph-h:before {
+  color: $white;
+}
+.telecoms-head:hover:hover {
+  background-color: $valencia;
+}
+.telecoms-head:hover:hover .triangle {
+  border-color: transparent transparent $valencia transparent;
+}
+.web-head:hover:hover {
+  background-color: $wisteria;
+}
+.web-head:hover:hover .triangle {
+  border-color: transparent transparent $wisteria transparent;
+}
+.cyber-head:hover:hover {
+  background-color: $radical-red;
+}
+.cyber-head:hover:hover .triangle {
+  border-color: transparent transparent $radical-red transparent;
+}
+.developer-head:hover:hover {
+  background-color: $punch;
+}
+.developer-head:hover:hover .triangle {
+  border-color: transparent transparent $punch transparent;}
+.btn-help-contact {
+  background-color: $manatee;
+}
+.btn-help-support {
+  background-color:$havelock-blue;
+}
+.btn-help-contact:hover {
+  background-color: $waterloo;
+  cursor: pointer;
+}
+.btn-help-support:hover {
+  background-color:$mariner;
+  cursor: pointer;
+}
+.icon-search-1 {
+  color: $white;
+}
+.icon-search-2{
+color: $tuna;
+}
+.icon-format-nav-laptop {
+  color: $hoki;
+}
+.icon-format-nav-telephone {
+  color: $valencia;
+} 
+.icon-format-nav-code {
+  color: $wisteria;
+} 
+
+.icon-format-nav-security {
+  color: $radical-red;
+}
+ 
+.icon-format-nav-devloper {
+  color: $valencia;
+} 
+.icon-display {
+    color: $havelock-blue;}
+.icon-display-service{
+  color: $white;
+}     
+.icon-digital{
+  color: $white;
+}
+   
+.icon-marketing {
+  color: $shamrock;
+} 
+
+
+.nav:hover .triangle{
+    @include viewport(large){
+        display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0px 70px 36px 70px;
+    border-color: transparent;
+    transform: rotate(180deg);
+    position: absolute;
+    z-index: 2;
+    }  
+    @include viewport(x-large){
+        display: block;
+            content: "";
+            width: 0px;
+            height: 0px;
+            border-style: solid;
+            border-width: 0 90px 35px 90px;
+            border-color: transparent;
+            transform: rotate(180deg);
+            position: absolute;
+            z-index: 2;  
+    }
+    @include viewport(xx-large){
+        display: block;
+            content: "";
+            width: 0px;
+            height: 0px;
+            border-style: solid;
+            border-width: 0 105px 35px 105px;
+            border-color: transparent;
+            transform: rotate(180deg);
+            position: absolute;
+            z-index: 2;  
+    }
+}

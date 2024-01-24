@@ -146,6 +146,7 @@ display: block;
   height: 4px; 
 }
 .icon-menu {
+  color: $white;
   top: 50%;
   left: 25%;
   display: block;
@@ -378,12 +379,14 @@ border-left: $tuna solid 14px;
 
 
 .btn-help {
+  color: $white;
 height: 56px;
 line-height: 46px;
 font-size: 1.125rem;
 padding: 5px 10px;
 width: 151px;
 border-radius: 3px;
+border: transparent;
 }
 
 
@@ -398,82 +401,12 @@ border-radius: 3px;
   border: none;
   cursor: pointer;
 }
-.sub-menu-banner-title {
-color: $white;
-}
-
-
-.bespoke-color {
-  background-color: $blue-bayoux;
-}
-.it-support-color {
-  background-color: $mariner;
-}
-.digital-color {
-  background-color: $eucalyptus;
-}
-.telecoms-color {
-  background-color: $tall-poppy;
-}
-.web-color {
-  background-color: $affair;
-}
-.cyber-color {
-  background-color: $red-ribbon;
-}
-.developer-color {
-  background-color: $cognac;
-}
-
-.bespoke-head:hover:hover {
-  background-color: $hoki;
-}
-.bespoke-head:hover:hover .triangle {
-  border-color: transparent transparent $hoki transparent;
-}
-.it-head:hover:hover {
-    background-color: $havelock-blue;
-  }
-  .it-head:hover:hover .triangle {
-    border-color: transparent transparent $havelock-blue transparent;
-  }
-.digital-head:hover:hover {
-  background-color: $shamrock;
-}
-.digital-head:hover:hover .triangle {
-  border-color: transparent transparent $shamrock transparent;
-}
-.digital-head:hover > .icon-bar-graph-h:before {
-  color: $white;
-}
-.telecoms-head:hover:hover {
-  background-color: $valencia;
-}
-.telecoms-head:hover:hover .triangle {
-  border-color: transparent transparent $valencia transparent;
-}
-.web-head:hover:hover {
-  background-color: $wisteria;
-}
-.web-head:hover:hover .triangle {
-  border-color: transparent transparent $wisteria transparent;
-}
-.cyber-head:hover:hover {
-  background-color: $radical-red;
-}
-.cyber-head:hover:hover .triangle {
-  border-color: transparent transparent $radical-red transparent;
-}
-.developer-head:hover:hover {
-  background-color: $punch;
-}
-.developer-head:hover:hover .triangle {
-  border-color: transparent transparent $punch transparent;}
-.btn-help-contact {
-  background-color: $manatee;
-}
 .btn-help-support {
   background-color:$havelock-blue;
+}
+.btn-help-contact {
+  background-color: $manatee;
+  cursor: pointer;
 }
 .btn-help-contact:hover {
   background-color: $waterloo;
@@ -517,4 +450,145 @@ color: $tuna;
    
 .icon-marketing {
   color: $shamrock;
+}
+.bespoke-color {
+  background-color: $blue-bayoux;
+}
+.it-support-color {
+  background-color: $mariner;
+}
+.digital-color {
+  background-color: $eucalyptus;
+}
+.telecoms-color {
+  background-color: $tall-poppy;
+}
+.web-color {
+  background-color: $affair;
+}
+.cyber-color {
+  background-color: $red-ribbon;
+}
+.developer-color {
+  background-color: $cognac;
 } 
+//nav//
+.nav{
+flex:1;
+text-align: center;
+& a{
+  display: block;
+  text-decoration: none;
+}
+&-bespoke {
+
+  &:hover {
+      background-color: $hoki;
+
+      .sub-menu-banner-software {
+          display: block;
+      }
+
+      .icon-format-nav-laptop {
+          color: $white;
+      }
+
+      @include nav-triangle($hoki);
+  }
+}
+&-it{
+
+  &:hover {
+      background-color: $havelock-blue;
+
+      .sub-menu-banner-software {
+          display: block;
+      }
+
+      .icon-format-nav-laptop {
+          color: $white;
+      }
+
+      @include nav-triangle($havelock-blue);
+  }
+}
+&-digital{
+
+  &:hover {
+      background-color: $shamrock;
+
+      .sub-menu-banner-software {
+          display: block;
+      }
+
+      .icon-format-nav-laptop {
+          color: $white;
+      }
+
+      @include nav-triangle($shamrock);
+  }
+}
+&-tel{
+
+  &:hover {
+      background-color: $valencia;
+
+      .sub-menu-banner-software {
+          display: block;
+      }
+
+      .icon-format-nav-laptop {
+          color: $white;
+      }
+
+      @include nav-triangle($valencia);
+  }
+}
+&-web{
+
+  &:hover {
+      background-color:$wisteria;
+
+      .sub-menu-banner-software {
+          display: block;
+      }
+
+      .icon-format-nav-laptop {
+          color: $white;
+      }
+
+      @include nav-triangle($wisteria);
+  }
+}
+&-cyber{
+
+  &:hover {
+      background-color: $radical-red;
+
+      .sub-menu-banner-software {
+          display: block;
+      }
+
+      .icon-format-nav-laptop {
+          color: $white;
+      }
+
+      @include nav-triangle($shamrock);
+  }
+}
+&-dev{
+  &:hover {
+      background-color: $punch;
+
+      .sub-menu-banner-software {
+          display: block;
+      }
+
+      .icon-format-nav-laptop {
+          color: $white;
+      }
+
+      @include nav-triangle($shamrock);
+  }
+}          
+}

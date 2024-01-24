@@ -95,7 +95,7 @@ input[type=text] {
         text-transform: uppercase;
         text-decoration: none;
         font-size: 1em;
-        padding: 16px 20px;
+        padding: 14px 20px 13px;
         border-radius: 3px;
         background-color: $manatee;
         border: none;
@@ -108,7 +108,7 @@ input[type=text] {
         text-transform: uppercase;
         text-decoration: none;
         font-size: 1em;
-        padding: 14px 20px;
+        padding: 14px 20px 13px;
         border-radius: 3px;
         background-color: $manatee;
         border: none;
@@ -121,7 +121,7 @@ input[type=text] {
         text-transform: uppercase;
         text-decoration: none;
         font-size: 1em;
-        padding: 14px 20px;
+        padding: 14px 20px 13px;
         border-radius: 3px;
         background-color: $manatee;
         border: none;
@@ -134,7 +134,7 @@ input[type=text] {
         text-transform: uppercase;
         text-decoration: none;
         font-size: 1em;
-        padding: 14px 20px;
+        padding: 14px 20px 13px;
         border-radius: 3px;
         background-color: $manatee;
         border: none;
@@ -145,7 +145,6 @@ input[type=text] {
 }
 .btn-help{
     @include viewport(x-large){
-        display: flex;
         align-items: center;
         justify-content: center;    
     } 
@@ -158,44 +157,6 @@ input[type=text] {
         justify-content: flex-start;
     }   
 } 
-.nav:hover .triangle{
-    @include viewport(large){
-        display: block;
-    content: "";
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 0px 70px 36px 70px;
-    border-color: transparent;
-    transform: rotate(180deg);
-    position: absolute;
-    z-index: 2;
-    }  
-    @include viewport(x-large){
-        display: block;
-            content: "";
-            width: 0px;
-            height: 0px;
-            border-style: solid;
-            border-width: 0 90px 35px 90px;
-            border-color: transparent;
-            transform: rotate(180deg);
-            position: absolute;
-            z-index: 2;  
-    }
-    @include viewport(xx-large){
-        display: block;
-            content: "";
-            width: 0px;
-            height: 0px;
-            border-style: solid;
-            border-width: 0 105px 35px 105px;
-            border-color: transparent;
-            transform: rotate(180deg);
-            position: absolute;
-            z-index: 2;  
-    }
-}
 .bottom-header{
     @include viewport(large){
         background-color: $tuna;   

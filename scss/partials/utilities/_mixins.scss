@@ -1,0 +1,91 @@
+//colours//
+$white:#fff;
+
+$black:#000;
+$woodsmoke:#121318; //black button hover//
+$charade:#272936; //black button//
+$river-bed:#464d5c; //text
+$tuna:#333645; //search bar 2//
+$manatee:#999aa2; //search bar 1//
+$waterloo:#84858F; //contact button hover//
+$gray-chateau:#a3a8ac; //cite//
+$alto:#CECECE;
+$mercury:#E5E5E5;
+$input:#ccc;
+$newsletter:#ddd;
+
+
+$blue-bayoux:#526781; //Bespoke software Nav//
+$hoki:#67809F; //software//
+$blue-ribbon:#166AF4; //google review hover//
+$havelock-blue:#4183d7; //support button and IT//
+$dodger-blue:#4387f6; //google reviews//
+$mariner:#286abd; //IT Nav//
+$viking:#5bc0de; //focus//
+
+$jade:#00b67b; //trustpilot//
+$green-haze:#009B69; //trustpilot hover/
+$eucalyptus:#25A25A; //digital marketing nav
+$shamrock:#2ecc71; //digital marketing background//
+$jungle-green:#26AB5F; //partner slideshow//
+
+
+$punch:#CE4125; //developer course nav//
+$valencia:#d64541; //telecoms services triangle//
+$tall-poppy:#BC2C28;//telecoms nav//
+$cognac:#A3331D; //devolper nav//
+$red-ribbon:#DE093F; //cyber nav//
+$radical-red:#F62459; //cyber security//
+
+
+$affair:#79539A; //web hover//
+$wisteria:#926FB1; // code nav//
+
+//footer colours//
+$footer:#212330;
+$facebook:#3B5998;
+$link:#0077B5;
+$twitter:#00ACED;
+$insta:#D93175;
+
+
+//buttons//
+@mixin btn-format() {
+    display:inline-block;
+    font-weight: 400;
+    height: auto;
+    line-height: 35px;
+    padding: 6px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    color: white;
+    row-gap: em(10px);
+
+    &:hover {
+        cursor: pointer;
+    }
+    
+}
+ 
+@mixin nav-triangle($color) {
+    &>a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 35px 67px 0 67px;
+        border-color: $color transparent transparent transparent; 
+        transform: rotate(0deg);
+        z-index: 1000;
+
+        @include viewport(x-large) {
+            border-width: 35px 84px 0 84px;
+        }
+    }
+}

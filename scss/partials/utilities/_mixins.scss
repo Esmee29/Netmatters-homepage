@@ -50,7 +50,7 @@ $insta:#D93175;
 
 
 //buttons//
-@mixin btn-format() {
+@mixin btn-format($color) {
     display:inline-block;
     font-weight: 400;
     height: auto;
@@ -61,7 +61,8 @@ $insta:#D93175;
     font-size: 14px;
     border: 1px solid transparent;
     border-radius: 2px;
-    color: white;
+    color: $white;
+    background-color: $color;
     row-gap: em(10px);
 
     &:hover {
@@ -69,23 +70,72 @@ $insta:#D93175;
     }
     
 }
- 
+@mixin btn-banner($color) {
+    margin: 5px 0;
+text-decoration: none;
+height: 50px;
+  padding: 0 20px;
+  border-radius: 3px;
+    color: $white;
+    background-color: $color;
+    line-height: 50px;
+  font-size: 1.2rem;
+  width: 250px;
+  text-transform: uppercase;
+
+    &:hover {
+        cursor: pointer;
+    }
+    
+}
+@mixin btn-welcome($color) {
+    color: $white;
+    border-radius: 6px;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    color: $white;
+    background-color: $color;
+    line-height: 35px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+}
+
 @mixin nav-triangle($color) {
     &>a::before {
+        top:214px;
         content: "";
-        position: absolute;
-        left: 0;
-        top: 100%;
-        width: 0px;
-        height: 0px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
         border-style: solid;
         border-width: 35px 67px 0 67px;
         border-color: $color transparent transparent transparent; 
         transform: rotate(0deg);
         z-index: 1000;
+        display: block;
+    position: absolute;
+    z-index: 2;
 
-        @include viewport(x-large) {
-            border-width: 35px 84px 0 84px;
-        }
+    @include viewport(large) {
+        border-width: 35px 73px 0 73px;
+        top: 220px;
     }
+    @include viewport(x-large) {
+            border-width: 35px 90px 0 90px;
+        }
+    @include viewport(xx-large) {
+        border-width: 35px 110px 0 110px;
+        top: 216px
+    }
+}
 }

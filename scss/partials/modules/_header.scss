@@ -190,18 +190,7 @@ display: block;
 .bottom-header a{
   color: $white;
 }
- 
-.header-row {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    
-}
+
 header .inner .actions .btn {
     height: 56px;
     line-height: 46px;
@@ -284,12 +273,10 @@ header a{
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
   }
   .search-box-1{
-display: inline-block;
+    display: inline-block;
     box-sizing: border-box;
     height: 56px;
     padding: 5px 15px;
-    border-color: #ccc;
-    width: 100%;
     font-size: 14px;
     background-color: #fff;
     background-image: none;
@@ -300,6 +287,9 @@ display: inline-block;
     border-radius: 0;
     width: 174px;
     padding-right: 40px;
+    @include viewport(large) {
+      display: none;
+  }
 }
 
 .hamburger {
@@ -572,7 +562,7 @@ text-align: center;
           color: $white;
       }
 
-      @include nav-triangle($shamrock);
+      @include nav-triangle($radical-red);
   }
 }
 &-dev{
@@ -587,7 +577,7 @@ text-align: center;
           color: $white;
       }
 
-      @include nav-triangle($shamrock);
+      @include nav-triangle($punch);
   }
 }          
 }

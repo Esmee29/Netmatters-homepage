@@ -2,9 +2,10 @@
 .container-banner{
     background: url(https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/home-YLei.png)center/cover no-repeat;
     background-color: $black;
-    opacity: 1.3;
+    background-blend-mode: hard-light;
     height: 550px;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .banner {
@@ -30,8 +31,6 @@
 }
 
 .banner-heading {
-    font-size: 2.5rem;
-    line-height: 3rem;
     margin: 0 0 1.25rem;
     color: $white;
     font-weight: 600;
@@ -49,23 +48,11 @@
     width: auto;
 }
 .btn-whyus {
-    margin: 5px 0;
-    text-decoration: none;
-    height: 50px;
-      padding: 5px 20px;
-      border-radius: 3px;
-      background-color: $wisteria;
-      line-height: 50px;
-      font-size: 1.2rem;
-      width: 250px;
-      text-transform: uppercase;
-
+  @include btn-banner($wisteria)
   }
 .btn-whyus:hover{
     background-color: $affair;
-    color: $white;
     text-decoration: none;
-    cursor: pointer;
   }
   .img-cover-modern {
     object-fit: cover;

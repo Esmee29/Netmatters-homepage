@@ -78,17 +78,37 @@ input[type=text] {
         height: 57px;
     }
 }
-.header-row{
-    @include viewport(medium){
-        display: flex;
-        gap: 20px;
-        width: 100%;
-        justify-content: flex-start;    
-    }
+.header-row{    
     @include viewport(large){
-        width: 970px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
     }
+    @include viewport(x-large){
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding-left: 15px;
+        padding-right: 15px; 
+        }
+        @include viewport(xx-large){
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px; 
+            }
 }
+
 .search-bar button{
     @include viewport(medium){
         color: $white;
@@ -206,6 +226,14 @@ input[type=text] {
         
     }
         .banner-heading {
+            @include viewport(small) {
+                font-size: 2.5rem;
+            line-height: 3rem;
+                 }
+                 @include viewport(medium) {
+                    font-size: 2.5rem;
+                line-height: 3rem;
+                     }
             @include viewport(large){
             font-size: 4.2rem;
             line-height: 5rem;
@@ -242,7 +270,11 @@ input[type=text] {
     @include viewport(x-large) {
         display: grid;
       grid-template-columns: auto auto auto;
-            }  
+            }
+    @include viewport(xx-large) {
+        display: grid;
+        grid-template-columns: auto auto auto;
+            }
 }
 .service-blocks-bottom{
     @include viewport(medium) {
@@ -256,7 +288,11 @@ input[type=text] {
         @include viewport(x-large) {
             display: grid;
       grid-template-columns: auto auto auto auto;
-                  }         
+                  }
+    @include viewport(xx-large) {
+    display: grid;
+grid-template-columns: auto auto auto auto;
+            }                  
 } 
 .service-block-one, .service-block-two{
     @include viewport(large){
@@ -264,7 +300,10 @@ input[type=text] {
           }
       @include viewport(x-large) {
         margin-right: 30px
-              }     
+              }
+              @include viewport(xx-large) {
+                margin-right: 30px
+                      }     
 }
 .service-block-five, .service-block-six, .service-block-seven, .service-block-five, .service-block-four{
     @include viewport(medium) {
@@ -277,8 +316,12 @@ input[type=text] {
                 }
                 @include viewport(x-large) {
                     margin-left: 15px;
-      margin-right: 15px;
-                          }    
+                    margin-right: 15px;
+                                        }
+                @include viewport(xx-large) {
+                    margin-left: 15px;
+                    margin-right: 15px;
+                                        }        
 } 
 
     .service-block-three .p, .btn-dm .p {
@@ -294,14 +337,29 @@ input[type=text] {
         grid-template-columns: repeat(2, 50%);
         gap: 15px;
                 }
+        @include viewport(x-large){
+            display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 15px;
+                }
+        @include viewport(xx-large){
+            display: grid;
+        grid-template-columns: repeat(2, 50%);
+        gap: 15px;
+                }
         
     }
     .welcome-left {
         @include viewport(large){
         grid-column-start: 1;
                 }
+        @include viewport(x-large){
+            grid-column-start: 1;
+                    }
+        @include viewport(xx-large){
+            grid-column-start: 1;
+                    }
     }
- .welcome-grid h2   
     .welcome-grid h2 {
         @include viewport(large){
             color: $white;
@@ -316,33 +374,53 @@ input[type=text] {
             margin-right: 30px;
             margin-bottom: 17px;
                         }
+            @include viewport(x-large){
+                padding: 10px 30px;
+                margin-right: 30px;
+                margin-bottom: 17px;
+                            }
+                                    
         }
         
     .welcome-right {
         @include viewport(large){
             grid-column-start: 2;
                     }
+        @include viewport(x-large){
+            grid-column-start: 2;
+                    }
+        @include viewport(xx-large){
+            grid-column-start: 2;
+                    }
+    }
+    .reviews{
+        @include viewport(large){
+            margin-top: 75px;
+                    }
+        @include viewport(x-large){
+            margin-top: 75px;
+                    }
+        
     }
 //news//
-.article-content{
+
+  .article-blocks{
     @include viewport(small){
         flex-direction: column;
         }
-        @include viewport(medium){
-            flex-direction: row;
-      flex-wrap: wrap;
-             }  
-}
-  .article-blocks{
     @include viewport(medium){
         display: flex;
       gap: 30px;
          }
-         @include viewport(large){
-            display: flex;
-            gap: 30px;    
+        @include viewport(large){
+        display: flex;
+        gap: 30px;    
     }
     @include viewport(x-large){
+        display: flex;
+      gap: 30px;    
+    }
+    @include viewport(xx-large){
         display: flex;
       gap: 30px;    
     }
@@ -384,7 +462,17 @@ input[type=text] {
         display: flex;
         flex-direction: row;
         gap: 30px;
-            } 
+            }
+            @include viewport(x-large){
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                    }
+                    @include viewport(xx-large){
+                        display: flex;
+                        flex-direction: row;
+                        gap: 30px;
+                            }  
     }
     #your-email, #your-name {
         @include viewport(large){
@@ -415,18 +503,26 @@ input[type=text] {
         width: 397px;
          }    
 }
-.links{
-    @include viewport(large){
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
+.links{  
+    @include viewport(small){
+        flex-wrap: wrap;
+    flex-direction: column;
+        }  
+    @include viewport(medium){
+        flex-grow: 1;
+    display: flex;
         }
+            @include viewport(large){
+                display: grid;
+                grid-template-columns: repeat(4, 25%);
     @include viewport(x-large) {
         flex-direction: row;
         flex-wrap: nowrap;
         flex-grow: 1;
         margin-left: -15px;
         margin-right: -15px;
-            }  
+    }
+}
 }
 .footer-container{
     @include viewport(small){

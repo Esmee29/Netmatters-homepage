@@ -14,13 +14,10 @@
 }
 
 .button-black {
-    background-color: $charade;
-    border: 1px solid transparent;
-    transition: 0.3s;
+    @include btn-welcome($charade)
 }
 .button-black:hover{
     background-color: $woodsmoke;
-    cursor: pointer;
 }
 strong {
     font-weight: 600;
@@ -38,34 +35,17 @@ cite {
     color: $gray-chateau;
     font-size: 1.1rem;
 }
-.btn-reviews {
-    color: $white;
-    background-color: $tuna;
-    border-radius: 6px;
-    padding: 10px 30px;
-    margin-top: 20px;
-    font-size: 20px;
-    display: block;
-}
+
 
 .btn-reviews-google {
-    display: inline-block;
-    background-color: $dodger-blue;
-    align-items: baseline;
+    @include btn-welcome($dodger-blue)
 }
 .btn-reviews-google:hover {
     background-color: $blue-ribbon;
-    text-decoration: none;
-    cursor: pointer;
 }
 .btn-reviews-trustpilot {
-    background-color: $jade;
-    display: inline-block;
-    align-items: baseline;
-    white-space: nowrap;
+    @include btn-welcome($jade)
 }
 .btn-reviews-trustpilot:hover {
     background-color: $green-haze;
-    text-decoration: none;
-    cursor: pointer;
 }

@@ -651,8 +651,6 @@ li {
 }
 
 .search-small {
-  border: 2px solid #CECECE;
-  background-color: #E5E5E5;
   height: 41px;
   border-radius: 3px;
 }
@@ -661,7 +659,8 @@ li {
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
-  border: 1px solid #ccc;
+  border: 2px solid #CECECE;
+  background-color: #E5E5E5;
 }
 
 .menu-1 {
@@ -688,7 +687,7 @@ li {
 }
 
 .search-box-2 {
-  width: 100%;
+  width: 90%;
   border: none;
   position: relative;
   background: transparent;
@@ -807,6 +806,25 @@ header a {
   border-color: #5bc0de;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+}
+
+.search-box-1 {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 56px;
+  padding: 5px 15px;
+  border-color: #ccc;
+  width: 100%;
+  font-size: 14px;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  border-radius: 0;
+  width: 174px;
+  padding-right: 40px;
 }
 
 .hamburger {
@@ -2783,7 +2801,13 @@ cite {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 1439px) {
+  .hidden-xlg {
+    display: none;
+  }
+}
+
+@media (min-width: 1440px) {
   .hidden-xlg {
     display: none;
   }
@@ -2805,7 +2829,7 @@ cite {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 1439px) {
   .logo {
     height: 64px;
   }
@@ -2883,7 +2907,55 @@ cite {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 992px) and (max-width: 1259px) {
+  .search-bar button {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 14px 20px;
+    border-radius: 3px;
+    background-color: #999aa2;
+    border: none;
+    outline: none;
+    border-radius: 0 5% 5% 0;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1260px) and (max-width: 1439px) {
+  .search-bar button {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 14px 20px;
+    border-radius: 3px;
+    background-color: #999aa2;
+    border: none;
+    outline: none;
+    border-radius: 0 5% 5% 0;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1440px) {
+  .search-bar button {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 14px 20px;
+    border-radius: 3px;
+    background-color: #999aa2;
+    border: none;
+    outline: none;
+    border-radius: 0 5% 5% 0;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1260px) and (max-width: 1439px) {
   .btn-help {
     display: flex;
     align-items: center;
@@ -2902,12 +2974,12 @@ cite {
 
 @media (min-width: 992px) and (max-width: 1259px) {
   .nav:hover .triangle {
-    border-width: 0 85.5px 35px 85.5px;
     display: block;
     content: "";
     width: 0px;
     height: 0px;
     border-style: solid;
+    border-width: 0px 70px 36px 70px;
     border-color: transparent;
     transform: rotate(180deg);
     position: absolute;
@@ -2915,14 +2987,29 @@ cite {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 1439px) {
   .nav:hover .triangle {
-    border-width: 0 85.5px 35px 85.5px;
     display: block;
     content: "";
     width: 0px;
     height: 0px;
     border-style: solid;
+    border-width: 0 90px 35px 90px;
+    border-color: transparent;
+    transform: rotate(180deg);
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 1440px) {
+  .nav:hover .triangle {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 105px 35px 105px;
     border-color: transparent;
     transform: rotate(180deg);
     position: absolute;
@@ -2968,7 +3055,7 @@ cite {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 1439px) {
   .banner {
     width: 950px;
     display: flex;
@@ -2994,7 +3081,7 @@ cite {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 1439px) {
   .banner-heading {
     font-size: 4.2rem;
     line-height: 5rem;
@@ -3013,7 +3100,7 @@ cite {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 1439px) {
   .service-heading {
     width: 1200px;
   }
@@ -3026,7 +3113,7 @@ cite {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 1439px) {
   .service-blocks {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -3047,7 +3134,7 @@ cite {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 1439px) {
   .service-blocks-bottom {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -3060,7 +3147,7 @@ cite {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 1439px) {
   .service-block-one, .service-block-two {
     margin-right: 30px;
   }
@@ -3080,14 +3167,14 @@ cite {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 1439px) {
   .service-block-five, .service-block-six, .service-block-seven, .service-block-five, .service-block-four {
     margin-left: 15px;
     margin-right: 15px;
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 1439px) {
   .service-block-three .p, .btn-dm .p {
     margin-bottom: 40px;
   }
@@ -3157,7 +3244,7 @@ cite {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 1439px) {
   .article-blocks {
     display: flex;
     gap: 30px;
@@ -3196,7 +3283,7 @@ cite {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 1439px) {
   .block-three {
     display: block;
   }
@@ -3236,7 +3323,7 @@ cite {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 1439px) {
   .about-netmatters {
     justify-content: flex-start;
     width: 397px;
@@ -3250,7 +3337,7 @@ cite {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1260px) and (max-width: 1439px) {
   .links {
     flex-direction: row;
     flex-wrap: nowrap;

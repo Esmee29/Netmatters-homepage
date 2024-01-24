@@ -131,8 +131,6 @@ display: block;
   color: $tuna;
 }
 .search-small {
-  border: 2px solid $alto;
-  background-color: $mercury;
   height: 41px;
   border-radius: 3px;
 }
@@ -140,7 +138,8 @@ display: block;
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
-  border: 1px solid $input;
+  border: 2px solid $alto;
+  background-color: $mercury;
 }
 .menu-1{
   width: 33px;
@@ -164,7 +163,7 @@ display: block;
 }
 
 .search-box-2 {
-  width: 100%;
+  width: 90%;
   border: none;
   position: relative;
   background: transparent;
@@ -277,12 +276,30 @@ header a{
     padding: 5px 15px;
     border: 1px 0 1px 1px $input;
   }
+  
   .search-focus:focus {
     border-color: $viking;
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
   }
-
+  .search-box-1{
+display: inline-block;
+    box-sizing: border-box;
+    height: 56px;
+    padding: 5px 15px;
+    border-color: #ccc;
+    width: 100%;
+    font-size: 14px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    border-radius: 0;
+    width: 174px;
+    padding-right: 40px;
+}
 
 .hamburger {
   margin-left: 10px;

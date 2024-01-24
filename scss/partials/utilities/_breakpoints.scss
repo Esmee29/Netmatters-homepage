@@ -21,7 +21,12 @@
         }
     }
     @else if $break == "x-large" { // extra large
-        @media (min-width: $brkpoint-xlg) { // greater than 1260px
+        @media (min-width: $brkpoint-xlg) and (max-width: #{$brkpoint-xxlg - 1}) { // between 1260px and 1439px
+            @content;
+        }
+    }
+    @else if $break == "xx-large" { // extra large
+        @media (min-width: $brkpoint-xxlg) { // greater than 1440px
             @content;
         }
     }
@@ -36,6 +41,7 @@ $brkpoint-smd: 650px;
 $brkpoint-md: 768px;
 $brkpoint-lg: 992px;
 $brkpoint-xlg: 1260px;
+$brkpoint-xxlg: 1440px;
 
     
     

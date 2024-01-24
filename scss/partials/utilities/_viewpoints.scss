@@ -18,6 +18,11 @@
     @include viewport(x-large) {
         display:none;
          }
+}
+.hidden-xlg{
+    @include viewport(xx-large) {
+        display:none;
+         }
 } 
 .header-large {
     @include viewport(large){
@@ -98,6 +103,45 @@ input[type=text] {
         border-radius: 0 5% 5% 0;
         cursor: pointer;   
     }
+    @include viewport(large){
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 14px 20px;
+        border-radius: 3px;
+        background-color: $manatee;
+        border: none;
+        outline: none;
+        border-radius: 0 5% 5% 0;
+        cursor: pointer;   
+    }
+    @include viewport(x-large){
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 14px 20px;
+        border-radius: 3px;
+        background-color: $manatee;
+        border: none;
+        outline: none;
+        border-radius: 0 5% 5% 0;
+        cursor: pointer;   
+    }
+    @include viewport(xx-large){
+        color: $white;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1em;
+        padding: 14px 20px;
+        border-radius: 3px;
+        background-color: $manatee;
+        border: none;
+        outline: none;
+        border-radius: 0 5% 5% 0;
+        cursor: pointer;   
+    }
 }
 .btn-help{
     @include viewport(x-large){
@@ -116,28 +160,40 @@ input[type=text] {
 } 
 .nav:hover .triangle{
     @include viewport(large){
-        border-width: 0 85.5px 35px 85.5px;
-            display: block;
+        display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0px 70px 36px 70px;
+    border-color: transparent;
+    transform: rotate(180deg);
+    position: absolute;
+    z-index: 2;
+    }  
+    @include viewport(x-large){
+        display: block;
             content: "";
             width: 0px;
             height: 0px;
             border-style: solid;
+            border-width: 0 90px 35px 90px;
             border-color: transparent;
             transform: rotate(180deg);
             position: absolute;
-            z-index: 2;   
-    }  
-    @include viewport(x-large){
-        border-width: 0 85.5px 35px 85.5px;
+            z-index: 2;  
+    }
+    @include viewport(xx-large){
         display: block;
-      content: "";
-      width: 0px;
-      height: 0px;
-      border-style: solid;
-      border-color: transparent;
-      transform: rotate(180deg);
-      position: absolute;
-      z-index: 2;   
+            content: "";
+            width: 0px;
+            height: 0px;
+            border-style: solid;
+            border-width: 0 105px 35px 105px;
+            border-color: transparent;
+            transform: rotate(180deg);
+            position: absolute;
+            z-index: 2;  
     }
 }
 .bottom-header{

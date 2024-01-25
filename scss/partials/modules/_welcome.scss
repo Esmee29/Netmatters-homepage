@@ -9,9 +9,7 @@
 .welcome-left a{
     color: $white;
    }
-.welcome-left .button-black {
-    margin-bottom: 30px;
-}
+
 
 .button-black {
     @include btn-welcome($charade)

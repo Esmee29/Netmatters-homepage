@@ -25,10 +25,12 @@
 .view-all a {
     font-size: 26px;
     font-weight: 600;
-    margin-right: 40px;
 }
 .view-all{
   text-align: center;
+}
+.view-all-top{
+  margin-right: 40px;
 }
 .view-all:hover a {
   text-decoration: underline;

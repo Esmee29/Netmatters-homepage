@@ -716,6 +716,20 @@
   }
 }
 
+@media (min-width: 320px) and (max-width: 767px) {
+  .container-section {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .container-section {
     padding-top: 50px;
@@ -918,7 +932,6 @@
   .news-input {
     display: flex;
     flex-direction: row;
-    gap: 30px;
   }
 }
 
@@ -926,7 +939,6 @@
   .news-input {
     display: flex;
     flex-direction: row;
-    gap: 30px;
   }
 }
 
@@ -934,7 +946,6 @@
   .news-input {
     display: flex;
     flex-direction: row;
-    gap: 30px;
   }
 }
 
@@ -965,6 +976,13 @@
 }
 
 @media (min-width: 1260px) and (max-width: 1499px) {
+  .about-netmatters {
+    justify-content: flex-start;
+    width: 397px;
+  }
+}
+
+@media (min-width: 1500px) {
   .about-netmatters {
     justify-content: flex-start;
     width: 397px;
@@ -1009,7 +1027,27 @@
   }
 }
 
+@media (min-width: 1500px) {
+  .links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+}
+
 @media (min-width: 1260px) and (max-width: 1499px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1500px) {
   .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -1031,6 +1069,15 @@
 }
 
 @media (min-width: 1260px) and (max-width: 1499px) {
+  .footer-menu {
+    margin-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 25%;
+  }
+}
+
+@media (min-width: 1500px) {
   .footer-menu {
     margin-bottom: 40px;
     padding-left: 15px;
@@ -1235,6 +1282,12 @@ footer {
 @media (min-width: 1260px) {
   .container {
     width: 1200px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .container {
+    width: 1400px;
   }
 }
 
@@ -2413,11 +2466,14 @@ header a {
 .view-all a {
   font-size: 26px;
   font-weight: 600;
-  margin-right: 40px;
 }
 
 .view-all {
   text-align: center;
+}
+
+.view-all-top {
+  margin-right: 40px;
 }
 
 .view-all:hover a {
@@ -2721,7 +2777,6 @@ header a {
 .name-input {
   flex: 1 1;
   padding-right: 15px;
-  padding-left: 15px;
   margin-bottom: 15px;
 }
 
@@ -2803,7 +2858,6 @@ label.required:after, label .required:after {
 }
 
 input[type="checkbox"] {
-  appearance: none;
   -webkit-appearance: none;
   min-height: 26px;
   min-width: 26px;
@@ -2817,7 +2871,9 @@ input[type="checkbox"] {
   display: flex;
   outline: none;
   margin-right: 20px;
-  font-size: 22px;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-left: 5px;
 }
 
 .label-checkmark {
@@ -3801,26 +3857,22 @@ input[type="checkbox"]:checked:after {
   color: #fff;
 }
 
-.welcome-left .button-black {
-  margin-bottom: 30px;
-}
-
 .button-black {
   color: #fff;
-  border-radius: 6px;
-  padding: 10px 30px;
-  font-size: 20px;
-  margin-top: 20px;
-  margin-right: 5px;
-  color: #fff;
   background-color: #272936;
-  line-height: 35px;
-  text-transform: uppercase;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
   display: inline-block;
-  margin-bottom: 0;
   font-weight: 400;
+  height: auto;
+  line-height: 35px;
   text-align: center;
-  vertical-align: middle;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  white-space: nowrap;
 }
 
 .button-black:hover {
@@ -3854,20 +3906,20 @@ cite {
 
 .btn-reviews-google {
   color: #fff;
-  border-radius: 6px;
-  padding: 10px 30px;
-  font-size: 20px;
-  margin-top: 20px;
-  margin-right: 5px;
-  color: #fff;
   background-color: #4387f6;
-  line-height: 35px;
-  text-transform: uppercase;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
   display: inline-block;
-  margin-bottom: 0;
   font-weight: 400;
+  height: auto;
+  line-height: 35px;
   text-align: center;
-  vertical-align: middle;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  white-space: nowrap;
 }
 
 .btn-reviews-google:hover {
@@ -3881,20 +3933,20 @@ cite {
 
 .btn-reviews-trustpilot {
   color: #fff;
-  border-radius: 6px;
-  padding: 10px 30px;
-  font-size: 20px;
-  margin-top: 20px;
-  margin-right: 5px;
-  color: #fff;
   background-color: #00b67b;
-  line-height: 35px;
-  text-transform: uppercase;
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
   display: inline-block;
-  margin-bottom: 0;
   font-weight: 400;
+  height: auto;
+  line-height: 35px;
   text-align: center;
-  vertical-align: middle;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  white-space: nowrap;
 }
 
 .btn-reviews-trustpilot:hover {

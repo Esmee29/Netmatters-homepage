@@ -89,20 +89,20 @@ height: 50px;
 }
 @mixin btn-welcome($color) {
     color: $white;
-    border-radius: 6px;
-    padding: 10px 30px;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-right: 5px;
-    color: $white;
     background-color: $color;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 400;
+    height: auto;
     line-height: 35px;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    white-space: nowrap;
     &:hover {
         cursor: pointer;
         text-decoration: none;

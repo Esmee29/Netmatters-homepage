@@ -359,6 +359,14 @@ grid-template-columns: auto auto auto auto;
       
     }
 .container-section {
+    @include viewport(small) {
+        padding-top: 20px;
+        padding-bottom: 50px;
+              }
+    @include viewport(medium) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+              }
     @include viewport(medium) {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -506,17 +514,14 @@ grid-template-columns: auto auto auto auto;
         @include viewport(large){
         display: flex;
         flex-direction: row;
-        gap: 30px;
             }
             @include viewport(x-large){
                 display: flex;
                 flex-direction: row;
-                gap: 30px;
                     }
                     @include viewport(xx-large){
                         display: flex;
                         flex-direction: row;
-                        gap: 30px;
                             }  
     }
     #your-email, #your-name {
@@ -546,7 +551,11 @@ grid-template-columns: auto auto auto auto;
     @include viewport(x-large) {
         justify-content: flex-start;
         width: 397px;
-         }    
+         }
+         @include viewport(xx-large) {
+            justify-content: flex-start;
+            width: 397px;
+             }      
 }
 .nm-logo-w{
     @include viewport(small){
@@ -574,6 +583,14 @@ grid-template-columns: auto auto auto auto;
     margin-left: -15px;
     margin-right: -15px;
     }
+    @include viewport(xx-large) {
+        display: flex;
+        flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    margin-left: -15px;
+    margin-right: -15px;
+    }
 }
 
 .footer-container{
@@ -582,6 +599,12 @@ grid-template-columns: auto auto auto auto;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+}
+@include viewport(xx-large){
+    display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-between;
 }
  }      
 .footer-socials a{
@@ -601,5 +624,11 @@ grid-template-columns: auto auto auto auto;
     padding-left: 15px;
     padding-right: 15px;
     width: 25%;
-    }    
+    }
+    @include viewport(xx-large){
+        margin-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 25%;
+    }        
 }

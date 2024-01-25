@@ -71,7 +71,6 @@ $insta:#D93175;
     
 }
 @mixin btn-banner($color) {
-    margin: 5px 0;
 text-decoration: none;
 height: 50px;
   padding: 0 20px;
@@ -94,6 +93,7 @@ height: 50px;
     padding: 10px 30px;
     font-size: 20px;
     margin-top: 20px;
+    margin-right: 5px;
     color: $white;
     background-color: $color;
     line-height: 35px;

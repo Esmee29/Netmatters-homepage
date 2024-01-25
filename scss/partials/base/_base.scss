@@ -129,12 +129,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0px;
     margin: 0;
   }
-  @media (min-width: 992px){
-p {
-    line-height: 1.875rem;
-    margin-bottom: 25px;
-}
-  }
  
 a{
     text-decoration: none;
@@ -149,7 +143,8 @@ a:hover {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-}
+    color: $river-bed;
+  }
 .text-align-md {
     text-align: center;
 }

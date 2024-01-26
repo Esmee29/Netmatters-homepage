@@ -2213,6 +2213,12 @@ header a {
   }
 }
 
+@media (min-width: 1500px) {
+  .nav-bespoke:hover > a::before {
+    border-width: 1.5rem 7rem 0 6.5rem;
+  }
+}
+
 .nav-it:hover {
   background-color: #4183d7;
 }
@@ -2269,6 +2275,12 @@ header a {
   .nav-it:hover > a::before {
     border-width: 1.5rem 6.8rem 0 6rem;
     top: 216px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .nav-it:hover > a::before {
+    border-width: 1.5rem 7rem 0 6.5rem;
   }
 }
 
@@ -2331,6 +2343,12 @@ header a {
   }
 }
 
+@media (min-width: 1500px) {
+  .nav-digital:hover > a::before {
+    border-width: 1.5rem 7rem 0 6.5rem;
+  }
+}
+
 .nav-tel:hover {
   background-color: #d64541;
 }
@@ -2387,6 +2405,12 @@ header a {
   .nav-tel:hover > a::before {
     border-width: 1.5rem 6.8rem 0 6rem;
     top: 216px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .nav-tel:hover > a::before {
+    border-width: 1.5rem 7rem 0 6.5rem;
   }
 }
 
@@ -2449,6 +2473,12 @@ header a {
   }
 }
 
+@media (min-width: 1500px) {
+  .nav-web:hover > a::before {
+    border-width: 1.5rem 7rem 0 6.5rem;
+  }
+}
+
 .nav-cyber:hover {
   background-color: #F62459;
 }
@@ -2508,6 +2538,12 @@ header a {
   }
 }
 
+@media (min-width: 1500px) {
+  .nav-cyber:hover > a::before {
+    border-width: 1.5rem 7rem 0 6.5rem;
+  }
+}
+
 .nav-dev:hover {
   background-color: #CE4125;
 }
@@ -2564,6 +2600,12 @@ header a {
   .nav-dev:hover > a::before {
     border-width: 1.5rem 6.8rem 0 6rem;
     top: 216px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .nav-dev:hover > a::before {
+    border-width: 1.5rem 7rem 0 6.5rem;
   }
 }
 

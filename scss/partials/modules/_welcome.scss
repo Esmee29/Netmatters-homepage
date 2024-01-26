@@ -47,6 +47,9 @@ cite {
 .btn-reviews-trustpilot {
     @include btn-welcome($jade)
 }
+.btn-reviews-trustpilot {
+    margin-top: 20px;
+}
 .btn-reviews-trustpilot:hover {
     background-color: $green-haze;
 }

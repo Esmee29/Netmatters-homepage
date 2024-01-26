@@ -132,38 +132,26 @@ height: 50px;
 
 @mixin nav-triangle($color) {
     &>a::before {
-        top: 214px;
+        top: 208px;
         content: "";
     width: 0px;
     height: 0px;
         border-style: solid;
-        border-width: 1.5rem 5rem 0 5rem;
+        border-width: 1.5rem 5rem 0 5.5rem;
         border-color: $color transparent transparent transparent; 
         transform: rotate(0deg);
         z-index: 1000;
         display: block;
     position: absolute;
-   
-    @include viewport(large) {
-        border-width: 1.5rem 4.6rem 0 4.6rem;
-        top: 219px;
+    @include viewport(large){
+        top:214px;
+        border-left-width: 67px;
+        border-right-width: 67px;
     }
-    @media (min-width:1060px)and (max-width:1120px){
-        border-width: 1.5rem 4.7rem 0 4.8rem;
-    }
-    @media (min-width:1121px)and (max-width:1259px){
-        border-width: 1.5rem 5.5rem 0 5.4rem;
-    }
-    @include viewport(x-large) {
-            border-width: 1.5rem 5.5rem 0 5.5rem;
-            top: 213px;
-        }
-    @include viewport(xx-large) {
-        border-width: 1.5rem 6.8rem 0 6rem;
-        top: 216px;
-    }
-    @media (min-width:1500px){
-        border-width: 1.5rem 7rem 0 6.6rem;
+    @include viewport(xx-large){
+        top:172px;
+        border-left-width: 84px;
+        border-right-width: 84px;
     }
 }
 }
@@ -182,6 +170,7 @@ height: 50px;
     border-radius: 15px;
     text-align: center;
     color: $river-bed;
+    
     
   }
   

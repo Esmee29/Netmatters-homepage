@@ -4,14 +4,7 @@
 .sub-menu-banner-title {
   color: $white;
 }
-.header-large {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 25px 0 20px;
-}
+
 
 .logo-container {
   display: table;
@@ -19,6 +12,7 @@
 }
 .logo {
 max-width: 100%;
+margin-right: 100px;
 }
 
 .logo img {
@@ -28,7 +22,6 @@ display: block;
 .search-bar {
   display: flex;
   align-items: center;
-  margin-right: 15px;
 }
 .search-form {
   display: flex;
@@ -122,10 +115,7 @@ display: block;
   height: 56px;
   border-radius: 3px;
 }
-.container-mobile {
-  display: table-cell;
-  vertical-align: middle;
-}
+
 .phone {
   text-decoration: none;
   font-size: 32px;
@@ -266,7 +256,7 @@ header a{
     border: 1px $input;
   }
   .search-box {
-    width: 142px;
+    width: 200px;
     padding: 5px 15px;
     border: 1px 0 1px 1px $input;
   }

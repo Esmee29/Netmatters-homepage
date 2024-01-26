@@ -72,10 +72,10 @@
 }
 .search-box-1{
     @include viewport(x-large){
-    width: 174px;
+    width: 240px;
     }
     @include viewport(xx-large){
-        width: 200px;
+        width: 240px;
     }   
 }
 input[type=text] {

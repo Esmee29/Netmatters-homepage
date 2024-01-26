@@ -349,13 +349,13 @@
 
 @media (min-width: 1260px) and (max-width: 1439px) {
   .search-box-1 {
-    width: 174px;
+    width: 240px;
   }
 }
 
 @media (min-width: 1440px) {
   .search-box-1 {
-    width: 200px;
+    width: 240px;
   }
 }
 
@@ -2208,7 +2208,7 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-bespoke:hover > a::before {
-    border-width: 1.5rem 7rem 0 6.8rem;
+    border-width: 1.5rem 6.8rem 0 6.8rem;
     top: 216px;
     margin-right: 50px;
   }
@@ -2268,7 +2268,7 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-it:hover > a::before {
-    border-width: 1.5rem 7rem 0 6.8rem;
+    border-width: 1.5rem 6.8rem 0 6.8rem;
     top: 216px;
     margin-right: 50px;
   }
@@ -2328,7 +2328,7 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-digital:hover > a::before {
-    border-width: 1.5rem 7rem 0 6.8rem;
+    border-width: 1.5rem 6.8rem 0 6.8rem;
     top: 216px;
     margin-right: 50px;
   }
@@ -2388,7 +2388,7 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-tel:hover > a::before {
-    border-width: 1.5rem 7rem 0 6.8rem;
+    border-width: 1.5rem 6.8rem 0 6.8rem;
     top: 216px;
     margin-right: 50px;
   }
@@ -2448,7 +2448,7 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-web:hover > a::before {
-    border-width: 1.5rem 7rem 0 6.8rem;
+    border-width: 1.5rem 6.8rem 0 6.8rem;
     top: 216px;
     margin-right: 50px;
   }
@@ -2508,7 +2508,7 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-cyber:hover > a::before {
-    border-width: 1.5rem 7rem 0 6.8rem;
+    border-width: 1.5rem 6.8rem 0 6.8rem;
     top: 216px;
     margin-right: 50px;
   }
@@ -2568,7 +2568,7 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-dev:hover > a::before {
-    border-width: 1.5rem 7rem 0 6.8rem;
+    border-width: 1.5rem 6.8rem 0 6.8rem;
     top: 216px;
     margin-right: 50px;
   }

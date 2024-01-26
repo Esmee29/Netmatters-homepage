@@ -378,33 +378,7 @@ grid-template-columns: auto auto auto auto;
                   }  
       
     }
-.container-section {
-    @include viewport(small) {
-        padding-top: 20px;
-        padding-bottom: 50px;
-              }
-    @include viewport(medium) {
-        padding-top: 50px;
-        padding-bottom: 50px;
-              }
-    @include viewport(medium) {
-        padding-top: 50px;
-        padding-bottom: 50px;
-              } 
-    @include viewport(large) {
-        padding-top: 50px;
-        padding-bottom: 50px;
-              } 
-    @include viewport(x-large) {
-        padding-top: 50px;
-        padding-bottom: 50px;
-              }
-              @include viewport(xx-large) {
-                padding-top: 50px;
-                padding-bottom: 50px;
-                      }  
         
-    }
 //welcome//
     .welcome-grid {
         @include viewport(large){

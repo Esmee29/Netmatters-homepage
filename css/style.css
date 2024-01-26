@@ -740,48 +740,6 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .container-section {
-    padding-top: 20px;
-    padding-bottom: 50px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .container-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .container-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1259px) {
-  .container-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
-
-@media (min-width: 1260px) and (max-width: 1439px) {
-  .container-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .container-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
-
 @media (min-width: 992px) and (max-width: 1259px) {
   .welcome-grid {
     display: grid;
@@ -4150,4 +4108,9 @@ cite {
 
 .btn-reviews-trustpilot:hover {
   background-color: #009B69;
+}
+
+.welcome-section {
+  padding-top: 20px;
+  padding-bottom: 50px;
 }

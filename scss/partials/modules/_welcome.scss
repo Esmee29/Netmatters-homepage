@@ -17,6 +17,9 @@
 .button-black:hover{
     background-color: $woodsmoke;
 }
+.button-black{
+    margin-top: 20px;
+}
 strong {
     font-weight: 600;
 }
@@ -43,9 +46,6 @@ cite {
 }
 .btn-reviews-trustpilot {
     @include btn-welcome($jade)
-    @include viewport(xx-large){
-        margin-top:70px;
-    }
 }
 .btn-reviews-trustpilot:hover {
     background-color: $green-haze;

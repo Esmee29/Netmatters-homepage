@@ -91,7 +91,6 @@ height: 50px;
     color: $white;
     background-color: $color;
     border-radius: 6px;
-    margin-top: 20px;
     margin-right: 20px;
     padding: 10px 20px;
     font-size: 20px;
@@ -109,6 +108,26 @@ height: 50px;
     }
     
 }
+@mixin service-button($color) {
+    display: inline-block;
+      font-weight: 400;
+      height: auto;
+      line-height: 35px;
+      padding: 6px 12px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 14px;
+      border: 1px solid transparent;
+      border-radius: 2px;
+      color: $white;
+      row-gap: 0.625em;
+      text-transform: uppercase;
+      border-radius: 3px;
+      width: 50%;
+      align-self: center;
+      margin-right: 0;
+      background-color: $color;
+    }
 //
 
 @mixin nav-triangle($color) {
@@ -128,6 +147,12 @@ height: 50px;
     @include viewport(large) {
         border-width: 1.5rem 4.6rem 0 4.6rem;
         top: 219px;
+    }
+    @media (min-width:1060px)and (max-width:1120px){
+        border-width: 1.5rem 4.7rem 0 4.8rem;
+    }
+    @media (min-width:1121px)and (max-width:1259px){
+        border-width: 1.5rem 5.5rem 0 5.4rem;
     }
     @include viewport(x-large) {
             border-width: 1.5rem 5.5rem 0 5.5rem;
@@ -157,23 +182,4 @@ height: 50px;
     color: $river-bed;
     
   }
-  @mixin service-button($color) {
-  display: inline-block;
-    font-weight: 400;
-    height: auto;
-    line-height: 35px;
-    padding: 6px 12px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    color: $white;
-    row-gap: 0.625em;
-    text-transform: uppercase;
-    border-radius: 3px;
-    width: 50%;
-    align-self: center;
-    margin-right: 0;
-    background-color: $color;
-  }
+  

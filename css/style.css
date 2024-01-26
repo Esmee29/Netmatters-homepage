@@ -863,6 +863,30 @@
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
+  .btn-reviews-google {
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  .btn-reviews-trustpilot {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1260px) and (max-width: 1439px) {
+  .btn-reviews-trustpilot {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .btn-reviews-trustpilot {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
   .latest-articles {
     margin-top: 30px;
   }
@@ -949,6 +973,12 @@
 @media (min-width: 1260px) and (max-width: 1439px) {
   .block-three {
     display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .triangle-space {
+    top: -1px;
   }
 }
 
@@ -2157,6 +2187,18 @@ header a {
   }
 }
 
+@media (min-width: 1060px) and (max-width: 1120px) {
+  .nav-bespoke:hover > a::before {
+    border-width: 1.5rem 4.7rem 0 4.8rem;
+  }
+}
+
+@media (min-width: 1121px) and (max-width: 1259px) {
+  .nav-bespoke:hover > a::before {
+    border-width: 1.5rem 5.5rem 0 5.4rem;
+  }
+}
+
 @media (min-width: 1260px) and (max-width: 1439px) {
   .nav-bespoke:hover > a::before {
     border-width: 1.5rem 5.5rem 0 5.5rem;
@@ -2202,6 +2244,18 @@ header a {
   .nav-it:hover > a::before {
     border-width: 1.5rem 4.6rem 0 4.6rem;
     top: 219px;
+  }
+}
+
+@media (min-width: 1060px) and (max-width: 1120px) {
+  .nav-it:hover > a::before {
+    border-width: 1.5rem 4.7rem 0 4.8rem;
+  }
+}
+
+@media (min-width: 1121px) and (max-width: 1259px) {
+  .nav-it:hover > a::before {
+    border-width: 1.5rem 5.5rem 0 5.4rem;
   }
 }
 
@@ -2253,6 +2307,18 @@ header a {
   }
 }
 
+@media (min-width: 1060px) and (max-width: 1120px) {
+  .nav-digital:hover > a::before {
+    border-width: 1.5rem 4.7rem 0 4.8rem;
+  }
+}
+
+@media (min-width: 1121px) and (max-width: 1259px) {
+  .nav-digital:hover > a::before {
+    border-width: 1.5rem 5.5rem 0 5.4rem;
+  }
+}
+
 @media (min-width: 1260px) and (max-width: 1439px) {
   .nav-digital:hover > a::before {
     border-width: 1.5rem 5.5rem 0 5.5rem;
@@ -2298,6 +2364,18 @@ header a {
   .nav-tel:hover > a::before {
     border-width: 1.5rem 4.6rem 0 4.6rem;
     top: 219px;
+  }
+}
+
+@media (min-width: 1060px) and (max-width: 1120px) {
+  .nav-tel:hover > a::before {
+    border-width: 1.5rem 4.7rem 0 4.8rem;
+  }
+}
+
+@media (min-width: 1121px) and (max-width: 1259px) {
+  .nav-tel:hover > a::before {
+    border-width: 1.5rem 5.5rem 0 5.4rem;
   }
 }
 
@@ -2349,6 +2427,18 @@ header a {
   }
 }
 
+@media (min-width: 1060px) and (max-width: 1120px) {
+  .nav-web:hover > a::before {
+    border-width: 1.5rem 4.7rem 0 4.8rem;
+  }
+}
+
+@media (min-width: 1121px) and (max-width: 1259px) {
+  .nav-web:hover > a::before {
+    border-width: 1.5rem 5.5rem 0 5.4rem;
+  }
+}
+
 @media (min-width: 1260px) and (max-width: 1439px) {
   .nav-web:hover > a::before {
     border-width: 1.5rem 5.5rem 0 5.5rem;
@@ -2397,6 +2487,18 @@ header a {
   }
 }
 
+@media (min-width: 1060px) and (max-width: 1120px) {
+  .nav-cyber:hover > a::before {
+    border-width: 1.5rem 4.7rem 0 4.8rem;
+  }
+}
+
+@media (min-width: 1121px) and (max-width: 1259px) {
+  .nav-cyber:hover > a::before {
+    border-width: 1.5rem 5.5rem 0 5.4rem;
+  }
+}
+
 @media (min-width: 1260px) and (max-width: 1439px) {
   .nav-cyber:hover > a::before {
     border-width: 1.5rem 5.5rem 0 5.5rem;
@@ -2442,6 +2544,18 @@ header a {
   .nav-dev:hover > a::before {
     border-width: 1.5rem 4.6rem 0 4.6rem;
     top: 219px;
+  }
+}
+
+@media (min-width: 1060px) and (max-width: 1120px) {
+  .nav-dev:hover > a::before {
+    border-width: 1.5rem 4.7rem 0 4.8rem;
+  }
+}
+
+@media (min-width: 1121px) and (max-width: 1259px) {
+  .nav-dev:hover > a::before {
+    border-width: 1.5rem 5.5rem 0 5.4rem;
   }
 }
 
@@ -3905,7 +4019,6 @@ input[type="checkbox"]:checked:after {
   color: #fff;
   background-color: #272936;
   border-radius: 6px;
-  margin-top: 20px;
   margin-right: 20px;
   padding: 10px 20px;
   font-size: 20px;
@@ -3926,6 +4039,10 @@ input[type="checkbox"]:checked:after {
 
 .button-black:hover {
   background-color: #121318;
+}
+
+.button-black {
+  margin-top: 20px;
 }
 
 strong {
@@ -3952,7 +4069,6 @@ cite {
   color: #fff;
   background-color: #4387f6;
   border-radius: 6px;
-  margin-top: 20px;
   margin-right: 20px;
   padding: 10px 20px;
   font-size: 20px;
@@ -3979,7 +4095,6 @@ cite {
   color: #fff;
   background-color: #00b67b;
   border-radius: 6px;
-  margin-top: 20px;
   margin-right: 20px;
   padding: 10px 20px;
   font-size: 20px;
@@ -3996,12 +4111,6 @@ cite {
 .btn-reviews-trustpilot:hover {
   cursor: pointer;
   text-decoration: none;
-}
-
-@media (min-width: 1440px) {
-  .btn-reviews-trustpilot {
-    margin-top: 70px;
-  }
 }
 
 .btn-reviews-trustpilot:hover {

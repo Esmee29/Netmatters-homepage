@@ -465,6 +465,22 @@ grid-template-columns: auto auto auto auto;
                     }
         
     }
+    .btn-reviews-google{
+        @include viewport(large){
+            margin-top: 60px;
+        } 
+    } 
+    .btn-reviews-trustpilot {
+        @include viewport(large){
+            margin-top: 20px;
+        }
+        @include viewport(x-large){
+            margin-top: 20px;
+        }
+        @include viewport(xx-large){
+            margin-top:70px;
+        }
+    }
 //news//
 .latest-articles{
     @include viewport(large){
@@ -528,7 +544,13 @@ grid-template-columns: auto auto auto auto;
 @include viewport(x-large){
     display: block;    
 }
-}  
+}
+//clients//
+.triangle-space{
+    @include viewport(xx-large){
+top: -1px; 
+            }      
+} 
   //newsletter//
     .news-input {
         @include viewport(large){

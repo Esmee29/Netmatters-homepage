@@ -2208,9 +2208,8 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-bespoke:hover > a::before {
-    border-width: 1.5rem 6.8rem 0 6.8rem;
+    border-width: 1.5rem 6.8rem 0 6rem;
     top: 216px;
-    margin-right: 50px;
   }
 }
 
@@ -2268,9 +2267,8 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-it:hover > a::before {
-    border-width: 1.5rem 6.8rem 0 6.8rem;
+    border-width: 1.5rem 6.8rem 0 6rem;
     top: 216px;
-    margin-right: 50px;
   }
 }
 
@@ -2328,9 +2326,8 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-digital:hover > a::before {
-    border-width: 1.5rem 6.8rem 0 6.8rem;
+    border-width: 1.5rem 6.8rem 0 6rem;
     top: 216px;
-    margin-right: 50px;
   }
 }
 
@@ -2388,9 +2385,8 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-tel:hover > a::before {
-    border-width: 1.5rem 6.8rem 0 6.8rem;
+    border-width: 1.5rem 6.8rem 0 6rem;
     top: 216px;
-    margin-right: 50px;
   }
 }
 
@@ -2448,9 +2444,8 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-web:hover > a::before {
-    border-width: 1.5rem 6.8rem 0 6.8rem;
+    border-width: 1.5rem 6.8rem 0 6rem;
     top: 216px;
-    margin-right: 50px;
   }
 }
 
@@ -2508,9 +2503,8 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-cyber:hover > a::before {
-    border-width: 1.5rem 6.8rem 0 6.8rem;
+    border-width: 1.5rem 6.8rem 0 6rem;
     top: 216px;
-    margin-right: 50px;
   }
 }
 
@@ -2568,9 +2562,8 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-dev:hover > a::before {
-    border-width: 1.5rem 6.8rem 0 6.8rem;
+    border-width: 1.5rem 6.8rem 0 6rem;
     top: 216px;
-    margin-right: 50px;
   }
 }
 

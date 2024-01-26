@@ -159,9 +159,8 @@ height: 50px;
             top: 213px;
         }
     @include viewport(xx-large) {
-        border-width: 1.5rem 6.8rem 0 6.8rem;
+        border-width: 1.5rem 6.8rem 0 6rem;
         top: 216px;
-        margin-right: 50px;
     }
 }
 }

@@ -109,33 +109,71 @@ height: 50px;
     }
     
 }
+//
 
 @mixin nav-triangle($color) {
     &>a::before {
-        top:214px;
+        top: 214px;
         content: "";
     width: 0px;
     height: 0px;
-    border-style: solid;
         border-style: solid;
-        border-width: 35px 67px 0 67px;
+        border-width: 1.5rem 5rem 0 5rem;
         border-color: $color transparent transparent transparent; 
         transform: rotate(0deg);
         z-index: 1000;
         display: block;
     position: absolute;
-    z-index: 2;
-
+   
     @include viewport(large) {
-        border-width: 35px 73px 0 73px;
-        top: 220px;
+        border-width: 1.5rem 4.6rem 0 4.6rem;
+        top: 219px;
     }
     @include viewport(x-large) {
-            border-width: 35px 90px 0 90px;
+            border-width: 1.5rem 5.5rem 0 5.5rem;
+            top: 213px;
         }
     @include viewport(xx-large) {
-        border-width: 35px 110px 0 105px;
-        top: 216px
+        border-width: 1.5rem 7rem 0 6.8rem;
+        top: 216px;
+        margin-right: 50px;
     }
 }
 }
+@mixin service-box() {
+    top: 0;
+    border: 1px solid $input;
+    border-radius: 0 0 3px 3px;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+    transition: .5s ease;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+    max-width: 720px;
+    padding: 30px;
+    display: flex;
+    border-radius: 15px;
+    text-align: center;
+    color: $river-bed;
+    
+  }
+  @mixin service-button($color) {
+  display: inline-block;
+    font-weight: 400;
+    height: auto;
+    line-height: 35px;
+    padding: 6px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    color: $white;
+    row-gap: 0.625em;
+    text-transform: uppercase;
+    border-radius: 3px;
+    width: 50%;
+    align-self: center;
+    margin-right: 0;
+    background-color: $color;
+  }

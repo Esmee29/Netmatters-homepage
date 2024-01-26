@@ -5,7 +5,9 @@
     justify-content: space-between;
   }
 
-  
+  .service-blocks:hover p{
+      color: $white;
+  }
   .float-container {
     display: block;
     border-radius: 15px;
@@ -63,7 +65,7 @@ line-height: 62px;
   .service-block-three:hover .h2{
     color: $white;
   }
-  .service-block-four:hover .h2{
+  .service-block-four:hover .h2 {
     color: $white;
   }
   .service-block-five:hover .h2{
@@ -79,19 +81,8 @@ line-height: 62px;
     padding-bottom: 10px;
   }
   .service-block-one  {
-    top: 0;
-    border: 1px solid $input;
-    border-radius: 0 0 3px 3px;
-    flex-direction: column;
-    margin-bottom: 30px;
-    position: relative;
-    transition: .5s ease;
-    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-    max-width: 720px;
-    padding: 30px;
-    display: flex;
-    border-radius: 15px;
-    text-align: center;
+    @include service-box
+    
   }
   .service-block-one:hover, .btn-software:hover {
     top: -10px;
@@ -140,18 +131,8 @@ line-height: 62px;
   }
   
   .service-block-two, .btn-it {
-    top: 0;
-    border: 1px solid $input;
-    border-radius: 0 0 3px 3px;
-    flex-direction: column;
-    margin-bottom: 30px;
-    position: relative;
-    transition: .5s ease;
-    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-    max-width: 720px;
-    padding: 30px;
-    display: flex;
-    border-radius: 15px;
+    @include service-box
+    
   }
   .service-block-two:hover, .btn-it:hover {
     top: -10px;
@@ -220,18 +201,8 @@ line-height: 62px;
     background-color: $white;
   }
   .service-block-three, .btn-dm {
-    top: 0;
-    border: 1px solid $input;
-    border-radius: 0 0 3px 3px;
-    flex-direction: column;
-    margin-bottom: 30px;
-    position: relative;
-    transition: .5s ease;
-    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-    max-width: 720px;
-    padding: 30px;
-    display: flex;
-    border-radius: 15px;
+    @include service-box
+    
   }
   .service-block-three:hover, .btn-dm:hover {
     top: -10px;
@@ -277,18 +248,8 @@ line-height: 62px;
     background-color: $white;
   }
   .service-block-four, .btn-ts {
-    top: 0;
-    border: 1px solid $input;
-    border-radius: 0 0 3px 3px;
-    flex-direction: column;
-    margin-bottom: 30px;
-    position: relative;
-    transition: .5s ease;
-    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-    max-width: 720px;
-    padding: 30px;
-    display: flex;
-    border-radius: 15px;
+     @include service-box
+    
   }
   .service-block-four:hover, .btn-ts:hover {
     top: -10px;
@@ -335,18 +296,8 @@ line-height: 62px;
     background-color: $white;
   }
   .service-block-five, .btn-wd {
-    top: 0;
-    border: 1px solid $input;
-    border-radius: 0 0 3px 3px;
-    flex-direction: column;
-    margin-bottom: 30px;
-    position: relative;
-    transition: .5s ease;
-    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-    max-width: 720px;
-    padding: 30px;
-    display: flex;
-    border-radius: 15px;
+    @include service-box
+    
   }
   .service-block-five:hover, .btn-wd:hover {
     top: -10px;
@@ -392,18 +343,8 @@ line-height: 62px;
     background-color: $white;
   }
   .service-block-six, .btn-cs {
-    top: 0;
-    border: 1px solid $input;
-    border-radius: 0 0 3px 3px;
-    flex-direction: column;
-    margin-bottom: 30px;
-    position: relative;
-    transition: .5s ease;
-    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-    max-width: 720px;
-    padding: 30px;
-    display: flex;
-    border-radius: 15px;
+    @include service-box
+    
   }
   .service-block-six:hover, .btn-cs:hover {
     top: -10px;
@@ -449,18 +390,8 @@ line-height: 62px;
     background-color: $white;
   }
   .service-block-seven, .btn-dt {
-    top: 0;
-    border: 1px solid $input;
-    border-radius: 0 0 3px 3px;
-    flex-direction: column;
-    margin-bottom: 30px;
-    position: relative;
-    transition: .5s ease;
-    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-    max-width: 720px;
-    padding: 30px;
-    display: flex;
-    border-radius: 15px;
+    @include service-box
+    
   }
   .service-block-seven:hover, .btn-dt:hover {
     top: -10px;
@@ -479,6 +410,7 @@ line-height: 62px;
     font-weight: 400;
     font-size: .8125rem;
     line-height: 1.375rem;
+    
   }
   .service-block-seven .btn, .btn-dt .btn {
     min-width: 130px;
@@ -510,164 +442,43 @@ line-height: 62px;
   }
   
   .btn-software {
-    display: inline-block;
-    font-weight: 400;
-    height: auto;
-    line-height: 35px;
-    padding: 6px 12px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    color: $white;
-    row-gap: 0.625em;
-    text-transform: uppercase;
-    border-radius: 3px;
-    width: 50%;
-    align-self: center;
-    margin-right: 0;
-    background-color: $hoki;
+    @include service-button($hoki)
   }
   .btn-software:hover {
     cursor: pointer;
   }
   .btn-it {
-    display: inline-block;
-    font-weight: 400;
-    height: auto;
-    line-height: 35px;
-    padding: 6px 12px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    color: $white;
-    row-gap: 0.625em;
-    text-transform: uppercase;
-    border-radius: 3px;
-    width: 50%;
-    align-self: center;
-    margin-right: 0;
-    background-color: $havelock-blue;
+    @include service-button($havelock-blue)
   }
   .btn-it:hover {
     cursor: pointer;
   }
   .btn-dm {
-    display: inline-block;
-    font-weight: 400;
-    height: auto;
-    line-height: 35px;
-    padding: 6px 12px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    color: $white;
-    row-gap: 0.625em;
-    text-transform: uppercase;
-    border-radius: 3px;
-    width: 50%;
-    align-self: center;
-    margin-right: 0;
-    background-color: $shamrock;
+    @include service-button($shamrock)
   }
   .btn-dm:hover {
     cursor: pointer;
   }
   .btn-ts {
-    display: inline-block;
-    font-weight: 400;
-    height: auto;
-    line-height: 35px;
-    padding: 6px 12px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    row-gap: 0.625em;
-    text-transform: uppercase;
-    border-radius: 3px;
-    width: 50%;
-    align-self: center;
-    color: $white;
-    margin-right: 0;
-    background-color: $valencia;
+    @include service-button($valencia)
   }
   .btn-ts:hover {
     cursor: pointer;
   }
   .btn-wd {
-    display: inline-block;
-    font-weight: 400;
-    height: auto;
-    line-height: 35px;
-    padding: 6px 12px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    row-gap: 0.625em;
-    text-transform: uppercase;
-    border-radius: 3px;
-    width: 50%;
-    align-self: center;
-    color: $white;
-    margin-left: 0;
-    margin-right: 0;
-    background-color: $wisteria;
+    @include service-button($wisteria)
   }
   .btn-wd:hover {
     cursor: pointer;
   }
   .btn-cs {
-    display: inline-block;
-    font-weight: 400;
-    height: auto;
-    line-height: 35px;
-    padding: 6px 12px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    row-gap: 0.625em;
-    text-transform: uppercase;
-    border-radius: 3px;
-    width: 50%;
-    align-self: center;
-    color: $white;
-    margin-right: 0;
-    background-color: $radical-red;
+    @include service-button($radical-red)
   }
   .btn-cs:hover {
     cursor: pointer;
   }
   .btn-dt {
-    display: inline-block;
-    font-weight: 400;
-    height: auto;
-    line-height: 35px;
-    padding: 6px 12px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    row-gap: 0.625em;
-    text-transform: uppercase;
-    border-radius: 3px;
-    width: 50%;
-    align-self: center;
-    color: $white;
-    margin-left: 0;
-    margin-right: 0;
-    background-color: $punch;
+    @include service-button($punch)
   }
   .btn-dt:hover {
     cursor: pointer;
@@ -675,4 +486,7 @@ line-height: 62px;
 
   .service-block-six .btn-cs, .btn-cs .btn-cs {
     margin-left: 0;
+  }
+  .view-all-large{
+    margin-right: 50px;
   }

@@ -70,6 +70,14 @@
         border: 1px 0 1px 1px $manatee;
     }    
 }
+.search-box-1{
+    @include viewport(x-large){
+    width: 174px;
+    }
+    @include viewport(xx-large){
+        width: 200px;
+    }   
+}
 input[type=text] {
     @include viewport(medium){
         border: 1px solid $input;
@@ -121,7 +129,10 @@ input[type=text] {
         border: none;
         outline: none;
         border-radius: 0 5% 5% 0;
-        cursor: pointer;   
+        &:hover {
+            cursor: pointer;
+            background-color:  $waterloo;
+        }  
     }
     @include viewport(large){
         color: $white;
@@ -134,7 +145,10 @@ input[type=text] {
         border: none;
         outline: none;
         border-radius: 0 5% 5% 0;
-        cursor: pointer;   
+        &:hover {
+            cursor: pointer;
+            background-color:  $waterloo;
+        }    
     }
     @include viewport(x-large){
         color: $white;
@@ -147,7 +161,10 @@ input[type=text] {
         border: none;
         outline: none;
         border-radius: 0 5% 5% 0;
-        cursor: pointer;   
+        &:hover {
+            cursor: pointer;
+            background-color:  $waterloo;
+        }    
     }
     @include viewport(xx-large){
         color: $white;
@@ -160,7 +177,10 @@ input[type=text] {
         border: none;
         outline: none;
         border-radius: 0 5% 5% 0;
-        cursor: pointer;   
+        &:hover {
+            cursor: pointer;
+            background-color:  $waterloo;
+        }    
     }
 }
 .btn-help{

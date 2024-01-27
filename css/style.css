@@ -2168,7 +2168,7 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-bespoke:hover > a::before {
-    top: 172px;
+    top: 212px;
     border-left-width: 84px;
     border-right-width: 84px;
   }
@@ -2210,7 +2210,7 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-it:hover > a::before {
-    top: 172px;
+    top: 212px;
     border-left-width: 84px;
     border-right-width: 84px;
   }
@@ -2252,7 +2252,7 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-digital:hover > a::before {
-    top: 172px;
+    top: 212px;
     border-left-width: 84px;
     border-right-width: 84px;
   }
@@ -2294,7 +2294,7 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-tel:hover > a::before {
-    top: 172px;
+    top: 212px;
     border-left-width: 84px;
     border-right-width: 84px;
   }
@@ -2336,7 +2336,7 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-web:hover > a::before {
-    top: 172px;
+    top: 212px;
     border-left-width: 84px;
     border-right-width: 84px;
   }
@@ -2378,7 +2378,7 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-cyber:hover > a::before {
-    top: 172px;
+    top: 212px;
     border-left-width: 84px;
     border-right-width: 84px;
   }
@@ -2420,7 +2420,7 @@ header a {
 
 @media (min-width: 1440px) {
   .nav-dev:hover > a::before {
-    top: 172px;
+    top: 212px;
     border-left-width: 84px;
     border-right-width: 84px;
   }

@@ -1488,7 +1488,7 @@ footer {
 }
 
 .cookie-settings-btn {
-  position: absolute;
+  position: fixed;
   line-height: 22px;
   z-index: 99;
   bottom: 0;

@@ -335,6 +335,76 @@ input[type=text] {
                             margin-bottom: 18px;
 }
 }
+//Cookies//
+.modal-dialog {
+    @include viewport(small) {
+        margin: 50px auto auto auto;
+    }
+    @include viewport(medium) {
+        width: 600px;
+        margin: 100px auto auto auto;
+    }
+
+    @include viewport(large) {
+        width: 600px;
+        margin: 100px auto auto auto;;
+    }
+
+    @include viewport(x-large) {
+        width: 600px;
+        margin: 100px auto auto auto;
+    }
+    @include viewport(xx-large) {
+        width: 600px;
+        margin: 100px auto auto auto;
+    }
+}
+.modal-footer {
+    @include viewport(medium) {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    @include viewport(large) {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    @include viewport(x-large) {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+    @include viewport(xx-large) {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+.cookie-row {
+    @include viewport(small) {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+.cookie-btn {
+    @include viewport(small) {
+        padding: 6px 12px;
+    }
+    @include viewport(medium) {
+    }
+    @include viewport(large) {
+        padding: 6px 40px;
+    }
+    @include viewport(x-large) {
+        padding: 6px 40px;
+    }
+    @include viewport(xx-large) {
+        padding: 6px 40px;
+    }
+}
 //services//
 .service-heading{
     @include viewport(x-large) {

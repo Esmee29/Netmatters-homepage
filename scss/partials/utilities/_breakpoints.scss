@@ -33,8 +33,7 @@
     @else {
         @error "No value could be retrieved for break for `#{$break}`";
     }
-
-    
+   
 }
 $brkpoint-sm: 320px;
 $brkpoint-smd: 650px;

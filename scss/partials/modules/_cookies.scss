@@ -1,0 +1,115 @@
+.cookie-settings-btn {
+    position: absolute;
+    line-height: 22px;
+    z-index: 99;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background: #75788a;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    border: solid #75788a;
+    border-width: 1px 1px 0 0;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: .8rem;
+}
+
+#cookie-consent {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background-color: rgba(0,0,0,.7);
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    outline: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+}
+
+.modal-dialog {
+    transform: translate(0);
+}
+
+.modal-content {
+    position: relative;
+    background-color: $white;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    box-shadow: 0 3px 9px rgba(0,0,0,.5);
+    background-clip: padding-box;
+    outline: none;
+}
+
+.modal-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e5e5e5;
+    text-align: start;
+
+    & h3 {
+        margin-bottom: 0;
+    }
+}
+
+.modal-body {
+    position: relative;
+    padding: 20px;
+    text-align: left;
+
+    & a {
+        color: #121318;
+    }
+}
+.modal-body a {
+    color: 1px solid #e5e5e5;
+}
+.modal-footer {
+    padding: 19px 20px 19px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+    
+}
+
+.cookie-row {
+    display: flex;
+    gap: 1.5rem;
+}
+.change-settings-btn {
+    background-color: $manatee;
+}
+.change-settings-btn:hover {
+    text-decoration: none;
+    background-color: $waterloo;
+}
+.accept-cookies-btn {
+    background-color: $wisteria;
+}
+.accept-cookies-btn:hover{
+    text-decoration: none;
+    background-color: $affair;
+}
+.cookie-btn {
+    display: block;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.btn{
+    font-weight: 400;
+    height: auto;
+    border-radius: 3px;
+    line-height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $white;
+    border: 1px solid transparent;
+}

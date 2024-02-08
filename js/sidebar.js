@@ -2,7 +2,7 @@
 // JavaScript Sidebar
 // ==========================================================================
 
-const btnHamburger = document.querySelector(".btn-hamburger");
+const btnHamburger = document.getElementById("header-hamburger");
 const sideBar = document.querySelector(".sidebar");
 const main = document.querySelector(".main");
 const sideBarActive = document.querySelector(".sidebar-active");

@@ -1,4 +1,3 @@
-// Selecting elements
 const sideBar = document.querySelector(".sidebar");
 const main = document.querySelector(".main");
 const body = document.querySelector("body");

@@ -4016,6 +4016,79 @@ input[type="checkbox"]:checked:after {
   margin-right: 50px;
 }
 
+/* Positioning the sidebar off-screen initially */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  /* Initially hidden on the right */
+  width: 250px;
+  height: 100%;
+  background-color: #333645;
+  transition: right 0.3s ease;
+  /* Transition for smooth animation */
+  z-index: 1000;
+  /* Ensure it's above other content */
+  overflow-x: hidden;
+}
+
+.sidebar ul {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar a {
+  color: white;
+  font-size: 1.125rem;
+  text-decoration: none;
+  padding: 19px 0 18px;
+  display: block;
+  border-radius: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 1px solid rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Active state for the sidebar */
+.sidebar.sidebar-active {
+  right: 0;
+  /* Displayed on the right */
+}
+
+/* Pushing the main content when the sidebar is active */
+.main {
+  transition: margin-right 0.3s ease;
+  /* Transition for smooth animation */
+}
+
+.main.main-sidebar-active {
+  margin-right: 250px;
+  /* Adjust based on the sidebar width */
+}
+
+/* Dark overlay */
+.dark-overlay {
+  display: none;
+  /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black */
+  z-index: 999;
+  /* Ensure it's above other content */
+}
+
+.dark-overlay.dark-overlay-active {
+  display: block;
+  /* Displayed when active */
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
   .sidebar {
     width: 275px;
@@ -4034,17 +4107,6 @@ input[type="checkbox"]:checked:after {
   }
 }
 
-.sidebar {
-  position: fixed;
-  top: 0;
-  right: 0;
-  z-index: 9;
-  height: 100%;
-  width: 350px;
-  background: #333645;
-  overflow-x: hidden;
-}
-
 .sidebar a {
   color: white;
   font-size: 1.125rem;
@@ -4058,63 +4120,40 @@ input[type="checkbox"]:checked:after {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.menu-link-text {
+  text-align: left;
+  font-size: .875rem;
+}
+
+.menu-banner-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.45);
+  color: #fff;
+}
+
+.menu-banner-item a {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: #fff;
+}
+
+.menu a {
+  text-align: left;
+  padding: 15px 20px;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
 .container-sidebar {
   padding: 21px;
+}
+
+li a {
+  color: #fff;
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
   .container-sidebar {
     display: none;
   }
-}
-
-.sidebar ul {
-  display: block;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.dark-overlay-active {
-  opacity: 50%;
-  z-index: 15;
-  left: -275px;
-  transition: .5s;
-  cursor: pointer;
-}
-
-@media (min-width: 992px) and (max-width: 1259px) {
-  .dark-overlay-active {
-    left: -350px;
-    transition: .5s;
-  }
-}
-
-@media (min-width: 1260px) {
-  .dark-overlay-active {
-    transition: .5s;
-    left: -350px;
-  }
-}
-
-.dark-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #0b0b0b;
-  opacity: 0%;
-  z-index: -1;
-  transition: transform .4s ease-in-out, opacity .4s ease-in-out;
-}
-
-.software, .it, .digital, .telecoms, .web, .security, .developer-course {
-  padding: 20px 0 0;
-}
-
-.our-work-menu {
-  background-color: #333645;
 }
 
 .actions {

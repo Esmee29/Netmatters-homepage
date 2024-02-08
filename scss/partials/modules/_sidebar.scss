@@ -1,0 +1,214 @@
+@media (min-width: 768px) and (max-width: 991px){
+.sidebar {
+    width: 275px;
+}
+}
+@media (min-width: 320px) and (max-width: 767px){
+.sidebar {
+    width: 275px;
+}
+}
+@media (min-width: 1260px){
+.sidebar {
+    overflow-x: hidden;
+}
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    height: 100%;
+    width: 350px;
+    background: #333645;
+    overflow-x: hidden;
+}
+.sidebar a {
+    color: white;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 19px 0 18px;
+    display: block;
+    border-radius: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    outline: 1px solid rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.container-sidebar {
+    padding: 21px;
+}
+@media (min-width: 992px) and (max-width: 1259px){
+.container-sidebar {
+    display: none;
+}
+}
+.sidebar ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.dark-overlay-active {
+    opacity: 50%;
+    z-index: 15;
+    left: -275px;
+    transition: .5s;
+    cursor: pointer;
+}
+@media (min-width: 992px) and (max-width: 1259px){
+.dark-overlay-active {
+    left: -350px;
+    transition: .5s;
+}
+}
+@media (min-width: 1260px){
+.dark-overlay-active {
+    transition: .5s;
+    left: -350px;
+}
+}
+.dark-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0b0b0b;
+    opacity: 0%;
+    z-index: -1;
+    transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+.software, .it, .digital, .telecoms, .web, .security, .developer-course {
+    padding: 20px 0 0;
+}
+.our-work-menu {
+    background-color: #333645;
+}
+// Hamburger button
+.actions {
+    float: right;
+}
+.container-hamburger {
+    display: table-cell;
+    vertical-align: middle;
+}
+.btn-hamburger {
+    height: 56px;
+    border-radius: 3px;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 35px;
+    padding: 6px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    border: 1px solid transparent;
+    color: white;
+    color: #fff;
+    background-color: #333645;
+    margin-left: 10px;
+}
+.hamburger-box {
+    display: inline-block;
+    width: 33px;
+    height: 19px;
+    position: relative;
+  }
+  
+  
+  .hamburger-inner {
+    left: 0;
+    top: 10px;
+  
+    @include hamburger();
+  
+    &::before {
+      @include hamburger();
+      top: -10px;
+      bottom: 0;
+    }
+  
+    &::after {
+      @include hamburger();
+      top: 10px;
+    }
+  }
+  
+  .hamburger-spin {
+    .hamburger-inner {
+  
+      @include hamburger();
+  
+      transform: rotate(225deg);
+      transition-delay: .12s;
+      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+      transition: .5s ease;
+  
+      &::before {
+        @include hamburger();
+        top:0;
+        opacity: 0;
+  
+        transition: top .1s ease-out
+          ,opacity .1s ease-out .12s;
+  
+        transform: rotate(45deg);
+  
+        &:hover {
+          top: 10px;
+        }
+      }
+  
+      &::after {
+        @include hamburger();
+        bottom: 0;
+        top: 0;
+        transform: rotate(-90deg);
+        transition: bottom .1s
+          ease-out, transform .22s
+          cubic-bezier(0.215, 0.610, 0.355, 1) .12s;
+      }
+    }
+  }
+
+  .hamburger-spin-backwards {
+    cursor: pointer;
+    
+    .hamburger-inner {
+    
+      @include hamburger();
+      
+        transform: rotate(-180deg);
+        transition-delay: .12s;
+        transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+        transition: .5s ease;
+      
+        &::before {
+          @include hamburger();
+          top: 10px;
+          opacity: 1;
+          transform: rotate(180deg);
+          transition: top .1s ease-out
+          ,opacity .1s ease-out .12s;
+      
+          //transform: rotate(45deg);
+      
+          &:hover {
+            top: 10px;
+          }
+        }
+      
+        &::after {
+          @include hamburger();
+          bottom: 0;
+          top: -10px;
+          transform: rotate(180deg);
+          transition: bottom .1s
+            ease-out, transform .22s
+            cubic-bezier(0.215, 0.610, 0.355, 1) .12s;
+        }
+    }
+  }
+
+

@@ -50,6 +50,16 @@ $insta:#D93175;
 
 
 //buttons//
+@mixin hamburger() {
+    content: "";
+    display:block;
+    position: absolute;
+    width: 33px;
+    height: 4px;
+    background-color: $white;
+    border-radius: 0;
+    left: 0;
+}
 @mixin btn-format($color) {
     display:inline-block;
     font-weight: 400;

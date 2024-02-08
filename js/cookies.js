@@ -8,7 +8,7 @@ console.log(testDate);
 
 btnAcceptCookies.addEventListener("click", () => {
     cookieSection.style.display = "none";
-    setCookie("cookie", true, 1); // number is days
+    setCookie("cookie", true, 1); // number in days
     
     body.style.overflow = "auto";
     console.log("cookie should be stored now");

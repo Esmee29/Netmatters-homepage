@@ -95,26 +95,6 @@ display: block;
   padding-bottom: 20px;
 }
 
-.hamburger {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-size: 21px;
-  width: 63px;
-  height: 56px;
-  background-color: $tuna;
-  border: none;
-  border-radius: 3px;
-  margin-left: 20px;
-  &:hover {
-    cursor: pointer;
-    background-color: $footer;
-}
-}
-.btn-hamburger {
-  height: 56px;
-  border-radius: 3px;
-}
 
 .phone {
   text-decoration: none;
@@ -242,10 +222,6 @@ header a{
   text-decoration: underline;
 }
 
-
-  .hamburger {
-    margin: 0px;
-  }
   .header-low {
     display: none;
   }
@@ -283,10 +259,6 @@ header a{
     @include viewport(large) {
       display: none;
   }
-}
-
-.hamburger {
-  margin-left: 10px;
 }
 .nav-bar {
   display: flex;

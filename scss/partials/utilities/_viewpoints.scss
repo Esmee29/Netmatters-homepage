@@ -19,7 +19,7 @@
         display:none;
          }
 }
-.hidden-xlg{
+.hidden-xxlg{
     @include viewport(xx-large) {
         display:none;
          }
@@ -753,3 +753,11 @@ justify-content: space-between;
     width: 25%;
     }        
 }
+//sidebar
+    .container-sidebar {
+        @include viewport(large){
+            
+      display: none;
+        }
+    } 
+    

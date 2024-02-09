@@ -2,24 +2,25 @@
 // JavaScript Sidebar
 // ==========================================================================
 
-const btnHamburger = document.getElementById("header-hamburger");
+const btnHamburger = document.querySelector(".btn-hamburger");
 const sideBar = document.querySelector(".sidebar");
 const main = document.querySelector(".main");
-const sideBarActive = document.querySelector(".sidebar-active");
 const darkOverlay = document.querySelector(".dark-overlay");
- 
-btnHamburger.addEventListener("click", () => { // Default hamburger button on the main header
-    darkOverlay.classList.add("dark-overlay-active");
-    sideBar.classList.add("sidebar-active");
-    btnHamburger.classList.add("hamburger-spin");
-    btnHamburger.classList.remove("hamburger-spin-backwards");
+
+btnHamburger.addEventListener("click", () => {
+    darkOverlay.classList.toggle("dark-overlay-active");
+    sideBar.classList.toggle("sidebar-active");
+    main.classList.toggle("main-sidebar-active");
+    btnHamburger.classList.toggle("hamburger-spin");
+    btnHamburger.classList.toggle("hamburger-spin-backwards");
     document.body.style.overflow = "hidden";
-})
- 
-darkOverlay.addEventListener("click", () => { // Click anywhere on the dark overlay next to the sidebar
+});
+
+darkOverlay.addEventListener("click", () => {
     darkOverlay.classList.remove("dark-overlay-active");
     sideBar.classList.remove("sidebar-active");
-    btnHamburger.classList.add("hamburger-spin-backwards");
+    main.classList.remove("main-sidebar-active");
     btnHamburger.classList.remove("hamburger-spin");
+    btnHamburger.classList.remove("hamburger-spin-backwards");
     document.body.style.overflow = "auto";
-})
+});

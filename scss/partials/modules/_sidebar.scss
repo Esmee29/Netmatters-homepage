@@ -1,20 +1,14 @@
-/* Positioning the sidebar off-screen initially */
+
 .sidebar {
     position: fixed;
     top: 0;
-    right: -250px; /* Initially hidden on the right */
+    right: -250px; 
     width: 250px;
     height: 100%;
     background-color: #333645;
-    transition: right 0.3s ease; /* Transition for smooth animation */
-    z-index: 1000; /* Ensure it's above other content */
+    transition: right 0.3s ease; 
+    z-index: 1000; 
     overflow-x: hidden;
-    & ul {
-        display: block;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
     & a {
         color: white;
         font-size: 1.125rem;
@@ -24,83 +18,142 @@
         border-radius: 3px;
         text-align: center;
         text-transform: uppercase;
-        outline: 1px solid rgba(0,0,0,.25);
-        border: 1px solid hsla(0,0%, 100%,.1);
     }
 }
-
-  
-  /* Active state for the sidebar */
-  .sidebar.sidebar-active {
-    right: 0; /* Displayed on the right */
-  }
-  
-  /* Pushing the main content when the sidebar is active */
-  .main {
-    transition: margin-right 0.3s ease; /* Transition for smooth animation */
-  }
-  
-  .main.main-sidebar-active {
-    margin-right: 250px; /* Adjust based on the sidebar width */
-  }
-  
-  /* Dark overlay */
-  .dark-overlay {
-    display: none; /* Initially hidden */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    z-index: 999; /* Ensure it's above other content */
-  }
-  
-  .dark-overlay.dark-overlay-active {
-    display: block; /* Displayed when active */
-  }
-  //
-  
+.it-side{
+    
+    color: $mariner;
+}
+.digital-side{
+    color: $eucalyptus;  
+}
+.nav-item-side small {
+    padding-bottom: 1px;
+    font-size: .625rem;
+    text-align: center;
+}
+.nav-item-side{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin-top: 15px;
+}
+.mobile-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.icon-format-nav {
+    font-size: 1.438rem;
+}
+.menu-banner-item a {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.menu-link-text {
+    text-align: left;
+    font-size: .875rem;
+}
+@media (min-width: 992px){
+.sidebar.sidebar-active {
+    width: 22rem;
+}
+}
 @media (min-width: 768px) and (max-width: 991px) {
-    .sidebar {
+    .sidebar-active {
       width: 275px;
     }
   }
   
   @media (min-width: 320px) and (max-width: 767px) {
-    .sidebar {
+    .sidebar-active {
       width: 275px;
     }
   }
-  
-  @media (min-width: 1260px) {
-    .sidebar {
-      overflow-x: hidden;
-    }
+  .sidebar.sidebar-active {
+    right: 0; 
   }
-  .sidebar a {
+  .services-large{
+    margin-left: 0;
+    padding-left: 0;
+  }  
+  .main {
+    transition: margin-right 0.3s ease; 
+    margin-right: 0; 
+  }
+  .fa-angles-right{
     color: white;
-    font-size: 1.125rem;
-    text-decoration: none;
-    padding: 19px 0 18px;
+    margin-right: 5px;
+    font-size: 10px;
+  }
+  .main.main-sidebar-active {
+    left: -310px;
+    transition: .5s;
+    cursor: pointer; 
+  }
+  .software, .it, .digital, .telecoms, .web, .security, .developer-course {
+    padding: 20px 0 0;
+}
+  .dark-overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 999; 
+  }
+  .sidebar ul {
     display: block;
-    border-radius: 3px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.no-padding ul {
+    padding: 0;
+}
+.sub-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    padding: auto;
+    margin-top: -15px;
+}
+  .menu-banner-item-title {
+    padding-top: 0;
+}
+.menu-banner-item-title a{
+    text-align: left;
+    margin-left: 20px;
+    border:#333645;
+}
+.menu-banner a {
+    display: block;
+    font-size: 1rem;
+    color: #fff;
     text-align: center;
     text-transform: uppercase;
-    outline: 1px solid rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+    margin: 0 20px;
+    width: 230px;
+}
+  .dark-overlay.dark-overlay-active {
+    display: block; 
   }
   .menu-link-text {
     text-align: left;
     font-size: .875rem;
 }
-.menu-banner-item {
-    border-top: 1px solid rgba(0, 0, 0, 0.45);
-    color: #fff;
-}
-.menu-banner-item a {
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    color: #fff;
+.menu-banner-title {
+    display: none;
 }
 .menu a {
     text-align: left;
@@ -108,17 +161,16 @@
     font-size: 1rem;
     background-color: rgba(0, 0, 0, 0.25);
 }
-  .container-sidebar {
-    padding: 21px;
-  }
- li a{
-    color: #fff;
- } 
-  @media (min-width: 992px) and (max-width: 1259px) {
-    .container-sidebar {
-      display: none;
+  
+
+  
+  @media (min-width: 1260px) {
+    .sidebar {
+      overflow-x: hidden;
     }
-  }  
+  }
+
+
     // Hamburger button
     .actions {
         float: right;

@@ -394,6 +394,7 @@ input[type=text] {
         padding: 6px 12px;
     }
     @include viewport(medium) {
+        padding: 6px 40px;
     }
     @include viewport(large) {
         padding: 6px 40px;
@@ -760,4 +761,22 @@ justify-content: space-between;
       display: none;
         }
     } 
+    .main.main-sidebar-active{
+        @include viewport(small){
+            left: -300px;
+            }  
+        @include viewport(medium){
+            left: -260px;
+            }
+                @include viewport(large){
+                    left: -330px;
+                }
+        @include viewport(x-large){
+            left: -310px;
+        }
+        @include viewport(xx-large){
+            left: -310px;
+        }       
+    }
+   
     

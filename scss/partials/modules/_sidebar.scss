@@ -5,12 +5,12 @@
     right: -250px; 
     width: 250px;
     height: 100%;
-    background-color: #333645;
+    background-color: $tuna;
     transition: right 0.3s ease; 
     z-index: 1000; 
     overflow-x: hidden;
     & a {
-        color: white;
+        color: $white;
         font-size: 1.125rem;
         text-decoration: none;
         padding: 19px 0 18px;
@@ -43,10 +43,20 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    outline: 1px solid rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 230px;
+    margin: 0px 20px 20px;
 }
 .icon-format-nav {
     font-size: 1.438rem;
 }
+@media (min-width: 1260px){
+    .hidden-extra{
+        display: none;
+    }
+}
+.hidden-extra
 .menu-banner-item a {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -56,7 +66,7 @@
 }
 @media (min-width: 992px){
 .sidebar.sidebar-active {
-    width: 22rem;
+    width: 350px
 }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -82,17 +92,19 @@
     margin-right: 0; 
   }
   .fa-angles-right{
-    color: white;
+    color: $white;
     margin-right: 5px;
     font-size: 10px;
   }
   .main.main-sidebar-active {
-    left: -310px;
     transition: .5s;
     cursor: pointer; 
   }
   .software, .it, .digital, .telecoms, .web, .security, .developer-course {
     padding: 20px 0 0;
+    @media (min-width: 1260px){
+            display: none;
+        }
 }
   .dark-overlay {
     display: none; 
@@ -124,15 +136,18 @@
   .menu-banner-item-title {
     padding-top: 0;
 }
+.menu-banner-item-title:hover {
+background-color: $bright-gray;
+}
 .menu-banner-item-title a{
     text-align: left;
     margin-left: 20px;
-    border:#333645;
+    border:$tuna;
 }
 .menu-banner a {
     display: block;
     font-size: 1rem;
-    color: #fff;
+    color: $white;
     text-align: center;
     text-transform: uppercase;
     background-color: rgba(0, 0, 0, 0.25);
@@ -190,9 +205,8 @@
         text-transform: uppercase;
         font-size: 14px;
         border: 1px solid transparent;
-        color: white;
-        color: #fff;
-        background-color: #333645;
+        color: $white;
+        background-color: $tuna;
         margin-left: 10px;
     }
     .hamburger-box {
@@ -223,76 +237,78 @@
       
       .hamburger-spin {
         .hamburger-inner {
-      
-          @include hamburger();
-      
-          transform: rotate(225deg);
-          transition-delay: .12s;
-          transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
-          transition: .5s ease;
-      
-          &::before {
+        
             @include hamburger();
-            top:0;
-            opacity: 0;
-      
-            transition: top .1s ease-out
-              ,opacity .1s ease-out .12s;
-      
-            transform: rotate(45deg);
-      
-            &:hover {
-              top: 10px;
-            }
-          }
-      
-          &::after {
-            @include hamburger();
-            bottom: 0;
-            top: 0;
-            transform: rotate(-90deg);
-            transition: bottom .1s
-              ease-out, transform .22s
-              cubic-bezier(0.215, 0.610, 0.355, 1) .12s;
+            
+              transform: rotate(-180deg);
+              transition-delay: .12s;
+              transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+              transition: .5s ease;
+            
+              &::before {
+                @include hamburger();
+                top: 10px;
+                opacity: 1;
+                transform: rotate(180deg);
+                transition: top .1s ease-out
+                ,opacity .1s ease-out .12s;
+            
+                //transform: rotate(45deg);
+            
+                &:hover {
+                  top: 10px;
+                }
+              }
+            
+              &::after {
+                @include hamburger();
+                bottom: 0;
+                top: -10px;
+                transform: rotate(180deg);
+                transition: bottom .1s
+                  ease-out, transform .22s
+                  cubic-bezier(0.215, 0.610, 0.355, 1) .12s;
+              }
           }
         }
-      }
-    
+        
       .hamburger-spin-backwards {
         cursor: pointer;
-        
         .hamburger-inner {
+      
+            @include hamburger();
         
-          @include hamburger();
-          
-            transform: rotate(-180deg);
+            transform: rotate(225deg);
             transition-delay: .12s;
             transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
             transition: .5s ease;
-          
+        
             &::before {
               @include hamburger();
-              top: 10px;
-              opacity: 1;
-              transform: rotate(180deg);
+              top:0;
+              opacity: 0;
+        
               transition: top .1s ease-out
-              ,opacity .1s ease-out .12s;
-          
-              //transform: rotate(45deg);
-          
+                ,opacity .1s ease-out .12s;
+        
+              transform: rotate(45deg);
+        
               &:hover {
                 top: 10px;
               }
             }
-          
+        
             &::after {
               @include hamburger();
               bottom: 0;
-              top: -10px;
-              transform: rotate(180deg);
+              top: 0;
+              transform: rotate(-90deg);
               transition: bottom .1s
                 ease-out, transform .22s
                 cubic-bezier(0.215, 0.610, 0.355, 1) .12s;
             }
+          }
         }
-      }
+      
+        
+       

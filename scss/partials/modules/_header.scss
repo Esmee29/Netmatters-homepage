@@ -70,10 +70,12 @@ display: block;
 .sticky-add {
   display: block;
 }
-.sticky-hidden {
+.sticky-remove {
   display: none;
 }
-
+#sticky a{
+  color: #fff;
+}
 .sticky-show {
   position: fixed;
   top: -218px;

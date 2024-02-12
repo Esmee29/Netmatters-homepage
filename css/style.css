@@ -1935,8 +1935,12 @@ li {
   display: block;
 }
 
-.sticky-hidden {
+.sticky-remove {
   display: none;
+}
+
+#sticky a {
+  color: #fff;
 }
 
 .sticky-show {

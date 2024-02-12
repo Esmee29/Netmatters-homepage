@@ -253,88 +253,68 @@ input[type=text] {
     }    
 }
 //carousel//
-    .banner {
+#banner {
+    h1 {
+  
+      @include viewport(large) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+  
+      @include viewport(x-large) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+    }
+  
+    p {
+  
+      @include viewport(large) {
+        font-size: 1.625rem;
+        line-height: 2.5rem;
+      }
+  
+      @include viewport(x-large) {
+        font-size: 1.625rem;
+        line-height: 2.5rem;
+      }
+    }
+  }
+  
+  .carousell-content {
+    
+      @include viewport(medium) { 
+        width: 640px;
+      }
+    
+      @include viewport(large) {
+        text-align: left;
+      }
+    
+      @include viewport(x-large) {
+        width: 1200px;
+        text-align: left;
+      }
+      
+      & h1 {
+    
         @include viewport(large) {
-            width: 950px;
-                display: flex;
-                justify-content: start;
-                text-align: left;
-                margin-left: auto;
-                margin-right: auto;
-             }
-             @include viewport(x-large) {
-                width: 950px;
-                    display: flex;
-                    justify-content: start;
-                    text-align: left;
-                    margin-left: auto;
-                    margin-right: auto;
-                 }
-        
-    }
-    .wrapper {
-        @include viewport(medium) {
-            width: 750px;
-            margin: auto;
-             }
-        
-    }
-        .banner-heading {
-            @include viewport(small) {
-                font-size: 2.5rem;
-            line-height: 3rem;
-                 }
-                 @include viewport(medium) {
-                    font-size: 2.5rem;
-                line-height: 3rem;
-                     }
-                     @include viewport(large){
-                        font-size: 4.2rem;
-                        line-height: 5rem;
-                        margin-bottom: 0px;
-                    }
-                        @include viewport(x-large){
-                            font-size: 4.2rem;
-                            line-height: 5rem;
-                            margin-bottom: 0px;
-                        }
-                    }
-
-        @media screen and (min-width: 992px){
-            .banner {
-                width: 950px;
-                display: flex;
-                justify-content: start;
-                text-align: left;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            }
-            .container-banner{
-                @include viewport(small) {
-                    height: 650px
-                     }
-               }
-               .btn-whyus{
-                @include viewport(small) {
-                    margin: 10px 20px;
-                     }
-                     @include viewport(medium) {
-                        margin: 10px 250px;
-                         }
-                     @include viewport(large){
-                        margin-left: 0px;
-                        margin-right: 0px;
-                        margin-top: 30px;
-                        margin-bottom: 18px;
-                    }
-                        @include viewport(x-large){
-                            margin-left: 0px;
-                            margin-right: 0px;
-                            margin-top: 30px;
-                            margin-bottom: 18px;
-}
-}
+          width: 900px;
+          font-size: 64px;
+          
+          
+        }
+      
+        @include viewport(x-large) {
+          width: 1200px;
+          font-size: 64px;
+          text-align: left;
+          
+        }
+      }
+    
+      
+  }
 //Cookies//
 .modal-dialog {
     @include viewport(small) {

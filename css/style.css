@@ -1494,7 +1494,7 @@ footer {
   }
 }
 
-.banner-img img {
+.carousel-img img {
   width: 100vw;
   object-fit: cover;
   min-height: 550px;

@@ -1412,7 +1412,7 @@ footer {
 }
 
 .slick-dots li button::before {
-  font-size: 16px;
+  font-size: 12px;
   color: #fff;
 }
 
@@ -1444,18 +1444,19 @@ footer {
 
 @media (min-width: 1260px) and (max-width: 1439px) {
   .img-container-banner::before {
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     background: linear-gradient(270deg, transparent 25%, #000);
+    z-index: 900;
   }
 }
 
 @media (min-width: 1440px) {
   .img-container-banner::before {
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     top: 0;
@@ -1566,7 +1567,7 @@ footer {
   text-align: center;
   font-weight: 200;
   z-index: 990;
-  padding: 3.75rem 15px;
+  padding: 3.75rem 40px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1585,6 +1586,8 @@ footer {
   .carousel-content {
     width: 1200px;
     text-align: left;
+    background: linear-gradient(270deg, transparent 25%, #000);
+    height: 100vh;
   }
 }
 
@@ -1601,6 +1604,174 @@ footer {
     font-size: 64px;
     text-align: left;
   }
+}
+
+.btn-whyus {
+  margin-top: 1.938rem;
+  line-height: 50px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  border-radius: 3px;
+  display: inline-block;
+  text-wrap: nowrap;
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  background-color: #926FB1;
+  text-transform: uppercase;
+}
+
+.btn-whyus:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-whyus:hover {
+  background-color: #79539A;
+}
+
+.btn-bespoke {
+  margin-top: 1.938rem;
+  line-height: 50px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  border-radius: 3px;
+  display: inline-block;
+  text-wrap: nowrap;
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  background-color: #67809F;
+  text-transform: uppercase;
+}
+
+.btn-bespoke:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-bespoke:hover {
+  background-color: #526781;
+}
+
+.btn-it-banner {
+  margin-top: 1.938rem;
+  line-height: 50px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  border-radius: 3px;
+  display: inline-block;
+  text-wrap: nowrap;
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  background-color: #4183d7;
+  text-transform: uppercase;
+}
+
+.btn-it-banner:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-it-banner:hover {
+  background-color: #2A6EC6;
+}
+
+.btn-digital {
+  margin-top: 1.938rem;
+  line-height: 50px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  border-radius: 3px;
+  display: inline-block;
+  text-wrap: nowrap;
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  background-color: #2ecc71;
+  text-transform: uppercase;
+}
+
+.btn-digital:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-digital:hover {
+  background-color: #26AB5F;
+}
+
+.btn-telecoms {
+  margin-top: 1.938rem;
+  line-height: 50px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  border-radius: 3px;
+  display: inline-block;
+  text-wrap: nowrap;
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  background-color: #d64541;
+  text-transform: uppercase;
+}
+
+.btn-telecoms:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-telecoms:hover {
+  background-color: #BC2C28;
+}
+
+.btn-web {
+  margin-top: 1.938rem;
+  line-height: 50px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  border-radius: 3px;
+  display: inline-block;
+  text-wrap: nowrap;
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  background-color: #926FB1;
+  text-transform: uppercase;
+}
+
+.btn-web:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-web:hover {
+  background-color: #79539A;
+}
+
+.btn-cyber {
+  margin-top: 1.938rem;
+  line-height: 50px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  border-radius: 3px;
+  display: inline-block;
+  text-wrap: nowrap;
+  text-decoration: none;
+  font-weight: 400;
+  color: #fff;
+  background-color: #F62459;
+  text-transform: uppercase;
+}
+
+.btn-cyber:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-cyber:hover {
+  background-color: #DE093F;
 }
 
 .cookie-settings-btn {
@@ -3294,6 +3465,10 @@ input[type="checkbox"]:checked:after {
   bottom: 100%;
   left: -200px;
   right: -200px;
+}
+
+.partner-slideshow img {
+  margin: 20px 20px;
 }
 
 .box {

@@ -19,6 +19,7 @@ $newsletter:#ddd;
 $blue-bayoux:#526781; //Bespoke software Nav//
 $hoki:#67809F; //software//
 $blue-ribbon:#166AF4; //google review hover//
+$cornflower-blue: #2A6EC6; //banner it hover
 $havelock-blue:#4183d7; //support button and IT//
 $dodger-blue:#4387f6; //google reviews//
 $mariner:#286abd; //IT Nav//
@@ -87,14 +88,17 @@ $insta:#D93175;
     padding: 5px 20px;
     font-size: 1.25rem;
     border-radius: 3px;
+    display: inline-block;
     text-wrap: nowrap;
-text-decoration: none;
+    text-decoration: none;
+    font-weight: 400;
     color: $white;
     background-color: $color;
   text-transform: uppercase;
 
     &:hover {
         cursor: pointer;
+        text-decoration: none;
     }
     
 }

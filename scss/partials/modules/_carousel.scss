@@ -3,7 +3,7 @@
   bottom: 20px;
 }
 .slick-dots li button::before{
-  font-size: 16px;
+  font-size: 12px;
   color: $white;
 }
 
@@ -28,19 +28,21 @@
   left: -2px;
  
  }
+ 
  .img-container-banner{
   &::before{
     content: "";
     @include viewport(x-large){
-      position: absolute;
+      position: relative;
       left: 0;
       right: 0;
       top: 0;
       bottom: 0;
       background: linear-gradient(270deg, transparent 25%, #000);
+      z-index: 900;
     }
     @include viewport(xx-large){
-      position: absolute;
+      position: relative;
   left: 0;
   right: 0;
   top: 0;
@@ -129,7 +131,7 @@
     text-align: center;
     font-weight: 200;
     z-index: 990;
-    padding: 3.75rem 15px;
+    padding: 3.75rem 40px;
     
   
     @include viewport(medium) { // 768px
@@ -143,6 +145,8 @@
     @include viewport(x-large) {
       width: 1200px;
       text-align: left;
+      background: linear-gradient(270deg, transparent 25%, #000);
+      height: 100vh;
     }
     
     & h1 {
@@ -163,4 +167,46 @@
     }
   
     
+}
+.btn-whyus{
+  @include btn-banner($wisteria) 
+}
+.btn-whyus:hover{
+  background-color: $affair; 
+}
+.btn-bespoke{
+  @include btn-banner($hoki) 
+}
+.btn-bespoke:hover{
+  background-color: $blue-bayoux; 
+}
+.btn-it-banner{
+  @include btn-banner($havelock-blue) 
+}
+.btn-it-banner:hover{
+  background-color: $cornflower-blue; 
+}
+.btn-digital{
+  @include btn-banner($shamrock) 
+}
+.btn-digital:hover{
+  background-color: $jungle-green; 
+}
+.btn-telecoms{
+  @include btn-banner($valencia) 
+}
+.btn-telecoms:hover{
+  background-color: $tall-poppy; 
+}
+.btn-web{
+  @include btn-banner($wisteria) 
+}
+.btn-web:hover{
+  background-color: $affair; 
+}
+.btn-cyber {
+  @include btn-banner($radical-red)
+}
+.btn-cyber:hover{
+  background-color: $red-ribbon; 
 }

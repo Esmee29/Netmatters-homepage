@@ -18,15 +18,13 @@ $(document).ready(function(){
         swipe: false
     });
     // Client Banner Slider using Slick
-    $('.affiliation-banner').slick({
+    $('.client-slideshow').slick({
         autoplay: true,
         autoplaySpeed: 2000,
-        dots: false,
-        infinite: true,
         variableWidth: true,
         prevArrow: false,
         nextArrow: false,
         draggable: false,
         swipe: false,
-      });
+    });
 });

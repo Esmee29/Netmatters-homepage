@@ -14,7 +14,7 @@
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
+    opacity: .80;
     color: $white;
 }
 #banner .slick-active::after {
@@ -28,16 +28,46 @@
   left: -2px;
  
  }
-.img-container-header img {
-  opacity: .5;
+ .img-container-banner{
+  &::before{
+    content: "";
+    @include viewport(x-large){
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: linear-gradient(270deg, transparent 25%, #000);
+    }
+    @include viewport(xx-large){
+      position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(270deg, transparent 25%, #000);
+  }
+  
+ }
+}
+.img-container-banner img{
+  @include viewport(small){
+    opacity: .5;  
+  }
+  @include viewport(medium){
+    opacity: .5;  
+  }
+  @include viewport(large){
+    opacity: .5;  
+  }
   @include viewport(x-large){
     opacity: 1;  
   }
   @include viewport(xx-large){
-    opacity: 1;  
+    opacity: 1;
   }
 }
-.home-img img {
+.banner-img img {
   width: 100vw;
   object-fit: cover;
   min-height: 550px;

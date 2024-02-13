@@ -1423,7 +1423,7 @@ footer {
 }
 
 .slick-dots li.slick-active button:before {
-  opacity: .75;
+  opacity: .80;
   color: #fff;
 }
 
@@ -1438,23 +1438,63 @@ footer {
   left: -2px;
 }
 
-.img-container-header img {
-  opacity: .5;
+.img-container-banner::before {
+  content: "";
 }
 
 @media (min-width: 1260px) and (max-width: 1439px) {
-  .img-container-header img {
+  .img-container-banner::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(270deg, transparent 25%, #000);
+  }
+}
+
+@media (min-width: 1440px) {
+  .img-container-banner::before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(270deg, transparent 25%, #000);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .img-container-banner img {
+    opacity: .5;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .img-container-banner img {
+    opacity: .5;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  .img-container-banner img {
+    opacity: .5;
+  }
+}
+
+@media (min-width: 1260px) and (max-width: 1439px) {
+  .img-container-banner img {
     opacity: 1;
   }
 }
 
 @media (min-width: 1440px) {
-  .img-container-header img {
+  .img-container-banner img {
     opacity: 1;
   }
 }
 
-.home-img img {
+.banner-img img {
   width: 100vw;
   object-fit: cover;
   min-height: 550px;

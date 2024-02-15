@@ -85,7 +85,7 @@
     margin-top: 1.938rem;
     line-height: 50px;
     padding: 5px 20px;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     border-radius: 3px;
     @include viewport(small) {
       margin-top: 1rem;
@@ -112,11 +112,7 @@
       margin-top: 1rem;
     }
   } 
-  p {
-    @include viewport(small) {
-      font-size: 1rem;
-    }
-}
+
 }
 .carousel-content {
     filter: invert(0);

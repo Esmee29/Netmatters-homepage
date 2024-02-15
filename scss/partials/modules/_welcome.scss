@@ -6,6 +6,9 @@
 .background-grey{
  background-color: $tuna;   
 }
+.black-buttons:hover a:hover{
+    text-decoration: none;
+}
 .welcome-left a{
     color: $white;
    }
@@ -52,6 +55,7 @@ cite:hover {
 }
 .btn-reviews-google:hover {
     background-color: $blue-ribbon;
+    
 }
 .btn-reviews-trustpilot {
     @include btn-welcome($jade)

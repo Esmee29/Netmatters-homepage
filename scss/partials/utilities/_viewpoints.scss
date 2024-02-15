@@ -542,24 +542,9 @@ grid-template-columns: auto auto auto auto;
             grid-column-start: 2;
                     }
     }
-    .reviews{
-        @include viewport(large){
-            margin-top: 75px;
-                    }
-        @include viewport(x-large){
-            margin-top: 75px;
-                    }
-        
-    }
-    .btn-reviews-google{
-        @include viewport(large){
-            margin-top: 60px;
-        } 
-    } 
+    
     .btn-reviews-trustpilot {
-        @include viewport(large){
-            margin-top: 20px;
-        }
+       
         @include viewport(x-large){
             margin-top: 20px;
         }

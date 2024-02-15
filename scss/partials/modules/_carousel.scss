@@ -51,7 +51,6 @@
     margin-bottom: 1.8rem;
     color: $white;
     font-weight: 600;
-
     @include viewport(large) {
       font-size: 4rem;
       line-height: 5rem;
@@ -68,7 +67,9 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 600;
-
+    @include viewport(small) {
+      font-size: 1rem;
+    }
     @include viewport(large) {
       font-size: 1.625rem;
       line-height: 2.5rem;
@@ -86,6 +87,9 @@
     padding: 5px 20px;
     font-size: 1.25rem;
     border-radius: 3px;
+    @include viewport(small) {
+      margin-top: 1rem;
+    }
   }
 }
 @media (min-width: 992px){
@@ -94,6 +98,24 @@
     line-height: 5rem;
     padding: 0;
     margin-left: 0;
+}
+}
+.why{
+  h1 {
+    @include viewport(small) {
+      font-size: 2rem !important; 
+      margin-bottom: -1rem !important;
+    }
+  }
+  a {
+    @include viewport(small) {
+      margin-top: 1rem;
+    }
+  } 
+  p {
+    @include viewport(small) {
+      font-size: 1rem;
+    }
 }
 }
 .carousel-content {

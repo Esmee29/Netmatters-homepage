@@ -9,8 +9,12 @@
 .welcome-left a{
     color: $white;
    }
-
-
+   .welcome-left p{
+    font-size: 1em;
+   }
+   .welcome-left a:hover{
+    text-decoration: underline;
+   }
 .button-black {
     @include btn-welcome($charade)
 }
@@ -30,14 +34,19 @@ strong {
 }
 em {
     font-style: italic;
+    font-size: 1.3rem;
 }
 cite {
     font-weight: 600;
     color: $gray-chateau;
     font-size: 1.1rem;
 }
-
-
+cite:hover {
+    text-decoration: none;
+}
+.author:hover {
+    text-decoration: underline;
+}
 .btn-reviews-google {
     @include btn-welcome($dodger-blue)
 }
@@ -48,7 +57,7 @@ cite {
     @include btn-welcome($jade)
 }
 .btn-reviews-trustpilot {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .btn-reviews-trustpilot:hover {
     background-color: $green-haze;

@@ -127,16 +127,7 @@
 
   .box {
       display: none;
-      position: absolute;
-      z-index: 2;
-      width: 280px;
-      bottom: 130px;
-      background-color: $tuna;
-      color: $white;
-      left: 50%;
-      transform: translatex(-50%);
-      text-align: center;
-      margin-bottom: 3rem;
+      
   }
   
   .box p {
@@ -236,4 +227,13 @@
     padding: 23px;
     position: absolute;
     bottom: 50px;
+    z-index: 2;
+      width: 280px;
+      background-color: $tuna;
+      color: $white;
+      left: 50%;
+      transform: translatex(-50%);
+      text-align: center;
+      margin-bottom: 3rem;
   }
+      

@@ -94,11 +94,10 @@ label.required:after, label .required:after {
 }
 
 input[type="checkbox"] {
-  -webkit-appearance: none;
-  min-height: 26px;
-  min-width: 26px;
-  max-height: 26px;
-  max-width: 26px;
+  min-height: 32px;
+  min-width: 32px;
+  max-height: 32px;
+  max-width: 32px;
   background-color: #ddd;
   border: 3px solid #333645;
   border-radius: 3px;
@@ -117,18 +116,14 @@ input[type="checkbox"] {
   font-weight: 600;
 }
 
-input[type="checkbox"]:after {
-  font-family: 'icomoon';
-  content: "\ea10";
-  color: $white;
-  display: none;
-}
+
 
 input[type="checkbox"]:checked {
-  background-color: $tuna;
+  background-color: #333645 !important;
 }
 
 input[type="checkbox"]:checked:after {
+  background-color: #333645 !important;
   display: block;
 }
 .privacy-policy {

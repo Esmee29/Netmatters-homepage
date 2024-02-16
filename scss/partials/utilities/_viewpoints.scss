@@ -92,6 +92,9 @@
     @include viewport(x-large) {
     height: 64px;
          }
+         @include viewport(xx-large) {
+            height: 80px;
+                 }
 }
 .search-bar{
     @include viewport(medium){
@@ -261,7 +264,7 @@ input[type=text] {
 }
 .nm-logo-black{
     @include viewport(medium){
-        max-width: 345px;
+        max-width: 345px !important;
     } 
     @include viewport(large){
         position: relative;

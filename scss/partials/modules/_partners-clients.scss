@@ -17,7 +17,10 @@
     filter: grayscale(1);
   }
   .color-logo, .mono-logo {
-    height: 85px;
+    max-height: 90px;
+}
+.princess {
+  padding-top: 15px;
 }
 .mono-logo:hover {
     filter: grayscale(0);

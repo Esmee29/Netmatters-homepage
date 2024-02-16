@@ -24,16 +24,18 @@
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 10000;
+    z-index: 100;
     background-color: rgba(0,0,0,.7);
-    display: none;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
+    display: flex;
+    -webkit-overflow-scrolling: touch;
     outline: 0;
     overflow-x: hidden;
     overflow-y: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    -ms-flex-pack: center!important;
+    padding: 30px;
     
 }
 

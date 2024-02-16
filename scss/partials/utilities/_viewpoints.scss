@@ -635,6 +635,18 @@ grid-template-columns: auto auto auto auto;
                         flex-direction: row;
                             }  
     }
+    .name-input {
+        @include viewport(small){
+          max-width: 500px;
+          padding-right: 0 !important;
+                }
+            }
+            .email-input {
+                @include viewport(small){
+                  max-width: 500px;
+                  padding-right: 0 !important;
+                        }
+                    }
     #your-email, #your-name {
         @include viewport(large){
         width: 450px;

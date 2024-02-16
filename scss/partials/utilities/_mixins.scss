@@ -159,17 +159,17 @@ $insta:#D93175;
         display: block;
     position: absolute;
     @include viewport(large){
-        top: 212px;
+        top: 214px;
     border-left-width: 67px;
     border-right-width: 67px;
     }
     @include viewport(x-large){
-        top: 207px;
+        top: 208px;
         border-left-width: 86px;
         border-right-width: 86px;
     }
     @include viewport(xx-large){
-        top: 212px;
+        top: 212.5px;
         border-left-width: 100px;
         border-right-width: 100px;
     }

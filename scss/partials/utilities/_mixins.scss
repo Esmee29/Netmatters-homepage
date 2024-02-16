@@ -164,14 +164,15 @@ $insta:#D93175;
         border-right-width: 67px;
     }
     @include viewport(x-large){
-        top: 207px;
-        border-left-width: 85px;
-        border-right-width: 85px;
+        top: 208px;
+        border-left-width: 86px;
+        border-right-width: 86px;
+        left:0.5
     }
     @include viewport(xx-large){
-        top:212px;
-        border-left-width: 100px;
-        border-right-width: 100px;
+        top: 13.4rem;
+        border-left-width: 6rem;
+        border-right-width: 6.5rem;
     }
 }
 }

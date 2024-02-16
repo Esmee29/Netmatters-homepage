@@ -1,7 +1,6 @@
 // ==========================================================================
 // JavaScript Sticky Header
 // ==========================================================================
-// Add the sticky-hide class to the sticky header on page load
 window.onload = function() {
     const stickyHeader = document.querySelector("#sticky");
     stickyHeader.classList.add("sticky-hide");
@@ -18,15 +17,15 @@ window.onscroll = function() {stickyHeaderScroll()};
 function stickyHeaderScroll() {
     let currentScrollPos = window.pageYOffset;
 
-    if (currentScrollPos > prevScrollPos && currentScrollPos > stickyHeaderHeight) // user is scrolling down and is past the default header at the top of page
+    if (currentScrollPos < prevScrollPos && currentScrollPos > stickyHeaderHeight) // user is scrolling up and is past the default header at the top of page
     {
-        stickyHeader.classList.add("sticky-hide");
-        stickyHeader.classList.remove("sticky-show");
-    }
-    else // user is scrolling upwards
-    {
-        stickyHeader.classList.add("sticky-show");     
+        stickyHeader.classList.add("sticky-show");
         stickyHeader.classList.remove("sticky-hide");
+    }
+    else // user is scrolling downwards
+    {
+        stickyHeader.classList.add("sticky-hide");     
+        stickyHeader.classList.remove("sticky-show");
     }
 
     if (currentScrollPos == 0) // removes sticky header at the top of the page, adds it back in if the webpage is scrolled past the height of the header
@@ -43,3 +42,4 @@ function stickyHeaderScroll() {
 
     prevScrollPos = currentScrollPos;
 }
+

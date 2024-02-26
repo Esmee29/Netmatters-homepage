@@ -1,252 +1,191 @@
 .partner-slideshow {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 100%;
-    overflow-x: hidden;
-    gap: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  overflow-x: hidden;
+  gap: 80px;
 }
 .partner-slideshow:first-child {
-    margin-left: 150px;
-  }
-  .partner-slideshow img{
-    margin: 0 40px;
-  }
-  .mono-logo {
-    filter: grayscale(1);
-  }
-  .color-logo, .mono-logo {
-    max-height: 90px;
+  margin-left: 150px;
+}
+.partner-slideshow img{
+  margin: 0 40px;
+}
+.mono-logo {
+  filter: grayscale(1);
+}
+.color-logo, .mono-logo {
+  max-height: 90px;
 }
 .princess {
-  padding-top: 15px;
+padding-top: 15px;
 }
 .mono-logo:hover {
-    filter: grayscale(0);
-  }
-  
-  .affiliation-banner {
-    display: flex;
-    flex-wrap: nowrap;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    width: 100%;
-    overflow-x: clip;
-    gap: 80px;
-  }
-  .affiliation-banner a{
-    color: white;
-  }
-  .affiliation-banner:first-child {
-    margin-left: 150px;
-  }
-  .xupes-logo {
-    position: relative;
-    height: 60px !important;
-    width: 200px;
-    padding-top: 15px;
-    margin-right: 15px;
-  }
-  .survey-logo{
-    height: 55px;
-  } 
-  .item{
-    margin: 0 40px;
-    max-height: 70px;
-    width: auto;
-  }
-.school-logo{
- height: 60px; 
+  filter: grayscale(0);
 }
-.ash-logo{
-  height: 60px;
-}
-  
-  .sponsors-banner > .up {
-    width: 280px;
-  }
-  
-  .triangle-up {
-    content: "";
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 40px 36px 0 36px !important;
-    border-color: #333645 transparent transparent transparent;
-    transform: rotate(0deg);
-    bottom: 40px;
-    margin-right: auto;
-    z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
-}
-  
-  .triangle-up {
-    display: none;
-    position: absolute;
-    margin-bottom: 30px;
-  }
-  
-  .triangle-space {
-    display: block;
-    position: absolute;
-    z-index: 100;
-    left: -200px;
-    right: -200px;
-    top: 15px;
-  }
-  .box-small{
-    display: none;
-  }
-  .box {
-      display: none;
-      
-  }
-  .box-small p{
-    font-size: .8125rem;
-    line-height: 1.375rem;
-    margin-top: 0px;
-  
-  }
-  .box p {
-    font-size: .8125rem;
-    line-height: 1.375rem;
-    margin-top: 0px;
-  
-  }
-  
-  .box p, .box h3 {
-    padding: 0px 15px;
-  }
-  .box-small p, .box-small h3 {
-    padding: 0px 15px;
-  }
-  
-  .box h3 {
-    color: $white;
-    font-size: 1.125rem;
-    padding-bottom: 17px;
-    margin: 0;
-  }
-  .box-small h3 {
-    color: $white;
-    font-size: 1.125rem;
-    padding-bottom: 17px;
-    margin: 0;
-  }
-  .box .btn {
-    display: inline-block;
-    font-weight: 400;
-    height: auto;
-    line-height: 49px;
-    padding: 0px 12px;
-    text-align: center;
-    margin: 0px 25px;
-    margin-bottom: 10px;
 
+.affiliation-banner {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  overflow-x: clip;
+  gap: 80px;
 }
-.box-small .btn {
+.affiliation-banner a{
+  color: white;
+}
+.affiliation-banner:first-child {
+  margin-left: 150px;
+}
+.affiliation-banner img {
   display: inline-block;
-  font-weight: 400;
-  height: auto;
-  line-height: 49px;
-  padding: 0px 12px;
+  margin-right: 25px;
+  margin-left: 25px;
+  width:auto;
+}
+.xupes-logo, .survey-logo{
+  position:relative;
+  width:200px;
+  padding-top:17px;
+  padding-bottom:17px;
+}
+
+
+.sponsors-banner > .up{
+  width:280px;
+}
+.triangle-up{
+  content:"";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 40px 36px 0 36px !important;
+  border-color:$tuna transparent transparent transparent;
+  transform: rotate(0deg);
+  bottom:40px;
+  margin-right:auto;
+  z-index:2;
+  left:50%;
+  transform: translateX(-50%)
+}
+.triangle-up{
+  display:none;
+  position:absolute;
+  bottom: 42px;
+}
+.triangle-space{
+display:none;
+ width:100%;
+ height:100%;
+ position:relative;
+ bottom: 220px;
+ height: 170px;
+}
+.box{
+  display:none;
+  position:absolute;
+  z-index: 2;
+  width: 280px;
+  bottom:110px;
+  z-index: 2;
+  background-color: #333645;
+  color: #fff;
+  left:50%;
+  transform:translatex(-50%);
   text-align: center;
-  margin: 0px 25px;
-  margin-bottom: 10px;
+
+  p{
+    font-size: .8125rem;
+    line-height: 1.375rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  p, h3{
+    padding: 0px 15px;
+  }
+  h3{
+    color:$white;
+    font-size:1.125rem;
+    padding-bottom:17px;
+    margin:0;
+  }
+  .btn{
+    display: block;
+    height: 47px;
+    margin: auto;
+    text-align: center;
+    padding-top: 0px;
+    line-height: 49px;
+    width:240px;
+    box-sizing:border-box;
+  }
 
 }
-  .btn-blue {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    text-decoration: none;
-    background-color: $havelock-blue;
-    border: 1px solid transparent;
+
+.mono-logo{
+  filter:grayscale(1)
+}
+.mono-logo:hover{
+  filter:grayscale(0);
+}
+.sweetzy-logo{
+  padding-top: 8px;
+}
+.ashcroft-logo{
+  padding-top: 20px;
+}
+.up{
+  padding-right:15px;
+  padding-left:15px;
+  position:relative;
+  height: 50px;
+}
+
+.up:hover{
+  .triangle-space{
+    display:block;
+  }
+  .triangle-up{
+    display:block;
+  }
+  .box{
+    display: inline-block;
+    padding:20px;
+    box-sizing:border-box;
+  }
+  
+}
+
+.btn-blue {
+  background-color: $havelock-blue;
 }
 .btn-blue:hover{
-  text-decoration: none;
-  background-color: $cornflower-blue;
+text-decoration: none;
+background-color: $cornflower-blue;
 }
 .btn-swan {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  text-decoration: none;
-  background-color: $hoki;
-  border: 1px solid transparent;
+background-color: $hoki;
 }
 .btn-swan:hover{
-  text-decoration: none;
-  background-color: $blue-bayoux;
+text-decoration: none;
+background-color: $blue-bayoux;
 }
 .btn-green {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  text-decoration: none;
-  background-color: $jungle-green;
-  border: 1px solid transparent;
+background-color: $jungle-green;
 }
 .btn-green:hover{
-  text-decoration: none;
-  background-color: $eucalyptus;
+text-decoration: none;
+background-color: $eucalyptus;
 }
 .btn-purple {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  text-decoration: none;
-  background-color: $wisteria;
-  border: 1px solid transparent;
+background-color: $wisteria;
 }
 .btn-purple:hover{
-  text-decoration: none;
-  background-color: $affair;
+text-decoration: none;
+background-color: $affair;
 }
-  .up {
-    padding-right: 15px;
-    padding-left: 15px;
-    position: relative;
-  }
-  
-  .up:hover .triangle-space {
-    display: block;
-  }
-  
-  .up:hover .triangle-up {
-    display: block;
-    position: absolute;
-    top: -80px;
-  }
  
-  .up:hover .box {
-    display: inline-block;
-    padding: 23px;
-    position: absolute;
-    z-index: 2;
-      width: 280px;
-      bottom: 85px;
-      background-color: $tuna;
-      color: $white;
-      left: 50%;
-      transform: translatex(-50%);
-      text-align: center;
-      margin-bottom: 3rem;
-  }
-  .up:hover .box-small {
-    display: inline-block;
-    padding: 23px;
-    position: absolute;
-    z-index: 2;
-      width: 280px;
-      bottom: 72px;
-      background-color: $tuna;
-      color: $white;
-      left: 50%;
-      transform: translatex(-50%);
-      text-align: center;
-      margin-bottom: 3rem;
-  }
-      

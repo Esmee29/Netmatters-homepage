@@ -18,9 +18,11 @@ $(document).ready(function(){
         swipe: false
     });
     // Client Banner Slider using Slick
-    $('.client-slideshow').slick({
+    $('.affiliation-banner').slick({
         autoplay: true,
         autoplaySpeed: 2000,
+        dots: false,
+        infinite: true,
         variableWidth: true,
         prevArrow: false,
         nextArrow: false,

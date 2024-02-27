@@ -96,6 +96,12 @@
             height: 80px;
                  }
 }
+.logo-container{
+    @include viewport(xx-large){
+        margin-right: 50px;
+        }
+
+}
 .search-bar{
     @include viewport(medium){
         font-size: 1em;
@@ -277,6 +283,17 @@ input[type=text] {
   vertical-align: middle;;
     }    
 }
+.nav:hover .sub-menu{
+    @include viewport(large){
+        margin-top: -10px;
+    }
+    @include viewport(x-large){
+        width: 1200px !important;
+        margin-top: -12px !important;
+    }
+}
+
+
 //carousel//
 #banner {
     h1 {

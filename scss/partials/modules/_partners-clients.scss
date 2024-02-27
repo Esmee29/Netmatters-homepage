@@ -30,7 +30,7 @@ padding-top: 15px;
   display: flex;
   flex-wrap: nowrap;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
   width: 100%;
   overflow-x: clip;
   gap: 80px;
@@ -53,7 +53,14 @@ padding-top: 15px;
   padding-top:17px;
   padding-bottom:17px;
 }
-
+.crane-logo{
+  height: 60px;
+}
+.item{
+  margin: 0 40px;
+  max-height: 70px;
+  width: auto;
+}
 
 .sponsors-banner > .up{
   width:280px;
@@ -75,7 +82,7 @@ padding-top: 15px;
 .triangle-up{
   display:none;
   position:absolute;
-  bottom: 42px;
+  bottom: 50px;
 }
 .triangle-space{
 display:none;
@@ -84,6 +91,21 @@ display:none;
  position:relative;
  bottom: 220px;
  height: 170px;
+}
+.sweet-triangle{
+  bottom: 35px;
+}
+.howes-triangle{
+  bottom: 208px;
+}
+.ash-triangle{
+  bottom: 20px;
+}
+.crane-triangle{
+  bottom: 38px;
+}
+.GD-triangle{
+  bottom: 38px;
 }
 .box{
   display:none;

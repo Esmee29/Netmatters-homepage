@@ -667,12 +667,17 @@ grid-template-columns: auto auto auto auto;
                   padding-right: 0 !important;
                         }
                     }
-    #your-email, #your-name {
+    #newsletter-email, #newsletter-name {
         @include viewport(large){
         width: 450px;
         display: block;
         box-sizing: border-box;
                 }
+                @include viewport(x-large){
+                    width: 570px;
+                        } @include viewport(xx-large){
+                            width: 570px;
+                                }
     }
 //footer//
 .footer{

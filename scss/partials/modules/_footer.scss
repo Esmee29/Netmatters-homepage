@@ -138,12 +138,11 @@
     }
     .bottom-footer {
       display: flex;
-      justify-content: space-between;
+      align-content: center;
       background-color: $footer;
       color: $white;
       font-size: 0.8125rem;
-      padding-top: 15px;
-      padding-bottom: 0;
+      padding: 5px 0px 10px 0px;
     }
     .bottom-footer a{
       color: $white;
